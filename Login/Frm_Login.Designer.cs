@@ -35,16 +35,16 @@ namespace Login
             this.btnExit = new System.Windows.Forms.Button();
             this.LblThongBapTenDangNhap = new System.Windows.Forms.Label();
             this.LblThongBaoMatKhau = new System.Windows.Forms.Label();
-            this.txtMatkhau = new MyCustom.WaterTextBox();
-            this.txtTenDangNhap = new MyCustom.WaterTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LDangKyTaiKhoan = new System.Windows.Forms.LinkLabel();
             this.LQuenMatKhau = new System.Windows.Forms.LinkLabel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.Remember = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtMatkhau = new MyCustom.WaterTextBox();
+            this.txtTenDangNhap = new MyCustom.WaterTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -89,7 +89,7 @@ namespace Login
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.LDangKyTaiKhoan);
             this.panel1.Controls.Add(this.LQuenMatKhau);
-            this.panel1.Controls.Add(this.checkBox1);
+            this.panel1.Controls.Add(this.Remember);
             this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Location = new System.Drawing.Point(23, 70);
             this.panel1.Name = "panel1";
@@ -126,31 +126,6 @@ namespace Login
             this.LblThongBaoMatKhau.Name = "LblThongBaoMatKhau";
             this.LblThongBaoMatKhau.Size = new System.Drawing.Size(467, 22);
             this.LblThongBaoMatKhau.TabIndex = 14;
-            // 
-            // txtMatkhau
-            // 
-            this.txtMatkhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMatkhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.txtMatkhau.Location = new System.Drawing.Point(52, 113);
-            this.txtMatkhau.Name = "txtMatkhau";
-            this.txtMatkhau.Size = new System.Drawing.Size(459, 28);
-            this.txtMatkhau.TabIndex = 2;
-            this.txtMatkhau.Tag = "";
-            this.txtMatkhau.UseSystemPasswordChar = true;
-            this.txtMatkhau.WaterMarkColor = System.Drawing.Color.Gray;
-            this.txtMatkhau.WaterMarkText = "Mật Khẩu";
-            // 
-            // txtTenDangNhap
-            // 
-            this.txtTenDangNhap.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.txtTenDangNhap.Location = new System.Drawing.Point(52, 27);
-            this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(459, 28);
-            this.txtTenDangNhap.TabIndex = 1;
-            this.txtTenDangNhap.Tag = "";
-            this.txtTenDangNhap.WaterMarkColor = System.Drawing.Color.Gray;
-            this.txtTenDangNhap.WaterMarkText = "Tên Đăng Nhập";
             // 
             // label3
             // 
@@ -205,7 +180,7 @@ namespace Login
             // LQuenMatKhau
             // 
             this.LQuenMatKhau.AutoSize = true;
-            this.LQuenMatKhau.Location = new System.Drawing.Point(337, 174);
+            this.LQuenMatKhau.Location = new System.Drawing.Point(337, 168);
             this.LQuenMatKhau.Name = "LQuenMatKhau";
             this.LQuenMatKhau.Size = new System.Drawing.Size(174, 29);
             this.LQuenMatKhau.TabIndex = 4;
@@ -215,18 +190,18 @@ namespace Login
             this.LQuenMatKhau.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LQuenMatKhau_LinkClicked);
             this.LQuenMatKhau.MouseHover += new System.EventHandler(this.LQuenMatKhau_MouseHover);
             // 
-            // checkBox1
+            // Remember
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBox1.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox1.Location = new System.Drawing.Point(24, 173);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(109, 33);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Tag = "";
-            this.checkBox1.Text = "Nhớ tôi";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.Remember.AutoSize = true;
+            this.Remember.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Remember.ForeColor = System.Drawing.Color.Blue;
+            this.Remember.Location = new System.Drawing.Point(24, 168);
+            this.Remember.Name = "Remember";
+            this.Remember.Size = new System.Drawing.Size(109, 33);
+            this.Remember.TabIndex = 3;
+            this.Remember.Tag = "";
+            this.Remember.Text = "Nhớ tôi";
+            this.Remember.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -236,6 +211,31 @@ namespace Login
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(532, 52);
             this.panel2.TabIndex = 6;
+            // 
+            // txtMatkhau
+            // 
+            this.txtMatkhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMatkhau.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtMatkhau.Location = new System.Drawing.Point(52, 110);
+            this.txtMatkhau.Name = "txtMatkhau";
+            this.txtMatkhau.Size = new System.Drawing.Size(459, 32);
+            this.txtMatkhau.TabIndex = 2;
+            this.txtMatkhau.Tag = "";
+            this.txtMatkhau.UseSystemPasswordChar = true;
+            this.txtMatkhau.WaterMarkColor = System.Drawing.Color.Gray;
+            this.txtMatkhau.WaterMarkText = "Mật Khẩu";
+            // 
+            // txtTenDangNhap
+            // 
+            this.txtTenDangNhap.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTenDangNhap.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtTenDangNhap.Location = new System.Drawing.Point(52, 24);
+            this.txtTenDangNhap.Name = "txtTenDangNhap";
+            this.txtTenDangNhap.Size = new System.Drawing.Size(459, 32);
+            this.txtTenDangNhap.TabIndex = 1;
+            this.txtTenDangNhap.Tag = "";
+            this.txtTenDangNhap.WaterMarkColor = System.Drawing.Color.Gray;
+            this.txtTenDangNhap.WaterMarkText = "Tên Đăng Nhập";
             // 
             // Frm_Login
             // 
@@ -272,7 +272,7 @@ namespace Login
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel LDangKyTaiKhoan;
         private System.Windows.Forms.LinkLabel LQuenMatKhau;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox Remember;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private MyCustom.WaterTextBox txtTenDangNhap;

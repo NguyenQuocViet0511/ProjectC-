@@ -29,108 +29,32 @@ namespace Login.Fromlogin
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtHoVaTen = new MyCustom.WaterTextBox();
-            this.txtTenDangNhap = new MyCustom.WaterTextBox();
-            this.txtMatKhau = new MyCustom.WaterTextBox();
-            this.txtEmail = new MyCustom.WaterTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblThongBaoHoVaTen = new System.Windows.Forms.Label();
             this.BtnDangKy = new System.Windows.Forms.Button();
-            this.lblQuayLai = new System.Windows.Forms.Label();
             this.CheckDongY = new System.Windows.Forms.CheckBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblQuayLai = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblThongBaoHoVaTen = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtHoVaTen = new MyCustom.WaterTextBox();
+            this.txtTenDangNhap = new MyCustom.WaterTextBox();
+            this.txtMatKhau = new MyCustom.WaterTextBox();
+            this.txtEmail = new MyCustom.WaterTextBox();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtHoVaTen
-            // 
-            this.txtHoVaTen.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtHoVaTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.txtHoVaTen.Location = new System.Drawing.Point(80, 23);
-            this.txtHoVaTen.Name = "txtHoVaTen";
-            this.txtHoVaTen.Size = new System.Drawing.Size(425, 28);
-            this.txtHoVaTen.TabIndex = 0;
-            this.txtHoVaTen.WaterMarkColor = System.Drawing.Color.Gray;
-            this.txtHoVaTen.WaterMarkText = "Họ Và Tên ";
-            // 
-            // txtTenDangNhap
-            // 
-            this.txtTenDangNhap.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.txtTenDangNhap.Location = new System.Drawing.Point(80, 87);
-            this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(425, 28);
-            this.txtTenDangNhap.TabIndex = 1;
-            this.txtTenDangNhap.WaterMarkColor = System.Drawing.Color.Gray;
-            this.txtTenDangNhap.WaterMarkText = "Tên Đăng Nhập";
-            // 
-            // txtMatKhau
-            // 
-            this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.txtMatKhau.Location = new System.Drawing.Point(80, 155);
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(425, 28);
-            this.txtMatKhau.TabIndex = 2;
-            this.txtMatKhau.WaterMarkColor = System.Drawing.Color.Gray;
-            this.txtMatKhau.WaterMarkText = "Mật Khẩu";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.txtEmail.Location = new System.Drawing.Point(80, 227);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(425, 28);
-            this.txtEmail.TabIndex = 3;
-            this.txtEmail.WaterMarkColor = System.Drawing.Color.Gray;
-            this.txtEmail.WaterMarkText = "Email";
-            // 
-            // label5
-            // 
-            this.label5.Image = global::Login.Properties.Resources.icons8_secured_letter_20px_1;
-            this.label5.Location = new System.Drawing.Point(54, 227);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(20, 30);
-            this.label5.TabIndex = 12;
-            // 
-            // label4
-            // 
-            this.label4.Image = global::Login.Properties.Resources.user;
-            this.label4.Location = new System.Drawing.Point(54, 85);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(20, 30);
-            this.label4.TabIndex = 11;
-            // 
-            // label2
-            // 
-            this.label2.Image = global::Login.Properties.Resources.pass;
-            this.label2.Location = new System.Drawing.Point(54, 153);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 30);
-            this.label2.TabIndex = 9;
-            // 
-            // label1
-            // 
-            this.label1.Image = global::Login.Properties.Resources.icons8_name_20px_1;
-            this.label1.Location = new System.Drawing.Point(54, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 30);
-            this.label1.TabIndex = 8;
             // 
             // label3
             // 
@@ -167,6 +91,14 @@ namespace Login.Fromlogin
             this.panel1.Size = new System.Drawing.Size(560, 435);
             this.panel1.TabIndex = 13;
             // 
+            // lblThongBaoHoVaTen
+            // 
+            this.lblThongBaoHoVaTen.ForeColor = System.Drawing.Color.Red;
+            this.lblThongBaoHoVaTen.Location = new System.Drawing.Point(80, 59);
+            this.lblThongBaoHoVaTen.Name = "lblThongBaoHoVaTen";
+            this.lblThongBaoHoVaTen.Size = new System.Drawing.Size(425, 13);
+            this.lblThongBaoHoVaTen.TabIndex = 20;
+            // 
             // BtnDangKy
             // 
             this.BtnDangKy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -178,6 +110,26 @@ namespace Login.Fromlogin
             this.BtnDangKy.Text = "Đăng Ký";
             this.BtnDangKy.UseVisualStyleBackColor = false;
             this.BtnDangKy.Click += new System.EventHandler(this.BtnDangKy_Click);
+            // 
+            // CheckDongY
+            // 
+            this.CheckDongY.AutoSize = true;
+            this.CheckDongY.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CheckDongY.Location = new System.Drawing.Point(57, 280);
+            this.CheckDongY.Name = "CheckDongY";
+            this.CheckDongY.Size = new System.Drawing.Size(148, 21);
+            this.CheckDongY.TabIndex = 17;
+            this.CheckDongY.Text = "đồng ý Điều Khoản";
+            this.CheckDongY.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(31, 23);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(560, 60);
+            this.panel2.TabIndex = 14;
             // 
             // lblQuayLai
             // 
@@ -194,17 +146,6 @@ namespace Login.Fromlogin
             this.lblQuayLai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblQuayLai.Click += new System.EventHandler(this.lblQuayLai_Click);
             this.lblQuayLai.MouseHover += new System.EventHandler(this.lblQuayLai_MouseHover);
-            // 
-            // CheckDongY
-            // 
-            this.CheckDongY.AutoSize = true;
-            this.CheckDongY.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CheckDongY.Location = new System.Drawing.Point(57, 280);
-            this.CheckDongY.Name = "CheckDongY";
-            this.CheckDongY.Size = new System.Drawing.Size(148, 21);
-            this.CheckDongY.TabIndex = 17;
-            this.CheckDongY.Text = "đồng ý Điều Khoản";
-            this.CheckDongY.UseVisualStyleBackColor = true;
             // 
             // pictureBox4
             // 
@@ -242,22 +183,81 @@ namespace Login.Fromlogin
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
-            // panel2
+            // label5
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(31, 23);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(560, 60);
-            this.panel2.TabIndex = 14;
+            this.label5.Image = global::Login.Properties.Resources.icons8_secured_letter_20px_1;
+            this.label5.Location = new System.Drawing.Point(54, 227);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(20, 30);
+            this.label5.TabIndex = 12;
             // 
-            // lblThongBaoHoVaTen
+            // label4
             // 
-            this.lblThongBaoHoVaTen.ForeColor = System.Drawing.Color.Red;
-            this.lblThongBaoHoVaTen.Location = new System.Drawing.Point(80, 59);
-            this.lblThongBaoHoVaTen.Name = "lblThongBaoHoVaTen";
-            this.lblThongBaoHoVaTen.Size = new System.Drawing.Size(425, 13);
-            this.lblThongBaoHoVaTen.TabIndex = 20;
+            this.label4.Image = global::Login.Properties.Resources.user;
+            this.label4.Location = new System.Drawing.Point(54, 85);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(20, 30);
+            this.label4.TabIndex = 11;
+            // 
+            // label2
+            // 
+            this.label2.Image = global::Login.Properties.Resources.pass;
+            this.label2.Location = new System.Drawing.Point(54, 153);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(20, 30);
+            this.label2.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.Image = global::Login.Properties.Resources.icons8_name_20px_1;
+            this.label1.Location = new System.Drawing.Point(54, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(20, 30);
+            this.label1.TabIndex = 8;
+            // 
+            // txtHoVaTen
+            // 
+            this.txtHoVaTen.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHoVaTen.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtHoVaTen.Location = new System.Drawing.Point(83, 20);
+            this.txtHoVaTen.Name = "txtHoVaTen";
+            this.txtHoVaTen.Size = new System.Drawing.Size(422, 32);
+            this.txtHoVaTen.TabIndex = 0;
+            this.txtHoVaTen.WaterMarkColor = System.Drawing.Color.Gray;
+            this.txtHoVaTen.WaterMarkText = "Họ Và Tên ";
+            // 
+            // txtTenDangNhap
+            // 
+            this.txtTenDangNhap.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTenDangNhap.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtTenDangNhap.Location = new System.Drawing.Point(83, 85);
+            this.txtTenDangNhap.Name = "txtTenDangNhap";
+            this.txtTenDangNhap.Size = new System.Drawing.Size(422, 32);
+            this.txtTenDangNhap.TabIndex = 1;
+            this.txtTenDangNhap.WaterMarkColor = System.Drawing.Color.Gray;
+            this.txtTenDangNhap.WaterMarkText = "Tên Đăng Nhập";
+            // 
+            // txtMatKhau
+            // 
+            this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMatKhau.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtMatKhau.Location = new System.Drawing.Point(83, 152);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.Size = new System.Drawing.Size(422, 32);
+            this.txtMatKhau.TabIndex = 2;
+            this.txtMatKhau.WaterMarkColor = System.Drawing.Color.Gray;
+            this.txtMatKhau.WaterMarkText = "Mật Khẩu";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtEmail.Location = new System.Drawing.Point(83, 223);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(422, 32);
+            this.txtEmail.TabIndex = 3;
+            this.txtEmail.WaterMarkColor = System.Drawing.Color.Gray;
+            this.txtEmail.WaterMarkText = "Email";
             // 
             // Form_DangKy
             // 
@@ -273,11 +273,11 @@ namespace Login.Fromlogin
             this.Text = "DangKyu";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

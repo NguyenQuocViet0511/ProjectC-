@@ -1,4 +1,5 @@
 ﻿using Login.Data;
+using Login.DataUser;
 using Login.Fromlogin;
 using System;
 using System.Collections.Generic;
@@ -14,22 +15,25 @@ namespace Login
 {
     public partial class Frm_Login : Form
     {
-        Boolean isThoat = true;
+
         public Frm_Login()
         {
             InitializeComponent();
-            user = new UserDao();
+           
         }
-        UserDao user;
+
         private void Frm_Login_Load(object sender, EventArgs e)
         {
-
+            txtTenDangNhap.Text = Properties.Settings.Default.Account;
+            txtMatkhau.Text = Properties.Settings.Default.Password;
         }
 
 
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            ListUser listUser = new ListUser();
+            listUser.DocFile(Const.Pathfile);
             if (string.IsNullOrEmpty(txtTenDangNhap.Text))
             {
                 LblThongBapTenDangNhap.Text = "Vui Lòng Không được Để Trống";
@@ -49,9 +53,11 @@ namespace Login
             }
             if (!string.IsNullOrEmpty(txtTenDangNhap.Text) && !string.IsNullOrEmpty(txtMatkhau.Text))
                
-                if (KiemTraDangNhap(txtTenDangNhap.Text, txtMatkhau.Text))
+                if (KiemTraTaiKhoanDangNhap(txtTenDangNhap.Text, txtMatkhau.Text))
                 {
-                              this.Close();
+
+                    MessageBox.Show("Bạn Đã Đăng Nhập Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
                 
                  }else
             {
@@ -59,27 +65,43 @@ namespace Login
                     LblThongBaoMatKhau.Text = "Sai Tên Tài Khoản Hoặc Mật Khẩu";
                 }
 
+            if (Remember.Checked)
+            {
+                Properties.Settings.Default.Account = txtTenDangNhap.Text;
+                Properties.Settings.Default.Password = txtMatkhau.Text;
+                Properties.Settings.Default.Save();
 
+            }
+            else
+            {
+                Properties.Settings.Default.Account = "";
+                Properties.Settings.Default.Password = "";
+                Properties.Settings.Default.Save();
+            }
 
 
         }
 
-        private bool KiemTraDangNhap(string userName, string passWord)
+        private Boolean KiemTraTaiKhoanDangNhap(String TenTaiKhoan,String MatKhau)
         {
-            if(user.user.UserName.Equals(userName) && user.user.PassWord.Equals(passWord))
+           for(int i = 0; i< Const.ListUser.Count; i++)
             {
-                return true;
+                if(Const.ListUser[i].TenTaiKhoan1.Equals(TenTaiKhoan) && Const.ListUser[i].Matkhau1.Equals(MatKhau))
+                {
+                    return true;
+                }
             }
             return false;
         }
 
 
-   
-       
+
+
 
         private void LQuenMatKhau_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            Form_QuenMatKhau form_QuenMatKhau = new Form_QuenMatKhau();
+            form_QuenMatKhau.ShowDialog();
         }
 
         private void LQuenMatKhau_MouseHover(object sender, EventArgs e)

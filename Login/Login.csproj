@@ -49,14 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\Const.cs" />
-    <Compile Include="Data\ListNhanVien.cs" />
-    <Compile Include="Data\NhanVien.cs" />
-    <Compile Include="Data\NhanVienNhanGiaiDao.cs" />
-    <Compile Include="Data\NhanVienTrungGiai.cs" />
-    <Compile Include="Data\User.cs" />
-    <Compile Include="Data\UserDao.cs" />
-    <Compile Include="Data\XuatFileExcel.cs" />
+    <Compile Include="DataToanCuc\Const.cs" />
+    <Compile Include="DataToanCuc\XuatFileExcel.cs" />
+    <Compile Include="DataUser\ListUser.cs" />
+    <Compile Include="DataUser\User.cs" />
     <Compile Include="Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +64,12 @@
     </Compile>
     <Compile Include="Fromlogin\Form_DangKy.Designer.cs">
       <DependentUpon>Form_DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fromlogin\Form_QuenMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fromlogin\Form_QuenMatKhau.Designer.cs">
+      <DependentUpon>Form_QuenMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="FromMain\From_Main.cs">
       <SubType>Form</SubType>
@@ -88,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Fromlogin\Form_DangKy.resx">
       <DependentUpon>Form_DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fromlogin\Form_QuenMatKhau.resx">
+      <DependentUpon>Form_QuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FromMain\From_Main.resx">
       <DependentUpon>From_Main.cs</DependentUpon>
