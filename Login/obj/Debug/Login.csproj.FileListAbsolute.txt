@@ -1,0 +1,44 @@
+D:\C#\Quay Số\QuaySo\Login\bin\Debug\Login.exe.config
+D:\C#\Quay Số\QuaySo\Login\bin\Debug\Login.exe
+D:\C#\Quay Số\QuaySo\Login\bin\Debug\Login.pdb
+D:\C#\Quay Số\QuaySo\Login\obj\Debug\Login.csproj.AssemblyReference.cache
+D:\C#\Quay Số\QuaySo\Login\obj\Debug\Login.Frm_Login.resources
+D:\C#\Quay Số\QuaySo\Login\obj\Debug\Login.Properties.Resources.resources
+D:\C#\Quay Số\QuaySo\Login\obj\Debug\Login.csproj.GenerateResource.cache
+D:\C#\Quay Số\QuaySo\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
+D:\C#\Quay Số\QuaySo\Login\obj\Debug\Login.exe
+D:\C#\Quay Số\QuaySo\Login\obj\Debug\Login.pdb
+C:\Users\admin\Downloads\QuaySo\Login\bin\Debug\Login.exe.config
+C:\Users\admin\Downloads\QuaySo\Login\bin\Debug\Login.exe
+C:\Users\admin\Downloads\QuaySo\Login\bin\Debug\Login.pdb
+C:\Users\admin\Downloads\QuaySo\Login\obj\Debug\Login.csproj.AssemblyReference.cache
+C:\Users\admin\Downloads\QuaySo\Login\obj\Debug\Login.Frm_Login.resources
+C:\Users\admin\Downloads\QuaySo\Login\obj\Debug\Login.Properties.Resources.resources
+C:\Users\admin\Downloads\QuaySo\Login\obj\Debug\Login.csproj.GenerateResource.cache
+C:\Users\admin\Downloads\QuaySo\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
+C:\Users\admin\Downloads\QuaySo\Login\obj\Debug\Login.exe
+C:\Users\admin\Downloads\QuaySo\Login\obj\Debug\Login.pdb
+C:\Users\admin\Downloads\QuaySo\Login\obj\Debug\Login.FromMain.resources
+D:\C#\QuaySo\Login\obj\Debug\Login.csproj.AssemblyReference.cache
+D:\C#\QuaySo\Login\obj\Debug\Login.Frm_Login.resources
+D:\C#\QuaySo\Login\obj\Debug\Login.FromMain.resources
+D:\C#\QuaySo\Login\obj\Debug\Login.Properties.Resources.resources
+D:\C#\QuaySo\Login\obj\Debug\Login.csproj.GenerateResource.cache
+D:\C#\QuaySo\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
+D:\C#\QuaySo\Login\obj\Debug\Login.exe
+D:\C#\QuaySo\Login\obj\Debug\Login.pdb
+D:\C#\QuaySo\Login\bin\Debug\Login.exe.config
+D:\C#\QuaySo\Login\bin\Debug\Login.exe
+D:\C#\QuaySo\Login\bin\Debug\Login.pdb
+C:\Users\admin\Desktop\QuaySo\Login\bin\Debug\Login.exe.config
+C:\Users\admin\Desktop\QuaySo\Login\bin\Debug\Login.exe
+C:\Users\admin\Desktop\QuaySo\Login\bin\Debug\Login.pdb
+C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.Frm_Login.resources
+C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.Properties.Resources.resources
+C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.exe
+C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.pdb
+C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.FromMain.From_Main.resources
+C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.Fromlogin.Form_DangKy.resources
