@@ -59,11 +59,29 @@
     <Compile Include="Frm_Login.Designer.cs">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fromlogin\Form_Checkcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fromlogin\Form_Checkcode.Designer.cs">
+      <DependentUpon>Form_Checkcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fromlogin\Form_CheckCodeQuenMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fromlogin\Form_CheckCodeQuenMatKhau.Designer.cs">
+      <DependentUpon>Form_CheckCodeQuenMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fromlogin\Form_DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Fromlogin\Form_DangKy.Designer.cs">
       <DependentUpon>Form_DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fromlogin\Form_MatKhauMoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fromlogin\Form_MatKhauMoi.Designer.cs">
+      <DependentUpon>Form_MatKhauMoi.cs</DependentUpon>
     </Compile>
     <Compile Include="Fromlogin\Form_QuenMatKhau.cs">
       <SubType>Form</SubType>
@@ -88,8 +106,17 @@
     <EmbeddedResource Include="Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Fromlogin\Form_Checkcode.resx">
+      <DependentUpon>Form_Checkcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fromlogin\Form_CheckCodeQuenMatKhau.resx">
+      <DependentUpon>Form_CheckCodeQuenMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Fromlogin\Form_DangKy.resx">
       <DependentUpon>Form_DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fromlogin\Form_MatKhauMoi.resx">
+      <DependentUpon>Form_MatKhauMoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fromlogin\Form_QuenMatKhau.resx">
       <DependentUpon>Form_QuenMatKhau.cs</DependentUpon>

@@ -35,6 +35,13 @@ namespace Login.DataUser
         public User()
         {
         }
-
+        public override bool Equals(object obj)
+        {
+            if (obj is User)
+            {
+                return this.MaID.Equals(((User)obj).MaID1);
+            }
+            return false;
+        }
     }
 }

@@ -11,12 +11,13 @@ namespace Login.DataUser
   public  class ListUser
     {
 
-  
+        
 
         public ListUser()
         {
+            
         }
-        public void Ghìile(String path)
+        public void GhiFile(String path)
         {
             using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.Write))
             {
@@ -31,6 +32,7 @@ namespace Login.DataUser
         }
         public void DocFile(string path)
         {
+            Const.ListUser.Clear();
 
             using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Read, FileShare.Read))
             {
@@ -51,6 +53,7 @@ namespace Login.DataUser
                             user.Matkhau1 = Tach[3];
                             user.Email1 = Tach[4];
                             user.Quyen1 = Tach[5];
+                            
                             Const.ListUser.Add(user);
                         }
                     }
