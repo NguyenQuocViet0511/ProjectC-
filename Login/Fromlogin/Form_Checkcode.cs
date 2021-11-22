@@ -47,5 +47,10 @@ namespace Login.Fromlogin
         {
 
         }
+
+        private void lblQuayLai_MouseHover(object sender, EventArgs e)
+        {
+            lblQuayLai.ForeColor = Color.Red;
+        }
     }
 }

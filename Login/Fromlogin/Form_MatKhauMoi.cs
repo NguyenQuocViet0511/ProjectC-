@@ -46,5 +46,29 @@ namespace Login.Fromlogin
             }
 
         }
+
+        private void CkbHienMatKhau_CheckedChanged(object sender, EventArgs e)
+        {
+            if(CkbHienMatKhau.Checked == true)
+            {
+                txtMatkhauMoi.UseSystemPasswordChar = false;
+                TxtNhapLaiMatKhau.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtMatkhauMoi.UseSystemPasswordChar = true;
+                TxtNhapLaiMatKhau.UseSystemPasswordChar = true;
+            }
+}
+
+        private void lblQuayLai_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void lblQuayLai_MouseHover(object sender, EventArgs e)
+        {
+            lblQuayLai.ForeColor = Color.Red;
+        }
     }
 }

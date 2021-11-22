@@ -33,11 +33,11 @@ namespace Login.Fromlogin
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.txtCode = new MyCustom.WaterTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.BtnXacMinhCode = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.lblQuayLai = new System.Windows.Forms.Label();
+            this.BtnXacMinhCode = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -85,6 +85,14 @@ namespace Login.Fromlogin
             this.panel3.Size = new System.Drawing.Size(423, 42);
             this.panel3.TabIndex = 25;
             // 
+            // label5
+            // 
+            this.label5.Image = global::Login.Properties.Resources.icons8_secured_letter_20px_1;
+            this.label5.Location = new System.Drawing.Point(13, 6);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(20, 31);
+            this.label5.TabIndex = 22;
+            // 
             // txtCode
             // 
             this.txtCode.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -105,26 +113,6 @@ namespace Login.Fromlogin
             this.label1.TabIndex = 24;
             this.label1.Text = "Vui Lòng Nhập Vào Code Được Gửi Về Email Của Bạn Để Hoàn Thành Đăng Ký";
             // 
-            // BtnXacMinhCode
-            // 
-            this.BtnXacMinhCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.BtnXacMinhCode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnXacMinhCode.Location = new System.Drawing.Point(142, 202);
-            this.BtnXacMinhCode.Name = "BtnXacMinhCode";
-            this.BtnXacMinhCode.Size = new System.Drawing.Size(230, 40);
-            this.BtnXacMinhCode.TabIndex = 20;
-            this.BtnXacMinhCode.Text = "Xác Minh Code";
-            this.BtnXacMinhCode.UseVisualStyleBackColor = false;
-            this.BtnXacMinhCode.Click += new System.EventHandler(this.BtnXacMinhCode_Click);
-            // 
-            // label5
-            // 
-            this.label5.Image = global::Login.Properties.Resources.icons8_secured_letter_20px_1;
-            this.label5.Location = new System.Drawing.Point(13, 6);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(20, 31);
-            this.label5.TabIndex = 22;
-            // 
             // lblQuayLai
             // 
             this.lblQuayLai.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -138,6 +126,19 @@ namespace Login.Fromlogin
             this.lblQuayLai.TabIndex = 23;
             this.lblQuayLai.Text = "Quay Lại Đăng Nhập";
             this.lblQuayLai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblQuayLai.MouseHover += new System.EventHandler(this.lblQuayLai_MouseHover);
+            // 
+            // BtnXacMinhCode
+            // 
+            this.BtnXacMinhCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnXacMinhCode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnXacMinhCode.Location = new System.Drawing.Point(142, 202);
+            this.BtnXacMinhCode.Name = "BtnXacMinhCode";
+            this.BtnXacMinhCode.Size = new System.Drawing.Size(230, 40);
+            this.BtnXacMinhCode.TabIndex = 20;
+            this.BtnXacMinhCode.Text = "Xác Minh Code";
+            this.BtnXacMinhCode.UseVisualStyleBackColor = false;
+            this.BtnXacMinhCode.Click += new System.EventHandler(this.BtnXacMinhCode_Click);
             // 
             // Form_CheckCodeQuenMatKhau
             // 
@@ -145,11 +146,12 @@ namespace Login.Fromlogin
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(549, 441);
+            this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Form_CheckCodeQuenMatKhau";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form_CheckCodeQuenMatKhau";
+            this.Text = "Code Kiểm Tra";
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

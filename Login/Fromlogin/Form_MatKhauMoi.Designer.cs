@@ -89,6 +89,7 @@ namespace Login.Fromlogin
             // CkbHienMatKhau
             // 
             this.CkbHienMatKhau.AutoSize = true;
+            this.CkbHienMatKhau.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CkbHienMatKhau.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CkbHienMatKhau.Location = new System.Drawing.Point(23, 200);
             this.CkbHienMatKhau.Name = "CkbHienMatKhau";
@@ -96,6 +97,7 @@ namespace Login.Fromlogin
             this.CkbHienMatKhau.TabIndex = 31;
             this.CkbHienMatKhau.Text = "Hiện Mật Khẩu";
             this.CkbHienMatKhau.UseVisualStyleBackColor = true;
+            this.CkbHienMatKhau.CheckedChanged += new System.EventHandler(this.CkbHienMatKhau_CheckedChanged);
             // 
             // TxtNhapLaiMatKhau
             // 
@@ -181,10 +183,13 @@ namespace Login.Fromlogin
             this.lblQuayLai.TabIndex = 23;
             this.lblQuayLai.Text = "Quay Lại Đăng Nhập";
             this.lblQuayLai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblQuayLai.Click += new System.EventHandler(this.lblQuayLai_Click);
+            this.lblQuayLai.MouseHover += new System.EventHandler(this.lblQuayLai_MouseHover);
             // 
             // BtnXacMinhCode
             // 
             this.BtnXacMinhCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnXacMinhCode.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnXacMinhCode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnXacMinhCode.Location = new System.Drawing.Point(142, 237);
             this.BtnXacMinhCode.Name = "BtnXacMinhCode";
@@ -200,10 +205,11 @@ namespace Login.Fromlogin
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(549, 440);
+            this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Form_MatKhauMoi";
-            this.Text = "Form_MatKhauMoi";
+            this.Text = "Mật Khẩu Mới";
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

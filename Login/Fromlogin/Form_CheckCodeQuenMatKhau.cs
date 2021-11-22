@@ -33,5 +33,10 @@ namespace Login.Fromlogin
                 MessageBox.Show("Mã Code Sai" , "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-}
+
+        private void lblQuayLai_MouseHover(object sender, EventArgs e)
+        {
+            lblQuayLai.ForeColor = Color.Red;
+        }
+    }
 }

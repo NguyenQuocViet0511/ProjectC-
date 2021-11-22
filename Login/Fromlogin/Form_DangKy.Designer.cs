@@ -33,27 +33,27 @@ namespace Login.Fromlogin
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblThongBaoHoVaTen = new System.Windows.Forms.Label();
             this.BtnDangKy = new System.Windows.Forms.Button();
-            this.CheckDongY = new System.Windows.Forms.CheckBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.lblQuayLai = new System.Windows.Forms.Label();
+            this.CheckDongY = new System.Windows.Forms.CheckBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtHoVaTen = new MyCustom.WaterTextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.txtTenDangNhap = new MyCustom.WaterTextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtMatKhau = new MyCustom.WaterTextBox();
             this.txtEmail = new MyCustom.WaterTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
@@ -102,6 +102,7 @@ namespace Login.Fromlogin
             // BtnDangKy
             // 
             this.BtnDangKy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnDangKy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnDangKy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnDangKy.Location = new System.Drawing.Point(162, 327);
             this.BtnDangKy.Name = "BtnDangKy";
@@ -110,26 +111,6 @@ namespace Login.Fromlogin
             this.BtnDangKy.Text = "Đăng Ký";
             this.BtnDangKy.UseVisualStyleBackColor = false;
             this.BtnDangKy.Click += new System.EventHandler(this.BtnDangKy_Click);
-            // 
-            // CheckDongY
-            // 
-            this.CheckDongY.AutoSize = true;
-            this.CheckDongY.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CheckDongY.Location = new System.Drawing.Point(57, 280);
-            this.CheckDongY.Name = "CheckDongY";
-            this.CheckDongY.Size = new System.Drawing.Size(148, 21);
-            this.CheckDongY.TabIndex = 17;
-            this.CheckDongY.Text = "đồng ý Điều Khoản";
-            this.CheckDongY.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(31, 23);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(560, 60);
-            this.panel2.TabIndex = 14;
             // 
             // lblQuayLai
             // 
@@ -146,6 +127,18 @@ namespace Login.Fromlogin
             this.lblQuayLai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblQuayLai.Click += new System.EventHandler(this.lblQuayLai_Click);
             this.lblQuayLai.MouseHover += new System.EventHandler(this.lblQuayLai_MouseHover);
+            // 
+            // CheckDongY
+            // 
+            this.CheckDongY.AutoSize = true;
+            this.CheckDongY.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CheckDongY.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CheckDongY.Location = new System.Drawing.Point(57, 280);
+            this.CheckDongY.Name = "CheckDongY";
+            this.CheckDongY.Size = new System.Drawing.Size(148, 21);
+            this.CheckDongY.TabIndex = 17;
+            this.CheckDongY.Text = "đồng ý Điều Khoản";
+            this.CheckDongY.UseVisualStyleBackColor = true;
             // 
             // pictureBox4
             // 
@@ -183,38 +176,6 @@ namespace Login.Fromlogin
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
-            // label5
-            // 
-            this.label5.Image = global::Login.Properties.Resources.icons8_secured_letter_20px_1;
-            this.label5.Location = new System.Drawing.Point(54, 227);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(20, 30);
-            this.label5.TabIndex = 12;
-            // 
-            // label4
-            // 
-            this.label4.Image = global::Login.Properties.Resources.user;
-            this.label4.Location = new System.Drawing.Point(54, 85);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(20, 30);
-            this.label4.TabIndex = 11;
-            // 
-            // label2
-            // 
-            this.label2.Image = global::Login.Properties.Resources.pass;
-            this.label2.Location = new System.Drawing.Point(54, 153);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 30);
-            this.label2.TabIndex = 9;
-            // 
-            // label1
-            // 
-            this.label1.Image = global::Login.Properties.Resources.icons8_name_20px_1;
-            this.label1.Location = new System.Drawing.Point(54, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 30);
-            this.label1.TabIndex = 8;
-            // 
             // txtHoVaTen
             // 
             this.txtHoVaTen.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -226,6 +187,14 @@ namespace Login.Fromlogin
             this.txtHoVaTen.WaterMarkColor = System.Drawing.Color.Gray;
             this.txtHoVaTen.WaterMarkText = "Họ Và Tên ";
             // 
+            // label5
+            // 
+            this.label5.Image = global::Login.Properties.Resources.icons8_secured_letter_20px_1;
+            this.label5.Location = new System.Drawing.Point(54, 227);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(20, 30);
+            this.label5.TabIndex = 12;
+            // 
             // txtTenDangNhap
             // 
             this.txtTenDangNhap.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -236,6 +205,14 @@ namespace Login.Fromlogin
             this.txtTenDangNhap.TabIndex = 1;
             this.txtTenDangNhap.WaterMarkColor = System.Drawing.Color.Gray;
             this.txtTenDangNhap.WaterMarkText = "Tên Đăng Nhập";
+            // 
+            // label4
+            // 
+            this.label4.Image = global::Login.Properties.Resources.user;
+            this.label4.Location = new System.Drawing.Point(54, 85);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(20, 30);
+            this.label4.TabIndex = 11;
             // 
             // txtMatKhau
             // 
@@ -259,6 +236,31 @@ namespace Login.Fromlogin
             this.txtEmail.WaterMarkColor = System.Drawing.Color.Gray;
             this.txtEmail.WaterMarkText = "Email";
             // 
+            // label2
+            // 
+            this.label2.Image = global::Login.Properties.Resources.pass;
+            this.label2.Location = new System.Drawing.Point(54, 153);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(20, 30);
+            this.label2.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.Image = global::Login.Properties.Resources.icons8_name_20px_1;
+            this.label1.Location = new System.Drawing.Point(54, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(20, 30);
+            this.label1.TabIndex = 8;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(31, 23);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(560, 60);
+            this.panel2.TabIndex = 14;
+            // 
             // Form_DangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,14 +272,14 @@ namespace Login.Fromlogin
             this.Controls.Add(this.panel1);
             this.Name = "Form_DangKy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DangKyu";
+            this.Text = "Đăng Ký Tài Khoản Mới";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
