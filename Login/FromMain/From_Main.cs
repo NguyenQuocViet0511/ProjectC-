@@ -13,6 +13,10 @@ namespace Login.FromMain
 {
     public partial class From_Main : Form
     {
+        private bool openMenu = true;
+
+        public bool OpenMenu { get => openMenu; set => openMenu = value; }
+
         public From_Main()
         {
             InitializeComponent();
@@ -28,5 +32,42 @@ namespace Login.FromMain
         {
            
         }
-    }
+
+        private void Menu_Click(object sender, EventArgs e)
+        {
+
+            TimerPanelMenu.Enabled = true;
+           
+
+        }
+
+
+
+        
+
+private void TimerPanelMenu_Tick(object sender, EventArgs e)
+        {
+
+            if (openMenu == true)
+            {
+                PanelMenu.Width -= 2;
+                if (PanelMenu.Width == 50)
+                {
+                    TimerPanelMenu.Enabled = false;
+                    openMenu = false;
+                }
+            }
+            if (openMenu == false)
+            {
+                PanelMenu.Width += 2;
+                if (PanelMenu.Width == 200)
+                {
+                    TimerPanelMenu.Enabled = false;
+                    openMenu = true;
+                }
+
+            }
+         
+        }
+}
 }

@@ -131,6 +131,7 @@ namespace Login.Fromlogin
             // BtnXacMinhCode
             // 
             this.BtnXacMinhCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnXacMinhCode.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnXacMinhCode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnXacMinhCode.Location = new System.Drawing.Point(142, 202);
             this.BtnXacMinhCode.Name = "BtnXacMinhCode";

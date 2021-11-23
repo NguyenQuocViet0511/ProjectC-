@@ -209,6 +209,7 @@ namespace Login.Fromlogin
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Form_MatKhauMoi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mật Khẩu Mới";
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
