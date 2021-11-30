@@ -61,7 +61,15 @@ namespace Login.Fromlogin
         {
             ListUser = new ListUser();
             ListUser.DocFile(Const.Pathfile);
-            if(!String.IsNullOrEmpty(txtEmail.Text))
+            if (String.IsNullOrEmpty(txtEmail.Text))
+            {
+                lblemail.Text = "Vui Lòng Không được Dể Trống";
+            }
+            else
+            {
+                lblemail.Text = ""; 
+            }
+            if (!String.IsNullOrEmpty(txtEmail.Text))
             {
                 if (KiemTraEmail(txtEmail.Text))
                 {
@@ -98,6 +106,7 @@ namespace Login.Fromlogin
                     }
                     else
                     {
+                        
                         MessageBox.Show("Email Này Không tồn Tại Vui Lòng Nhập Vào Email Khác", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     }

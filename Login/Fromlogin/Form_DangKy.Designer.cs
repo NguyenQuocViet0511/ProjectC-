@@ -48,6 +48,9 @@ namespace Login.Fromlogin
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbltendangnhap = new System.Windows.Forms.Label();
+            this.lblmatkhau = new System.Windows.Forms.Label();
+            this.lblemail = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -70,6 +73,9 @@ namespace Login.Fromlogin
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.lblemail);
+            this.panel1.Controls.Add(this.lblmatkhau);
+            this.panel1.Controls.Add(this.lbltendangnhap);
             this.panel1.Controls.Add(this.lblThongBaoHoVaTen);
             this.panel1.Controls.Add(this.BtnDangKy);
             this.panel1.Controls.Add(this.lblQuayLai);
@@ -133,7 +139,7 @@ namespace Login.Fromlogin
             this.CheckDongY.AutoSize = true;
             this.CheckDongY.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CheckDongY.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CheckDongY.Location = new System.Drawing.Point(57, 280);
+            this.CheckDongY.Location = new System.Drawing.Point(57, 290);
             this.CheckDongY.Name = "CheckDongY";
             this.CheckDongY.Size = new System.Drawing.Size(148, 21);
             this.CheckDongY.TabIndex = 17;
@@ -261,6 +267,30 @@ namespace Login.Fromlogin
             this.panel2.Size = new System.Drawing.Size(560, 60);
             this.panel2.TabIndex = 14;
             // 
+            // lbltendangnhap
+            // 
+            this.lbltendangnhap.ForeColor = System.Drawing.Color.Red;
+            this.lbltendangnhap.Location = new System.Drawing.Point(80, 126);
+            this.lbltendangnhap.Name = "lbltendangnhap";
+            this.lbltendangnhap.Size = new System.Drawing.Size(425, 13);
+            this.lbltendangnhap.TabIndex = 21;
+            // 
+            // lblmatkhau
+            // 
+            this.lblmatkhau.ForeColor = System.Drawing.Color.Red;
+            this.lblmatkhau.Location = new System.Drawing.Point(80, 194);
+            this.lblmatkhau.Name = "lblmatkhau";
+            this.lblmatkhau.Size = new System.Drawing.Size(425, 13);
+            this.lblmatkhau.TabIndex = 22;
+            // 
+            // lblemail
+            // 
+            this.lblemail.ForeColor = System.Drawing.Color.Red;
+            this.lblemail.Location = new System.Drawing.Point(80, 264);
+            this.lblemail.Name = "lblemail";
+            this.lblemail.Size = new System.Drawing.Size(425, 13);
+            this.lblemail.TabIndex = 23;
+            // 
             // Form_DangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,5 +335,8 @@ namespace Login.Fromlogin
         private System.Windows.Forms.CheckBox CheckDongY;
         private System.Windows.Forms.Button BtnDangKy;
         private System.Windows.Forms.Label lblThongBaoHoVaTen;
+        private System.Windows.Forms.Label lblemail;
+        private System.Windows.Forms.Label lblmatkhau;
+        private System.Windows.Forms.Label lbltendangnhap;
     }
 }

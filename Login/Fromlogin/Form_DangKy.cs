@@ -104,15 +104,39 @@ namespace Login.Fromlogin
         }
         private void BtnDangKy_Click(object sender, EventArgs e)
         {
-            //if(String.IsNullOrEmpty(txtHoVaTen.Text))
-            //{
-            //    lblThongBaoHoVaTen.Text = "Vui Lòng Không được để trống ";
-            //}
-            //else
-            //{
-            //    lblThongBaoHoVaTen.Text = "";
-            //}
-            if(!String.IsNullOrEmpty(txtHoVaTen.Text) && !String.IsNullOrEmpty(txtTenDangNhap.Text) && !String.IsNullOrEmpty(txtMatKhau.Text) && !String.IsNullOrEmpty(txtEmail.Text))
+            if (String.IsNullOrEmpty(txtHoVaTen.Text))
+            {
+                lblThongBaoHoVaTen.Text = "Vui Lòng Không được để trống ";
+            }
+            else
+            {
+                lblThongBaoHoVaTen.Text = "";
+            }
+            if (String.IsNullOrEmpty(txtTenDangNhap.Text))
+            {
+                lbltendangnhap.Text = "Vui Lòng Không được để trống ";
+            }
+            else
+            {
+                lbltendangnhap.Text = "";
+            }
+            if (String.IsNullOrEmpty(txtMatKhau.Text))
+            {
+                lblmatkhau.Text = "Vui Lòng Không được để trống ";
+            }
+            else
+            {
+                lblmatkhau.Text = "";
+            }
+            if (String.IsNullOrEmpty(txtEmail.Text))
+            {
+                lblemail.Text = "Vui Lòng Không được để trống ";
+            }
+            else
+            {
+                lblemail.Text = "";
+            }
+            if (!String.IsNullOrEmpty(txtHoVaTen.Text) && !String.IsNullOrEmpty(txtTenDangNhap.Text) && !String.IsNullOrEmpty(txtMatKhau.Text) && !String.IsNullOrEmpty(txtEmail.Text))
             {
                 LoadId();
                 if (CheckDongY.Checked == true)

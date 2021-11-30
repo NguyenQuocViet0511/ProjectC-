@@ -38,6 +38,7 @@ namespace Login.Fromlogin
             this.lblQuayLai = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.lblemail = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -77,6 +78,7 @@ namespace Login.Fromlogin
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.lblemail);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblQuayLai);
@@ -141,6 +143,14 @@ namespace Login.Fromlogin
             this.label3.Text = "Quên Mật Khẩu";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lblemail
+            // 
+            this.lblemail.ForeColor = System.Drawing.Color.Red;
+            this.lblemail.Location = new System.Drawing.Point(93, 79);
+            this.lblemail.Name = "lblemail";
+            this.lblemail.Size = new System.Drawing.Size(380, 16);
+            this.lblemail.TabIndex = 26;
+            // 
             // Form_QuenMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,5 +182,6 @@ namespace Login.Fromlogin
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblQuayLai;
+        private System.Windows.Forms.Label lblemail;
     }
 }
