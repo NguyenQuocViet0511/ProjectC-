@@ -27,6 +27,7 @@ namespace Login.FromMain
         {
           
             InitializeComponent();
+            Add();
             MenuBar();
             MenuDrop();
             timeDate.Enabled = true;
@@ -455,5 +456,34 @@ namespace Login.FromMain
         {
             btnTrangChu.BackColor = Color.Empty;
         }
+
+        private void btnTrangChu_Click(object sender, EventArgs e)
+        {
+            Add();
+
+
+
+            }
+
+        private void Add()
+        {
+            this.TrangThaiMo = true;
+            this.tieudeTab = "Trang Chủ";
+            if (!CheckOpenTab(tieudeTab))
+            {
+                TabItem tab = tc_Main.CreateTab(tieudeTab);
+                tab.Name = "Trang Chủ";
+                From_TrangChu from_TrangChu = new From_TrangChu()
+                {
+
+                    from_TrangChu = this,
+                    TopLevel = false,
+                    Dock = DockStyle.Fill
+                };
+                tab.AttachedControl.Controls.Add(from_TrangChu);
+                from_TrangChu.Show();
+                tc_Main.SelectedTabIndex = tc_Main.Tabs.Count - 1;
+            }
+    }
     }
 }

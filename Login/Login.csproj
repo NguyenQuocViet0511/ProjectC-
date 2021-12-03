@@ -104,6 +104,12 @@
     <Compile Include="MainHeThong\From_quanLiTaiKhoan.Designer.cs">
       <DependentUpon>From_quanLiTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainHeThong\From_TrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainHeThong\From_TrangChu.Designer.cs">
+      <DependentUpon>From_TrangChu.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyCustome\MenuColorTable.cs" />
     <Compile Include="MyCustome\MenuRenderer.cs" />
     <Compile Include="MyCustome\RJButton.cs">
@@ -143,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainHeThong\From_quanLiTaiKhoan.resx">
       <DependentUpon>From_quanLiTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainHeThong\From_TrangChu.resx">
+      <DependentUpon>From_TrangChu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -241,6 +250,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\home_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top-phan-mem-quan-ly-hoc-sinh.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

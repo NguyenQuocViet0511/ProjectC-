@@ -84,8 +84,6 @@ namespace Login.FromMain
             this.quảnLíSinhViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLíDanhSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nhậpĐiểmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
-            this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imglayout)).BeginInit();
@@ -102,7 +100,6 @@ namespace Login.FromMain
             this.panelsinhvien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tc_Main)).BeginInit();
-            this.tc_Main.SuspendLayout();
             this.DropMenuHeThong.SuspendLayout();
             this.DropMenuSinhVien.SuspendLayout();
             this.DropMenuGiaoVien.SuspendLayout();
@@ -404,6 +401,7 @@ namespace Login.FromMain
             this.btnTrangChu.Text = "Trang Chủ";
             this.btnTrangChu.TextColor = System.Drawing.Color.White;
             this.btnTrangChu.UseVisualStyleBackColor = false;
+            this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
             this.btnTrangChu.MouseEnter += new System.EventHandler(this.btnTrangChu_MouseEnter);
             this.btnTrangChu.MouseLeave += new System.EventHandler(this.btnTrangChu_MouseLeave);
             // 
@@ -751,11 +749,6 @@ namespace Login.FromMain
             new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(254))))), 0.45F),
             new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(254))))), 0.45F),
             new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(254))))), 1F)});
-<<<<<<< HEAD
-            this.tc_Main.Controls.Add(this.tabControlPanel1);
-=======
-            this.tc_Main.ColorScheme.TabPanelBackground = System.Drawing.Color.Silver;
->>>>>>> 94743544e6b73c59e205c040ef2f5c37ca3e13d4
             this.tc_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tc_Main.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tc_Main.Location = new System.Drawing.Point(225, 0);
@@ -766,7 +759,6 @@ namespace Login.FromMain
             this.tc_Main.Style = DevComponents.DotNetBar.eTabStripStyle.Office2007Document;
             this.tc_Main.TabIndex = 13;
             this.tc_Main.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
-            this.tc_Main.Tabs.Add(this.tabItem1);
             this.tc_Main.Text = "tabControl1";
             this.tc_Main.TabItemClose += new DevComponents.DotNetBar.TabStrip.UserActionEventHandler(this.tc_Main_TabItemClose);
             // 
@@ -880,29 +872,6 @@ namespace Login.FromMain
             this.nhậpĐiểmToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.nhậpĐiểmToolStripMenuItem.Text = "Nhập Điểm";
             // 
-            // tabItem1
-            // 
-            this.tabItem1.AttachedControl = this.tabControlPanel1;
-            this.tabItem1.Name = "tabItem1";
-            this.tabItem1.Text = "tabItem1";
-            // 
-            // tabControlPanel1
-            // 
-            this.tabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControlPanel1.Location = new System.Drawing.Point(0, 23);
-            this.tabControlPanel1.Name = "tabControlPanel1";
-            this.tabControlPanel1.Padding = new System.Windows.Forms.Padding(1);
-            this.tabControlPanel1.Size = new System.Drawing.Size(1015, 787);
-            this.tabControlPanel1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(254)))));
-            this.tabControlPanel1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(188)))), ((int)(((byte)(227)))));
-            this.tabControlPanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.tabControlPanel1.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.tabControlPanel1.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
-            | DevComponents.DotNetBar.eBorderSide.Bottom)));
-            this.tabControlPanel1.Style.GradientAngle = 90;
-            this.tabControlPanel1.TabIndex = 1;
-            this.tabControlPanel1.TabItem = this.tabItem1;
-            // 
             // From_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -932,7 +901,6 @@ namespace Login.FromMain
             this.panelsinhvien.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tc_Main)).EndInit();
-            this.tc_Main.ResumeLayout(false);
             this.DropMenuHeThong.ResumeLayout(false);
             this.DropMenuSinhVien.ResumeLayout(false);
             this.DropMenuGiaoVien.ResumeLayout(false);
@@ -995,7 +963,5 @@ namespace Login.FromMain
         private CustomControls.RJControls.RJButton btnTrangChu;
         private System.Windows.Forms.PictureBox imglayouthome;
         private System.Windows.Forms.PictureBox imglayoutend;
-        private DevComponents.DotNetBar.TabControlPanel tabControlPanel1;
-        private DevComponents.DotNetBar.TabItem tabItem1;
     }
 }
