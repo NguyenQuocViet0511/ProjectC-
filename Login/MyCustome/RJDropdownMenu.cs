@@ -64,7 +64,7 @@ namespace CustomControls.RJControls
         private void LoadMenuItemHeight()
         {
             if (isMainMenu)
-                menuItemHeaderSize = new Bitmap(25, 45);
+                menuItemHeaderSize = new Bitmap(30,20 );
             else menuItemHeaderSize = new Bitmap(20, menuItemHeight);
 
             foreach (ToolStripMenuItem menuItemL1 in this.Items)

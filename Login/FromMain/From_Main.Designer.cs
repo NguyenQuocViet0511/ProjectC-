@@ -32,29 +32,31 @@ namespace Login.FromMain
             this.components = new System.ComponentModel.Container();
             this.TimerPanelMenu = new System.Windows.Forms.Timer(this.components);
             this.PanelMenu = new System.Windows.Forms.Panel();
-            this.rjButton4 = new CustomControls.RJControls.RJButton();
             this.panelgiaovien = new System.Windows.Forms.Panel();
+            this.panelsinhvien = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panelhethong = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.imglayout = new System.Windows.Forms.PictureBox();
+            this.imgcode = new System.Windows.Forms.PictureBox();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnThoat = new CustomControls.RJControls.RJButton();
             this.rjButton10 = new CustomControls.RJControls.RJButton();
             this.rjButton9 = new CustomControls.RJControls.RJButton();
             this.rjButton8 = new CustomControls.RJControls.RJButton();
             this.btngiaovien = new CustomControls.RJControls.RJButton();
-            this.panelsinhvien = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.rjButton7 = new CustomControls.RJControls.RJButton();
             this.rjButton6 = new CustomControls.RJControls.RJButton();
             this.rjButton5 = new CustomControls.RJControls.RJButton();
             this.btnsinhvien = new CustomControls.RJControls.RJButton();
-            this.panelhethong = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rjButton3 = new CustomControls.RJControls.RJButton();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.btnhethong = new CustomControls.RJControls.RJButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.imglayout = new System.Windows.Forms.PictureBox();
             this.Menu = new CustomControls.RJControls.RJButton();
-            this.imgcode = new System.Windows.Forms.PictureBox();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.DropMenuHethong = new CustomControls.RJControls.RJDropdownMenu(this.components);
             this.quảnLíTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -86,7 +88,7 @@ namespace Login.FromMain
             // 
             this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
             this.PanelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanelMenu.Controls.Add(this.rjButton4);
+            this.PanelMenu.Controls.Add(this.btnThoat);
             this.PanelMenu.Controls.Add(this.panelgiaovien);
             this.PanelMenu.Controls.Add(this.btngiaovien);
             this.PanelMenu.Controls.Add(this.panelsinhvien);
@@ -101,40 +103,141 @@ namespace Login.FromMain
             this.PanelMenu.Size = new System.Drawing.Size(225, 751);
             this.PanelMenu.TabIndex = 3;
             // 
-            // rjButton4
-            // 
-            this.rjButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
-            this.rjButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
-            this.rjButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton4.BorderRadius = 0;
-            this.rjButton4.BorderSize = 0;
-            this.rjButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rjButton4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.rjButton4.FlatAppearance.BorderSize = 0;
-            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton4.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.rjButton4.ForeColor = System.Drawing.Color.White;
-            this.rjButton4.Image = global::Login.Properties.Resources.Logout_26px;
-            this.rjButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton4.Location = new System.Drawing.Point(0, 706);
-            this.rjButton4.Name = "rjButton4";
-            this.rjButton4.Size = new System.Drawing.Size(223, 33);
-            this.rjButton4.TabIndex = 21;
-            this.rjButton4.Tag = "Thoát";
-            this.rjButton4.Text = "Thoát";
-            this.rjButton4.TextColor = System.Drawing.Color.White;
-            this.rjButton4.UseVisualStyleBackColor = false;
-            // 
             // panelgiaovien
             // 
             this.panelgiaovien.Controls.Add(this.rjButton10);
             this.panelgiaovien.Controls.Add(this.rjButton9);
             this.panelgiaovien.Controls.Add(this.rjButton8);
             this.panelgiaovien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelgiaovien.Location = new System.Drawing.Point(0, 485);
+            this.panelgiaovien.Location = new System.Drawing.Point(0, 509);
             this.panelgiaovien.Name = "panelgiaovien";
             this.panelgiaovien.Size = new System.Drawing.Size(223, 113);
             this.panelgiaovien.TabIndex = 20;
+            // 
+            // panelsinhvien
+            // 
+            this.panelsinhvien.Controls.Add(this.pictureBox2);
+            this.panelsinhvien.Controls.Add(this.rjButton7);
+            this.panelsinhvien.Controls.Add(this.rjButton6);
+            this.panelsinhvien.Controls.Add(this.rjButton5);
+            this.panelsinhvien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelsinhvien.Location = new System.Drawing.Point(0, 339);
+            this.panelsinhvien.Name = "panelsinhvien";
+            this.panelsinhvien.Size = new System.Drawing.Size(223, 120);
+            this.panelsinhvien.TabIndex = 18;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 116);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(223, 4);
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
+            // 
+            // panelhethong
+            // 
+            this.panelhethong.Controls.Add(this.pictureBox1);
+            this.panelhethong.Controls.Add(this.rjButton3);
+            this.panelhethong.Controls.Add(this.rjButton2);
+            this.panelhethong.Controls.Add(this.rjButton1);
+            this.panelhethong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelhethong.Location = new System.Drawing.Point(0, 172);
+            this.panelhethong.Name = "panelhethong";
+            this.panelhethong.Size = new System.Drawing.Size(223, 117);
+            this.panelhethong.TabIndex = 16;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 113);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(223, 4);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.imglayout);
+            this.panel2.Controls.Add(this.Menu);
+            this.panel2.Controls.Add(this.imgcode);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.ForeColor = System.Drawing.Color.Black;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.panel2.Size = new System.Drawing.Size(223, 122);
+            this.panel2.TabIndex = 1;
+            // 
+            // imglayout
+            // 
+            this.imglayout.BackColor = System.Drawing.Color.White;
+            this.imglayout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.imglayout.Location = new System.Drawing.Point(0, 118);
+            this.imglayout.Name = "imglayout";
+            this.imglayout.Padding = new System.Windows.Forms.Padding(0, 40, 0, 0);
+            this.imglayout.Size = new System.Drawing.Size(223, 4);
+            this.imglayout.TabIndex = 18;
+            this.imglayout.TabStop = false;
+            // 
+            // imgcode
+            // 
+            this.imgcode.Image = global::Login.Properties.Resources._263177636_458089092342503_7954596673940287683_n;
+            this.imgcode.Location = new System.Drawing.Point(3, 13);
+            this.imgcode.Name = "imgcode";
+            this.imgcode.Size = new System.Drawing.Size(176, 68);
+            this.imgcode.TabIndex = 6;
+            this.imgcode.TabStop = false;
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(225, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1015, 72);
+            this.panel1.TabIndex = 7;
+            // 
+            // panel3
+            // 
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(225, 707);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1015, 44);
+            this.panel3.TabIndex = 8;
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
+            this.btnThoat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
+            this.btnThoat.BorderColor = System.Drawing.Color.Red;
+            this.btnThoat.BorderRadius = 0;
+            this.btnThoat.BorderSize = 0;
+            this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThoat.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnThoat.FlatAppearance.BorderSize = 0;
+            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnThoat.ForeColor = System.Drawing.Color.White;
+            this.btnThoat.Image = global::Login.Properties.Resources.Logout_26px;
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.Location = new System.Drawing.Point(0, 706);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(223, 33);
+            this.btnThoat.TabIndex = 21;
+            this.btnThoat.Tag = "Thoát";
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.TextColor = System.Drawing.Color.White;
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            this.btnThoat.MouseEnter += new System.EventHandler(this.btnThoat_MouseEnter);
+            this.btnThoat.MouseLeave += new System.EventHandler(this.btnThoat_MouseLeave);
             // 
             // rjButton10
             // 
@@ -220,37 +323,17 @@ namespace Login.FromMain
             this.btngiaovien.ForeColor = System.Drawing.Color.White;
             this.btngiaovien.Image = global::Login.Properties.Resources.training_30px;
             this.btngiaovien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btngiaovien.Location = new System.Drawing.Point(0, 432);
+            this.btngiaovien.Location = new System.Drawing.Point(0, 459);
             this.btngiaovien.Name = "btngiaovien";
-            this.btngiaovien.Size = new System.Drawing.Size(223, 53);
+            this.btngiaovien.Size = new System.Drawing.Size(223, 50);
             this.btngiaovien.TabIndex = 19;
             this.btngiaovien.Tag = "Giáo Viên";
             this.btngiaovien.Text = "Giáo Viên";
             this.btngiaovien.TextColor = System.Drawing.Color.White;
             this.btngiaovien.UseVisualStyleBackColor = false;
             this.btngiaovien.Click += new System.EventHandler(this.btngiaovien_Click);
-            // 
-            // panelsinhvien
-            // 
-            this.panelsinhvien.Controls.Add(this.pictureBox2);
-            this.panelsinhvien.Controls.Add(this.rjButton7);
-            this.panelsinhvien.Controls.Add(this.rjButton6);
-            this.panelsinhvien.Controls.Add(this.rjButton5);
-            this.panelsinhvien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelsinhvien.Location = new System.Drawing.Point(0, 312);
-            this.panelsinhvien.Name = "panelsinhvien";
-            this.panelsinhvien.Size = new System.Drawing.Size(223, 120);
-            this.panelsinhvien.TabIndex = 18;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 116);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(223, 4);
-            this.pictureBox2.TabIndex = 19;
-            this.pictureBox2.TabStop = false;
+            this.btngiaovien.MouseEnter += new System.EventHandler(this.btngiaovien_MouseEnter);
+            this.btngiaovien.MouseLeave += new System.EventHandler(this.btngiaovien_MouseLeave);
             // 
             // rjButton7
             // 
@@ -336,37 +419,17 @@ namespace Login.FromMain
             this.btnsinhvien.ForeColor = System.Drawing.Color.White;
             this.btnsinhvien.Image = global::Login.Properties.Resources.student_male_30px;
             this.btnsinhvien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsinhvien.Location = new System.Drawing.Point(0, 259);
+            this.btnsinhvien.Location = new System.Drawing.Point(0, 289);
             this.btnsinhvien.Name = "btnsinhvien";
-            this.btnsinhvien.Size = new System.Drawing.Size(223, 53);
+            this.btnsinhvien.Size = new System.Drawing.Size(223, 50);
             this.btnsinhvien.TabIndex = 17;
             this.btnsinhvien.Tag = "Sinh Viên";
             this.btnsinhvien.Text = "Sinh Viên";
             this.btnsinhvien.TextColor = System.Drawing.Color.White;
             this.btnsinhvien.UseVisualStyleBackColor = false;
             this.btnsinhvien.Click += new System.EventHandler(this.btnsinhvien_Click);
-            // 
-            // panelhethong
-            // 
-            this.panelhethong.Controls.Add(this.pictureBox1);
-            this.panelhethong.Controls.Add(this.rjButton3);
-            this.panelhethong.Controls.Add(this.rjButton2);
-            this.panelhethong.Controls.Add(this.rjButton1);
-            this.panelhethong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelhethong.Location = new System.Drawing.Point(0, 142);
-            this.panelhethong.Name = "panelhethong";
-            this.panelhethong.Size = new System.Drawing.Size(223, 117);
-            this.panelhethong.TabIndex = 16;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 113);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(223, 4);
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
+            this.btnsinhvien.MouseEnter += new System.EventHandler(this.btnsinhvien_MouseEnter);
+            this.btnsinhvien.MouseLeave += new System.EventHandler(this.btnsinhvien_MouseLeave);
             // 
             // rjButton3
             // 
@@ -452,38 +515,17 @@ namespace Login.FromMain
             this.btnhethong.ForeColor = System.Drawing.Color.White;
             this.btnhethong.Image = global::Login.Properties.Resources.gear_30px;
             this.btnhethong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnhethong.Location = new System.Drawing.Point(0, 89);
+            this.btnhethong.Location = new System.Drawing.Point(0, 122);
             this.btnhethong.Name = "btnhethong";
-            this.btnhethong.Size = new System.Drawing.Size(223, 53);
+            this.btnhethong.Size = new System.Drawing.Size(223, 50);
             this.btnhethong.TabIndex = 13;
             this.btnhethong.Tag = "Hệ Thống";
             this.btnhethong.Text = "Hệ Thống";
             this.btnhethong.TextColor = System.Drawing.Color.White;
             this.btnhethong.UseVisualStyleBackColor = false;
             this.btnhethong.Click += new System.EventHandler(this.btnhethong_Click_1);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.imglayout);
-            this.panel2.Controls.Add(this.Menu);
-            this.panel2.Controls.Add(this.imgcode);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.ForeColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.panel2.Size = new System.Drawing.Size(223, 89);
-            this.panel2.TabIndex = 1;
-            // 
-            // imglayout
-            // 
-            this.imglayout.BackColor = System.Drawing.Color.White;
-            this.imglayout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.imglayout.Location = new System.Drawing.Point(0, 85);
-            this.imglayout.Name = "imglayout";
-            this.imglayout.Size = new System.Drawing.Size(223, 4);
-            this.imglayout.TabIndex = 18;
-            this.imglayout.TabStop = false;
+            this.btnhethong.MouseEnter += new System.EventHandler(this.btnhethong_MouseEnter);
+            this.btnhethong.MouseLeave += new System.EventHandler(this.btnhethong_MouseLeave);
             // 
             // Menu
             // 
@@ -499,26 +541,13 @@ namespace Login.FromMain
             this.Menu.Image = global::Login.Properties.Resources.menu_36px;
             this.Menu.Location = new System.Drawing.Point(178, 11);
             this.Menu.Name = "Menu";
+            this.Menu.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.Menu.Size = new System.Drawing.Size(44, 40);
             this.Menu.TabIndex = 13;
             this.Menu.Tag = "";
             this.Menu.TextColor = System.Drawing.Color.White;
             this.Menu.UseVisualStyleBackColor = false;
             this.Menu.Click += new System.EventHandler(this.Menu_Click);
-            // 
-            // imgcode
-            // 
-            this.imgcode.Image = global::Login.Properties.Resources._263177636_458089092342503_7954596673940287683_n;
-            this.imgcode.Location = new System.Drawing.Point(3, 13);
-            this.imgcode.Name = "imgcode";
-            this.imgcode.Size = new System.Drawing.Size(175, 58);
-            this.imgcode.TabIndex = 6;
-            this.imgcode.TabStop = false;
-            // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.Text = "notifyIcon1";
-            this.notifyIcon1.Visible = true;
             // 
             // DropMenuHethong
             // 
@@ -595,6 +624,8 @@ namespace Login.FromMain
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1240, 751);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.PanelMenu);
             this.Name = "From_Main";
             this.Text = "From_Main";
@@ -635,7 +666,7 @@ namespace Login.FromMain
         private CustomControls.RJControls.RJButton rjButton3;
         private CustomControls.RJControls.RJButton rjButton2;
         private CustomControls.RJControls.RJButton rjButton1;
-        private CustomControls.RJControls.RJButton rjButton4;
+        private CustomControls.RJControls.RJButton btnThoat;
         private System.Windows.Forms.PictureBox pictureBox2;
         private CustomControls.RJControls.RJButton rjButton7;
         private CustomControls.RJControls.RJButton rjButton6;
@@ -650,5 +681,7 @@ namespace Login.FromMain
         private System.Windows.Forms.ToolStripMenuItem quảnLíToolStripMenuItem;
         private CustomControls.RJControls.RJDropdownMenu DropMeniGiaoVien;
         private System.Windows.Forms.ToolStripMenuItem quảnLíToolStripMenuItem1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
     }
 }

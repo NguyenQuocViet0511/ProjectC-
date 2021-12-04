@@ -51,7 +51,8 @@ namespace Login.FromMain
             if (this.PanelMenu.Width > 200)
             {
                 MenuDrop();
-                imglayout.Visible = false;
+                imglayout.Dock = DockStyle.Top;
+               
                 PanelMenu.Width = 100;
                 imgcode.Visible = false;
                 Menu.Dock = DockStyle.Top;
@@ -68,6 +69,7 @@ namespace Login.FromMain
             {
                 PanelMenu.Width = 225;
                 imgcode.Visible = true;
+                imglayout.Dock = DockStyle.Bottom;
                 imglayout.Visible = true;
                 Menu.Dock = DockStyle.None;
                 foreach (Button MenuButon in PanelMenu.Controls.OfType<Button>())
@@ -185,5 +187,59 @@ namespace Login.FromMain
                 DropMeniGiaoVien.Show(btnsinhvien, btngiaovien.Width , btnsinhvien.Height);
             }
         }
-    }
+
+      
+
+        private void btnThoat_MouseEnter(object sender, EventArgs e)
+        {
+            btnThoat.BackColor = Color.Red;
+           
+        }
+
+        private void btnThoat_MouseLeave(object sender, EventArgs e)
+        {
+            btnThoat.BackColor = Color.Empty;
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn Có Muốn Thoát Không", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) != DialogResult.Cancel)
+            {
+                Frm_Login frm_Login = new Frm_Login();
+                frm_Login.ShowDialog();
+            }
+        }
+
+        private void btnhethong_MouseEnter(object sender, EventArgs e)
+        {
+            btnhethong.BackColor = Color.Orange;
+        }
+
+        private void btnhethong_MouseLeave(object sender, EventArgs e)
+        {
+            btnhethong.BackColor = Color.Empty;
+        }
+
+        private void btnsinhvien_MouseEnter(object sender, EventArgs e)
+        {
+            btnsinhvien.BackColor = Color.Orange;
+        }
+
+        private void btnsinhvien_MouseLeave(object sender, EventArgs e)
+        {
+            btnsinhvien.BackColor = Color.Empty;
+        }
+
+        private void btngiaovien_MouseEnter(object sender, EventArgs e)
+        {
+            btngiaovien.BackColor = Color.Orange;
+        }
+
+        private void btngiaovien_MouseLeave(object sender, EventArgs e)
+        {
+            btngiaovien.BackColor = Color.Empty;
+        }
+}
+
+
 }
