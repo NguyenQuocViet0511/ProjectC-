@@ -124,7 +124,7 @@ namespace Login.FromMain
             this.panel3.Controls.Add(this.lblLoginName);
             this.panel3.Controls.Add(this.lblDate);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(225, 810);
+            this.panel3.Location = new System.Drawing.Point(225, 704);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1015, 45);
             this.panel3.TabIndex = 8;
@@ -367,7 +367,7 @@ namespace Login.FromMain
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
             this.PanelMenu.Name = "PanelMenu";
             this.PanelMenu.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            this.PanelMenu.Size = new System.Drawing.Size(225, 855);
+            this.PanelMenu.Size = new System.Drawing.Size(225, 749);
             this.PanelMenu.TabIndex = 3;
             // 
             // imglayoutend
@@ -669,7 +669,7 @@ namespace Login.FromMain
             this.btnThoat.ForeColor = System.Drawing.Color.White;
             this.btnThoat.Image = global::Login.Properties.Resources.Logout_26px;
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(0, 808);
+            this.btnThoat.Location = new System.Drawing.Point(0, 702);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(221, 33);
             this.btnThoat.TabIndex = 21;
@@ -751,14 +751,18 @@ namespace Login.FromMain
             new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(254))))), 0.45F),
             new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(254))))), 0.45F),
             new DevComponents.DotNetBar.BackgroundColorBlend(System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(254))))), 1F)});
+<<<<<<< HEAD
             this.tc_Main.Controls.Add(this.tabControlPanel1);
+=======
+            this.tc_Main.ColorScheme.TabPanelBackground = System.Drawing.Color.Silver;
+>>>>>>> 94743544e6b73c59e205c040ef2f5c37ca3e13d4
             this.tc_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tc_Main.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tc_Main.Location = new System.Drawing.Point(225, 0);
             this.tc_Main.Name = "tc_Main";
             this.tc_Main.SelectedTabFont = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.tc_Main.SelectedTabIndex = -1;
-            this.tc_Main.Size = new System.Drawing.Size(1015, 810);
+            this.tc_Main.Size = new System.Drawing.Size(1015, 704);
             this.tc_Main.Style = DevComponents.DotNetBar.eTabStripStyle.Office2007Document;
             this.tc_Main.TabIndex = 13;
             this.tc_Main.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
@@ -904,7 +908,7 @@ namespace Login.FromMain
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1240, 855);
+            this.ClientSize = new System.Drawing.Size(1240, 749);
             this.Controls.Add(this.tc_Main);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.PanelMenu);

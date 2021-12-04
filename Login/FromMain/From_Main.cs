@@ -99,12 +99,13 @@ namespace Login.FromMain
 
             if (openMenu == true)
             {
+                MenuDrop();
                 MenuHethong = true;
                 PanelMenu.Width -= 7;
                 if (PanelMenu.Width < 101)
                 {
                    
-                MenuDrop();
+             
                 imglayout.Dock = DockStyle.Top;
 
                 PanelMenu.Width = 100;
