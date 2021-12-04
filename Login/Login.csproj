@@ -95,6 +95,14 @@
     <Compile Include="FromMain\From_Main.Designer.cs">
       <DependentUpon>From_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyCustome\MenuColorTable.cs" />
+    <Compile Include="MyCustome\MenuRenderer.cs" />
+    <Compile Include="MyCustome\RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyCustome\RJDropdownMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="MyCustome\WaterTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -185,6 +193,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_right_32px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand_arrow_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anhnen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\263317886_239586268129945_2944993818996751779_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\263177636_458089092342503_7954596673940287683_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_male_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\training_30px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
