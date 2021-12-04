@@ -53,11 +53,10 @@ C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_DangKy.res
 C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_MatKhauMoi.resources
 C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_QuenMatKhau.resources
 C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.FromMain.From_Main.resources
+C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.MainHeThong.From_quanLiTaiKhoan.resources
 C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.Properties.Resources.resources
 C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.csproj.GenerateResource.cache
 C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.csproj.CopyComplete
 C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.exe
 C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.pdb
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.MainHeThong.From_quanLiTaiKhoan.resources
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.csproj.AssemblyReference.cache

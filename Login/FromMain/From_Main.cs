@@ -181,6 +181,19 @@ namespace Login.FromMain
                 //    }
                 //}
                 TimeHeThong.Enabled = true;
+                if (MenuHethong == true)
+                {
+                    panelgiaovien.Height = 0;
+                    panelsinhvien.Height = 0;
+                    MenuSinhvien = true;
+                    Menugiaovien = true;
+                }
+               
+                    
+                
+     
+               
+            
             }
             else
             {
@@ -237,8 +250,16 @@ namespace Login.FromMain
 
         private void btnsinhvien_Click_1(object sender, EventArgs e)
         {
+          
             if (PanelMenu.Width > 224)
             {
+                if(MenuSinhvien == true)
+                {
+                    panelhethong.Height = 0;
+                    MenuHethong = true;
+                    panelgiaovien.Height = 0;
+                    Menugiaovien = true;
+                }
                 TimeSinhVien.Enabled = true;
             }
             else
@@ -251,6 +272,13 @@ namespace Login.FromMain
         {
             if (PanelMenu.Width > 224)
             {
+                if (Menugiaovien == true)
+                {
+                    panelhethong.Height = 0;
+                    MenuHethong = true;
+                    panelsinhvien.Height = 0;
+                    MenuSinhvien = true;
+                }
                 TimeGiaoVien.Enabled = true;
             }
             else
@@ -286,8 +314,10 @@ namespace Login.FromMain
 
         private void TimeSinhVien_Tick(object sender, EventArgs e)
         {
+      
             if (MenuSinhvien == true)
             {
+                
                 panelsinhvien.Height += 7;
                 if (panelsinhvien.Height > 115)
                 {
