@@ -45,7 +45,6 @@ C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.Fromlogin.Form_DangKy.resour
 C:\Users\admin\Desktop\ProjectC-\Login\bin\Debug\Login.exe.config
 C:\Users\admin\Desktop\ProjectC-\Login\bin\Debug\Login.exe
 C:\Users\admin\Desktop\ProjectC-\Login\bin\Debug\Login.pdb
-C:\Users\admin\Desktop\ProjectC-\Login\bin\Debug\DevComponents.DotNetBar2.dll
 C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.Frm_Login.resources
 C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_Checkcode.resources
 C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_CheckCodeQuenMatKhau.resources
