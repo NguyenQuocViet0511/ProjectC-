@@ -395,9 +395,15 @@ namespace Login.FromMain
         /// add tab  from quan li tai khoan khi nhan button quan li tai khoan
         private void btnQuanLitaikhoan_Click(object sender, EventArgs e)
         {
+           QuanLitaikhoan();
+        }
+
+        private void QuanLitaikhoan()
+        {
+
             this.TrangThaiMo = true;
             this.tieudeTab = "Quản Lí Tài Khoản";
-            if(!CheckOpenTab(tieudeTab))
+            if (!CheckOpenTab(tieudeTab))
             {
                 TabItem tab = tc_Main.CreateTab(tieudeTab);
                 tab.Name = "Quản Lí Tai Khoản";
@@ -406,7 +412,7 @@ namespace Login.FromMain
 
                     from_QuanLiTaiKhoan = this,
                     TopLevel = false,
-                    Dock =DockStyle.Fill
+                    Dock = DockStyle.Fill
                 };
                 tab.AttachedControl.Controls.Add(from_QuanLiTaiKhoan);
                 from_QuanLiTaiKhoan.Show();
@@ -414,7 +420,7 @@ namespace Login.FromMain
 
 
 
-                }
+            }
         }
 
         private void tc_Main_TabItemClose(object sender, TabStripActionEventArgs e)
@@ -485,5 +491,10 @@ namespace Login.FromMain
                 tc_Main.SelectedTabIndex = tc_Main.Tabs.Count - 1;
             }
     }
+
+        private void quảnLíTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLitaikhoan();
+        }
     }
 }

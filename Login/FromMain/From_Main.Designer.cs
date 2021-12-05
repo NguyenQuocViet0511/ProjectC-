@@ -781,22 +781,23 @@ namespace Login.FromMain
             this.DropMenuHeThong.MenuItemTextColor = System.Drawing.Color.Empty;
             this.DropMenuHeThong.Name = "DropMenuHeThong";
             this.DropMenuHeThong.PrimaryColor = System.Drawing.Color.Empty;
-            this.DropMenuHeThong.Size = new System.Drawing.Size(180, 92);
+            this.DropMenuHeThong.Size = new System.Drawing.Size(181, 114);
             // 
             // quảnLíTàiKhoảnToolStripMenuItem
             // 
             this.quảnLíTàiKhoảnToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
             this.quảnLíTàiKhoảnToolStripMenuItem.Image = global::Login.Properties.Resources.manager_20px;
             this.quảnLíTàiKhoảnToolStripMenuItem.Name = "quảnLíTàiKhoảnToolStripMenuItem";
-            this.quảnLíTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.quảnLíTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.quảnLíTàiKhoảnToolStripMenuItem.Text = "Quản Lí Tài Khoản";
+            this.quảnLíTàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.quảnLíTàiKhoảnToolStripMenuItem_Click);
             // 
             // đổiMậtKhẩuToolStripMenuItem
             // 
             this.đổiMậtKhẩuToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
             this.đổiMậtKhẩuToolStripMenuItem.Image = global::Login.Properties.Resources.password_1_20px;
             this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi Mật Khẩu";
             // 
             // thôngTinBảnThânToolStripMenuItem
@@ -804,7 +805,7 @@ namespace Login.FromMain
             this.thôngTinBảnThânToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
             this.thôngTinBảnThânToolStripMenuItem.Image = global::Login.Properties.Resources.user_20px;
             this.thôngTinBảnThânToolStripMenuItem.Name = "thôngTinBảnThânToolStripMenuItem";
-            this.thôngTinBảnThânToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.thôngTinBảnThânToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.thôngTinBảnThânToolStripMenuItem.Text = "Thông Tin Bản Thân";
             // 
             // phânQuyềnToolStripMenuItem
@@ -812,7 +813,7 @@ namespace Login.FromMain
             this.phânQuyềnToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
             this.phânQuyềnToolStripMenuItem.Image = global::Login.Properties.Resources.read_online_20px;
             this.phânQuyềnToolStripMenuItem.Name = "phânQuyềnToolStripMenuItem";
-            this.phânQuyềnToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.phânQuyềnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.phânQuyềnToolStripMenuItem.Text = "Phân Quyền";
             // 
             // DropMenuSinhVien
