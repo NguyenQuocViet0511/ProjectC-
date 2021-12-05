@@ -81,3 +81,4 @@ C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.csproj.CopyComplete
 C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.exe
 C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.pdb
 C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\ProjectC-\Login\bin\Debug\DevComponents.DotNetBar2.dll
