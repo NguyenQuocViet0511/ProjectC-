@@ -254,5 +254,32 @@
   <ItemGroup>
     <None Include="Resources\top-phan-mem-quan-ly-hoc-sinh.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manager_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_1_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\read_online_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\education_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_male_30px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\education_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_male_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_shield_36px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

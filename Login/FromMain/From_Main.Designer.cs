@@ -40,14 +40,12 @@ namespace Login.FromMain
             this.imglayout = new System.Windows.Forms.PictureBox();
             this.Menu = new CustomControls.RJControls.RJButton();
             this.imgcode = new System.Windows.Forms.PictureBox();
-            this.imglayouthethong = new System.Windows.Forms.PictureBox();
             this.panelhethong = new System.Windows.Forms.Panel();
             this.rjButton10 = new CustomControls.RJControls.RJButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rjButton3 = new CustomControls.RJControls.RJButton();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.btnQuanLitaikhoan = new CustomControls.RJControls.RJButton();
-            this.imglayoutsinhvien = new System.Windows.Forms.PictureBox();
             this.PanelMenu = new System.Windows.Forms.Panel();
             this.imglayoutend = new System.Windows.Forms.PictureBox();
             this.btnTrangChu = new CustomControls.RJControls.RJButton();
@@ -63,7 +61,9 @@ namespace Login.FromMain
             this.rjButton7 = new CustomControls.RJControls.RJButton();
             this.rjButton6 = new CustomControls.RJControls.RJButton();
             this.rjButton5 = new CustomControls.RJControls.RJButton();
+            this.imglayoutsinhvien = new System.Windows.Forms.PictureBox();
             this.btnsinhvien = new CustomControls.RJControls.RJButton();
+            this.imglayouthethong = new System.Windows.Forms.PictureBox();
             this.btnThoat = new CustomControls.RJControls.RJButton();
             this.btnhethong = new CustomControls.RJControls.RJButton();
             this.TimeHeThong = new System.Windows.Forms.Timer(this.components);
@@ -88,10 +88,8 @@ namespace Login.FromMain
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imglayout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgcode)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imglayouthethong)).BeginInit();
             this.panelhethong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imglayoutsinhvien)).BeginInit();
             this.PanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imglayoutend)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imglayouthome)).BeginInit();
@@ -99,6 +97,8 @@ namespace Login.FromMain
             ((System.ComponentModel.ISupportInitialize)(this.imglayoutgiaovien)).BeginInit();
             this.panelsinhvien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imglayoutsinhvien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imglayouthethong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tc_Main)).BeginInit();
             this.DropMenuHeThong.SuspendLayout();
             this.DropMenuSinhVien.SuspendLayout();
@@ -204,19 +204,9 @@ namespace Login.FromMain
             this.imgcode.TabIndex = 6;
             this.imgcode.TabStop = false;
             // 
-            // imglayouthethong
-            // 
-            this.imglayouthethong.BackColor = System.Drawing.Color.White;
-            this.imglayouthethong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.imglayouthethong.Location = new System.Drawing.Point(0, 172);
-            this.imglayouthethong.Name = "imglayouthethong";
-            this.imglayouthethong.Padding = new System.Windows.Forms.Padding(0, 40, 0, 0);
-            this.imglayouthethong.Size = new System.Drawing.Size(221, 4);
-            this.imglayouthethong.TabIndex = 22;
-            this.imglayouthethong.TabStop = false;
-            // 
             // panelhethong
             // 
+            this.panelhethong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.panelhethong.Controls.Add(this.rjButton10);
             this.panelhethong.Controls.Add(this.pictureBox1);
             this.panelhethong.Controls.Add(this.rjButton3);
@@ -230,17 +220,18 @@ namespace Login.FromMain
             // 
             // rjButton10
             // 
-            this.rjButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
-            this.rjButton10.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
-            this.rjButton10.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.rjButton10.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.rjButton10.BorderColor = System.Drawing.Color.Yellow;
             this.rjButton10.BorderRadius = 0;
             this.rjButton10.BorderSize = 0;
             this.rjButton10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rjButton10.Dock = System.Windows.Forms.DockStyle.Top;
             this.rjButton10.FlatAppearance.BorderSize = 0;
             this.rjButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton10.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rjButton10.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.rjButton10.ForeColor = System.Drawing.Color.White;
+            this.rjButton10.Image = global::Login.Properties.Resources.read_online_20px;
             this.rjButton10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rjButton10.Location = new System.Drawing.Point(0, 108);
             this.rjButton10.Name = "rjButton10";
@@ -263,17 +254,18 @@ namespace Login.FromMain
             // 
             // rjButton3
             // 
-            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
-            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
-            this.rjButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.rjButton3.BorderColor = System.Drawing.Color.Yellow;
             this.rjButton3.BorderRadius = 0;
             this.rjButton3.BorderSize = 0;
             this.rjButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rjButton3.Dock = System.Windows.Forms.DockStyle.Top;
             this.rjButton3.FlatAppearance.BorderSize = 0;
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton3.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rjButton3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.rjButton3.ForeColor = System.Drawing.Color.White;
+            this.rjButton3.Image = global::Login.Properties.Resources.user_20px;
             this.rjButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rjButton3.Location = new System.Drawing.Point(0, 72);
             this.rjButton3.Name = "rjButton3";
@@ -286,17 +278,18 @@ namespace Login.FromMain
             // 
             // rjButton2
             // 
-            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
-            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
-            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.rjButton2.BorderColor = System.Drawing.Color.Yellow;
             this.rjButton2.BorderRadius = 0;
             this.rjButton2.BorderSize = 0;
             this.rjButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rjButton2.Dock = System.Windows.Forms.DockStyle.Top;
             this.rjButton2.FlatAppearance.BorderSize = 0;
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rjButton2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.rjButton2.ForeColor = System.Drawing.Color.White;
+            this.rjButton2.Image = global::Login.Properties.Resources.password_1_20px;
             this.rjButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rjButton2.Location = new System.Drawing.Point(0, 36);
             this.rjButton2.Name = "rjButton2";
@@ -309,17 +302,18 @@ namespace Login.FromMain
             // 
             // btnQuanLitaikhoan
             // 
-            this.btnQuanLitaikhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
-            this.btnQuanLitaikhoan.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
-            this.btnQuanLitaikhoan.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnQuanLitaikhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnQuanLitaikhoan.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnQuanLitaikhoan.BorderColor = System.Drawing.Color.Yellow;
             this.btnQuanLitaikhoan.BorderRadius = 0;
             this.btnQuanLitaikhoan.BorderSize = 0;
             this.btnQuanLitaikhoan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnQuanLitaikhoan.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnQuanLitaikhoan.FlatAppearance.BorderSize = 0;
             this.btnQuanLitaikhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQuanLitaikhoan.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnQuanLitaikhoan.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnQuanLitaikhoan.ForeColor = System.Drawing.Color.White;
+            this.btnQuanLitaikhoan.Image = global::Login.Properties.Resources.manager_20px;
             this.btnQuanLitaikhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQuanLitaikhoan.Location = new System.Drawing.Point(0, 0);
             this.btnQuanLitaikhoan.Name = "btnQuanLitaikhoan";
@@ -330,17 +324,6 @@ namespace Login.FromMain
             this.btnQuanLitaikhoan.TextColor = System.Drawing.Color.White;
             this.btnQuanLitaikhoan.UseVisualStyleBackColor = false;
             this.btnQuanLitaikhoan.Click += new System.EventHandler(this.btnQuanLitaikhoan_Click);
-            // 
-            // imglayoutsinhvien
-            // 
-            this.imglayoutsinhvien.BackColor = System.Drawing.Color.White;
-            this.imglayoutsinhvien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.imglayoutsinhvien.Location = new System.Drawing.Point(0, 384);
-            this.imglayoutsinhvien.Name = "imglayoutsinhvien";
-            this.imglayoutsinhvien.Padding = new System.Windows.Forms.Padding(0, 40, 0, 0);
-            this.imglayoutsinhvien.Size = new System.Drawing.Size(221, 4);
-            this.imglayoutsinhvien.TabIndex = 27;
-            this.imglayoutsinhvien.TabStop = false;
             // 
             // PanelMenu
             // 
@@ -418,6 +401,7 @@ namespace Login.FromMain
             // 
             // panelgiaovien
             // 
+            this.panelgiaovien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.panelgiaovien.Controls.Add(this.rjButton4);
             this.panelgiaovien.Controls.Add(this.rjButton9);
             this.panelgiaovien.Controls.Add(this.rjButton8);
@@ -429,8 +413,8 @@ namespace Login.FromMain
             // 
             // rjButton4
             // 
-            this.rjButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
-            this.rjButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
+            this.rjButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.rjButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.rjButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton4.BorderRadius = 0;
             this.rjButton4.BorderSize = 0;
@@ -438,7 +422,7 @@ namespace Login.FromMain
             this.rjButton4.Dock = System.Windows.Forms.DockStyle.Top;
             this.rjButton4.FlatAppearance.BorderSize = 0;
             this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton4.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rjButton4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.rjButton4.ForeColor = System.Drawing.Color.White;
             this.rjButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rjButton4.Location = new System.Drawing.Point(0, 72);
@@ -452,8 +436,8 @@ namespace Login.FromMain
             // 
             // rjButton9
             // 
-            this.rjButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
-            this.rjButton9.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
+            this.rjButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.rjButton9.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.rjButton9.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton9.BorderRadius = 0;
             this.rjButton9.BorderSize = 0;
@@ -461,7 +445,7 @@ namespace Login.FromMain
             this.rjButton9.Dock = System.Windows.Forms.DockStyle.Top;
             this.rjButton9.FlatAppearance.BorderSize = 0;
             this.rjButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton9.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rjButton9.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.rjButton9.ForeColor = System.Drawing.Color.White;
             this.rjButton9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rjButton9.Location = new System.Drawing.Point(0, 36);
@@ -475,8 +459,8 @@ namespace Login.FromMain
             // 
             // rjButton8
             // 
-            this.rjButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
-            this.rjButton8.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
+            this.rjButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.rjButton8.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.rjButton8.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton8.BorderRadius = 0;
             this.rjButton8.BorderSize = 0;
@@ -484,7 +468,7 @@ namespace Login.FromMain
             this.rjButton8.Dock = System.Windows.Forms.DockStyle.Top;
             this.rjButton8.FlatAppearance.BorderSize = 0;
             this.rjButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton8.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rjButton8.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.rjButton8.ForeColor = System.Drawing.Color.White;
             this.rjButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rjButton8.Location = new System.Drawing.Point(0, 0);
@@ -520,7 +504,7 @@ namespace Login.FromMain
             this.btngiaovien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btngiaovien.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btngiaovien.ForeColor = System.Drawing.Color.White;
-            this.btngiaovien.Image = global::Login.Properties.Resources.training_30px;
+            this.btngiaovien.Image = global::Login.Properties.Resources.education_36px;
             this.btngiaovien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btngiaovien.Location = new System.Drawing.Point(0, 512);
             this.btngiaovien.Name = "btngiaovien";
@@ -536,6 +520,7 @@ namespace Login.FromMain
             // 
             // panelsinhvien
             // 
+            this.panelsinhvien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.panelsinhvien.Controls.Add(this.pictureBox2);
             this.panelsinhvien.Controls.Add(this.rjButton7);
             this.panelsinhvien.Controls.Add(this.rjButton6);
@@ -558,8 +543,8 @@ namespace Login.FromMain
             // 
             // rjButton7
             // 
-            this.rjButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
-            this.rjButton7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
+            this.rjButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.rjButton7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.rjButton7.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton7.BorderRadius = 0;
             this.rjButton7.BorderSize = 0;
@@ -567,7 +552,7 @@ namespace Login.FromMain
             this.rjButton7.Dock = System.Windows.Forms.DockStyle.Top;
             this.rjButton7.FlatAppearance.BorderSize = 0;
             this.rjButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton7.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rjButton7.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.rjButton7.ForeColor = System.Drawing.Color.White;
             this.rjButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rjButton7.Location = new System.Drawing.Point(0, 72);
@@ -581,8 +566,8 @@ namespace Login.FromMain
             // 
             // rjButton6
             // 
-            this.rjButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
-            this.rjButton6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
+            this.rjButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.rjButton6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.rjButton6.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton6.BorderRadius = 0;
             this.rjButton6.BorderSize = 0;
@@ -590,7 +575,7 @@ namespace Login.FromMain
             this.rjButton6.Dock = System.Windows.Forms.DockStyle.Top;
             this.rjButton6.FlatAppearance.BorderSize = 0;
             this.rjButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton6.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rjButton6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.rjButton6.ForeColor = System.Drawing.Color.White;
             this.rjButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rjButton6.Location = new System.Drawing.Point(0, 36);
@@ -604,8 +589,8 @@ namespace Login.FromMain
             // 
             // rjButton5
             // 
-            this.rjButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
-            this.rjButton5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
+            this.rjButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.rjButton5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.rjButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton5.BorderRadius = 0;
             this.rjButton5.BorderSize = 0;
@@ -613,7 +598,7 @@ namespace Login.FromMain
             this.rjButton5.Dock = System.Windows.Forms.DockStyle.Top;
             this.rjButton5.FlatAppearance.BorderSize = 0;
             this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton5.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rjButton5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.rjButton5.ForeColor = System.Drawing.Color.White;
             this.rjButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.rjButton5.Location = new System.Drawing.Point(0, 0);
@@ -624,6 +609,17 @@ namespace Login.FromMain
             this.rjButton5.Text = "Xem Lịch Thi";
             this.rjButton5.TextColor = System.Drawing.Color.White;
             this.rjButton5.UseVisualStyleBackColor = false;
+            // 
+            // imglayoutsinhvien
+            // 
+            this.imglayoutsinhvien.BackColor = System.Drawing.Color.White;
+            this.imglayoutsinhvien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.imglayoutsinhvien.Location = new System.Drawing.Point(0, 384);
+            this.imglayoutsinhvien.Name = "imglayoutsinhvien";
+            this.imglayoutsinhvien.Padding = new System.Windows.Forms.Padding(0, 40, 0, 0);
+            this.imglayoutsinhvien.Size = new System.Drawing.Size(221, 4);
+            this.imglayoutsinhvien.TabIndex = 27;
+            this.imglayoutsinhvien.TabStop = false;
             // 
             // btnsinhvien
             // 
@@ -638,7 +634,7 @@ namespace Login.FromMain
             this.btnsinhvien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsinhvien.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnsinhvien.ForeColor = System.Drawing.Color.White;
-            this.btnsinhvien.Image = global::Login.Properties.Resources.student_male_30px;
+            this.btnsinhvien.Image = global::Login.Properties.Resources.student_male_36px;
             this.btnsinhvien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsinhvien.Location = new System.Drawing.Point(0, 334);
             this.btnsinhvien.Name = "btnsinhvien";
@@ -651,6 +647,17 @@ namespace Login.FromMain
             this.btnsinhvien.Click += new System.EventHandler(this.btnsinhvien_Click_1);
             this.btnsinhvien.MouseEnter += new System.EventHandler(this.btnsinhvien_MouseEnter);
             this.btnsinhvien.MouseLeave += new System.EventHandler(this.btnsinhvien_MouseLeave);
+            // 
+            // imglayouthethong
+            // 
+            this.imglayouthethong.BackColor = System.Drawing.Color.White;
+            this.imglayouthethong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.imglayouthethong.Location = new System.Drawing.Point(0, 172);
+            this.imglayouthethong.Name = "imglayouthethong";
+            this.imglayouthethong.Padding = new System.Windows.Forms.Padding(0, 40, 0, 0);
+            this.imglayouthethong.Size = new System.Drawing.Size(221, 4);
+            this.imglayouthethong.TabIndex = 22;
+            this.imglayouthethong.TabStop = false;
             // 
             // btnThoat
             // 
@@ -692,7 +699,7 @@ namespace Login.FromMain
             this.btnhethong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnhethong.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnhethong.ForeColor = System.Drawing.Color.White;
-            this.btnhethong.Image = global::Login.Properties.Resources.gear_30px;
+            this.btnhethong.Image = global::Login.Properties.Resources.user_shield_36px;
             this.btnhethong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnhethong.Location = new System.Drawing.Point(0, 122);
             this.btnhethong.Name = "btnhethong";
@@ -779,6 +786,7 @@ namespace Login.FromMain
             // quảnLíTàiKhoảnToolStripMenuItem
             // 
             this.quảnLíTàiKhoảnToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
+            this.quảnLíTàiKhoảnToolStripMenuItem.Image = global::Login.Properties.Resources.manager_20px;
             this.quảnLíTàiKhoảnToolStripMenuItem.Name = "quảnLíTàiKhoảnToolStripMenuItem";
             this.quảnLíTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.quảnLíTàiKhoảnToolStripMenuItem.Text = "Quản Lí Tài Khoản";
@@ -786,6 +794,7 @@ namespace Login.FromMain
             // đổiMậtKhẩuToolStripMenuItem
             // 
             this.đổiMậtKhẩuToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
+            this.đổiMậtKhẩuToolStripMenuItem.Image = global::Login.Properties.Resources.password_1_20px;
             this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
             this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi Mật Khẩu";
@@ -793,6 +802,7 @@ namespace Login.FromMain
             // thôngTinBảnThânToolStripMenuItem
             // 
             this.thôngTinBảnThânToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
+            this.thôngTinBảnThânToolStripMenuItem.Image = global::Login.Properties.Resources.user_20px;
             this.thôngTinBảnThânToolStripMenuItem.Name = "thôngTinBảnThânToolStripMenuItem";
             this.thôngTinBảnThânToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.thôngTinBảnThânToolStripMenuItem.Text = "Thông Tin Bản Thân";
@@ -800,6 +810,7 @@ namespace Login.FromMain
             // phânQuyềnToolStripMenuItem
             // 
             this.phânQuyềnToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
+            this.phânQuyềnToolStripMenuItem.Image = global::Login.Properties.Resources.read_online_20px;
             this.phânQuyềnToolStripMenuItem.Name = "phânQuyềnToolStripMenuItem";
             this.phânQuyềnToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.phânQuyềnToolStripMenuItem.Text = "Phân Quyền";
@@ -889,10 +900,8 @@ namespace Login.FromMain
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imglayout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgcode)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imglayouthethong)).EndInit();
             this.panelhethong.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imglayoutsinhvien)).EndInit();
             this.PanelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imglayoutend)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imglayouthome)).EndInit();
@@ -900,6 +909,8 @@ namespace Login.FromMain
             ((System.ComponentModel.ISupportInitialize)(this.imglayoutgiaovien)).EndInit();
             this.panelsinhvien.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imglayoutsinhvien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imglayouthethong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tc_Main)).EndInit();
             this.DropMenuHeThong.ResumeLayout(false);
             this.DropMenuSinhVien.ResumeLayout(false);

@@ -449,7 +449,7 @@ namespace Login.FromMain
 
         private void btnTrangChu_MouseEnter(object sender, EventArgs e)
         {
-            btnTrangChu.BackColor = Color.Red;
+            btnTrangChu.BackColor = Color.Orange;
         }
 
         private void btnTrangChu_MouseLeave(object sender, EventArgs e)
