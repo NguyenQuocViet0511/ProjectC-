@@ -58,3 +58,5 @@ C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.pdb
 C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_Checkcode.resources
 C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_CheckCodeQuenMatKhau.resources
 C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_MatKhauMoi.resources
+C:\Users\ThanhDat\OneDrive\Documents\GitHub\ProjectC-\Login\obj\Debug\Login.exe
+C:\Users\ThanhDat\OneDrive\Documents\GitHub\ProjectC-\Login\obj\Debug\Login.pdb
