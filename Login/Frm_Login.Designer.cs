@@ -205,9 +205,10 @@ namespace Login
             // LQuenMatKhau
             // 
             this.LQuenMatKhau.AutoSize = true;
-            this.LQuenMatKhau.Location = new System.Drawing.Point(337, 168);
+            this.LQuenMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LQuenMatKhau.Location = new System.Drawing.Point(393, 174);
             this.LQuenMatKhau.Name = "LQuenMatKhau";
-            this.LQuenMatKhau.Size = new System.Drawing.Size(174, 29);
+            this.LQuenMatKhau.Size = new System.Drawing.Size(118, 20);
             this.LQuenMatKhau.TabIndex = 4;
             this.LQuenMatKhau.TabStop = true;
             this.LQuenMatKhau.Tag = "";
@@ -219,13 +220,14 @@ namespace Login
             // 
             this.Remember.AutoSize = true;
             this.Remember.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Remember.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Remember.ForeColor = System.Drawing.Color.Blue;
-            this.Remember.Location = new System.Drawing.Point(24, 168);
+            this.Remember.Location = new System.Drawing.Point(21, 174);
             this.Remember.Name = "Remember";
-            this.Remember.Size = new System.Drawing.Size(109, 33);
+            this.Remember.Size = new System.Drawing.Size(216, 24);
             this.Remember.TabIndex = 3;
             this.Remember.Tag = "";
-            this.Remember.Text = "Nhớ tôi";
+            this.Remember.Text = "Nhớ tài khoản và mật khẩu";
             this.Remember.UseVisualStyleBackColor = true;
             // 
             // panel2

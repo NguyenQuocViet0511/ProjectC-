@@ -8,12 +8,18 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevComponents.DotNetBar;
+using Login.MainHeThong;
 
 namespace Login.FromMain
 {
     public partial class From_Main : Form
     {
-        private bool openMenu = true;
+        
+        private bool openMenu = false;
+        private bool MenuHethong = true;
+        private bool Menugiaovien = true;
+        private bool MenuSinhvien = true;
 
         public bool OpenMenu { get => openMenu; set => openMenu = value; }
 
@@ -23,8 +29,9 @@ namespace Login.FromMain
             InitializeComponent();
             MenuBar();
             MenuDrop();
-            DropMenuHethong.IsMainMenu = true;
-            DropMeniGiaoVien.IsMainMenu = true;
+            timeDate.Enabled = true;
+            DropMenuHeThong.IsMainMenu = true;
+            DropMenuGiaoVien.IsMainMenu = true;
             DropMenuSinhVien.IsMainMenu = true;
         }
 
@@ -41,43 +48,48 @@ namespace Login.FromMain
             Frm_Login frm_Login = new Frm_Login();
             frm_Login.ShowDialog();
         }
-
-     
-
-       
-
         private void MenuBar()
         {
             if (this.PanelMenu.Width > 200)
             {
+                openMenu = false;
                 MenuDrop();
                 imglayout.Dock = DockStyle.Top;
                
                 PanelMenu.Width = 100;
+                imglayouthome.Visible = false;
                 imgcode.Visible = false;
+                imglayoutend.Visible = false;
+                imglayoutgiaovien.Visible = false;
+                imglayouthethong.Visible = false;
+                imglayoutsinhvien.Visible = false;
                 Menu.Dock = DockStyle.Top;
                 foreach (Button MenuButon in PanelMenu.Controls.OfType<Button>())
                 {
                     MenuButon.Text = "";
                     MenuButon.ImageAlign = ContentAlignment.MiddleCenter;
-                    MenuButon.Padding = new Padding(0);
+                    MenuButon.Padding = new System.Windows.Forms.Padding(0);
                 }
 
 
-            }
-            else
-            {
-                PanelMenu.Width = 225;
-                imgcode.Visible = true;
-                imglayout.Dock = DockStyle.Bottom;
-                imglayout.Visible = true;
-                Menu.Dock = DockStyle.None;
-                foreach (Button MenuButon in PanelMenu.Controls.OfType<Button>())
-                {
-                    MenuButon.Text = MenuButon.Tag.ToString();
-                    MenuButon.ImageAlign = ContentAlignment.MiddleLeft;
-                    MenuButon.Padding = new Padding(10, 0, 0, 0);
-                }
+                //}
+                //else
+                //{
+                //    PanelMenu.Width = 225;
+                //    imgcode.Visible = true;
+                //    imglayoutgiaovien.Visible = true;
+                //    imglayouthethong.Visible = true;
+                //    imglayoutsinhvien.Visible = true;
+                //    imglayout.Dock = DockStyle.Bottom;
+                //    imglayout.Visible = true;
+                //    Menu.Dock = DockStyle.None;
+                //    panelhethong.Height = 158;
+                //    foreach (Button MenuButon in PanelMenu.Controls.OfType<Button>())
+                //    {
+                //        MenuButon.Text = MenuButon.Tag.ToString();
+                //        MenuButon.ImageAlign = ContentAlignment.MiddleLeft;
+                //        MenuButon.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+                //    }
             }
 
         }
@@ -85,33 +97,69 @@ namespace Login.FromMain
         private void TimerPanelMenu_Tick(object sender, EventArgs e)
         {
 
-            //if (openMenu == true)
-            //{
-            //    PanelMenu.Width -= 2;
-            //    if (PanelMenu.Width == 50)
-            //    {
-            //        TimerPanelMenu.Enabled = false;
-            //        openMenu = false;
-            //    }
-            //}
-            //if (openMenu == false)
-            //{
-            //    PanelMenu.Width += 2;
-            //    if (PanelMenu.Width == 200)
-            //    {
-            //        TimerPanelMenu.Enabled = false;
-            //        openMenu = true;
-            //    }
+            if (openMenu == true)
+            {
+                MenuHethong = true;
+                PanelMenu.Width -= 7;
+                if (PanelMenu.Width < 101)
+                {
+                   
+                MenuDrop();
+                imglayout.Dock = DockStyle.Top;
 
-            //}
-         
+                PanelMenu.Width = 100;
+                    imglayouthome.Visible = false;
+                imgcode.Visible = false;
+                imglayoutend.Visible = false;
+                imglayoutgiaovien.Visible = false;
+                imglayouthethong.Visible = false;
+                imglayoutsinhvien.Visible = false;
+                Menu.Dock = DockStyle.Top;
+                foreach (Button MenuButon in PanelMenu.Controls.OfType<Button>())
+                {
+                    MenuButon.Text = "";
+                    MenuButon.ImageAlign = ContentAlignment.MiddleCenter;
+                    MenuButon.Padding = new System.Windows.Forms.Padding(0);
+                }
+                TimerPanelMenu.Enabled = false;
+                openMenu = false;
+            }
+            }
+            if (openMenu == false)
+            {
+                MenuHethong = false;
+                MenuSinhvien = true;
+                Menugiaovien = true;
+                PanelMenu.Width += 7;
+                if (PanelMenu.Width > 224)
+                {
+                 
+                    imgcode.Visible = true;
+                    imglayouthome.Visible = true;
+                    imglayoutend.Visible = true;
+                    imglayoutgiaovien.Visible = true;
+                    imglayouthethong.Visible = true;
+                    imglayoutsinhvien.Visible = true;
+                    imglayout.Dock = DockStyle.Bottom;
+                    imglayout.Visible = true;
+                    Menu.Dock = DockStyle.None;
+                    panelhethong.Height = 158;
+                    foreach (Button MenuButon in PanelMenu.Controls.OfType<Button>())
+                    {
+                        MenuButon.Text = MenuButon.Tag.ToString();
+                        MenuButon.ImageAlign = ContentAlignment.MiddleLeft;
+                        MenuButon.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+                    }
+                    TimerPanelMenu.Enabled = false;
+                    openMenu = true;
+                }
+
+            }
+
         }
-
-     
-
         private void Menu_Click(object sender, EventArgs e)
         {
-            MenuBar();
+            TimerPanelMenu.Enabled = true;
         }
 
  
@@ -120,73 +168,31 @@ namespace Login.FromMain
         {
             if(PanelMenu.Width > 224)
             {
-                if (panelhethong.Height < 1)
-                {
-                    panelhethong.Height = 117;
-                }
-                else
-                {
+                //if (panelhethong.Height < 1)
+                //{
+                //    panelhethong.Height = 158;
+                //}
+                //else
+                //{
 
-                    if (panelhethong.Height > 115)
-                    {
-                        panelhethong.Height = 0;
-                    }
-                }
+                //    if (panelhethong.Height > 157)
+                //    {
+                //        panelhethong.Height = 0;
+                //    }
+                //}
+                TimeHeThong.Enabled = true;
             }
             else
             {
-                DropMenuHethong.Show(btnhethong, btnhethong.Width, 0);
+                DropMenuHeThong.Show(btnhethong, btnhethong.Width, 0);
             }
 
 
         }
 
-        private void btnsinhvien_Click(object sender, EventArgs e)
-        {
-            if (PanelMenu.Width > 224)
-            {
-                if (panelsinhvien.Height < 1)
-                {
-                    panelsinhvien.Height = 117;
-                }
-                else
-                {
+      
 
-                    if (panelsinhvien.Height > 115)
-                    {
-                        panelsinhvien.Height = 0;
-                    }
-                }
-            }
-            else
-            {
-                DropMenuSinhVien.Show(btnhethong, btnsinhvien.Width, btnhethong.Height);
-            }
-        }
-
-        private void btngiaovien_Click(object sender, EventArgs e)
-        {
-
-            if (PanelMenu.Width > 224)
-            {
-                if (panelgiaovien.Height < 1)
-                {
-                    panelgiaovien.Height = 117;
-                }
-                else
-                {
-
-                    if (panelgiaovien.Height > 115)
-                    {
-                        panelgiaovien.Height = 0;
-                    }
-                }
-            }
-            else
-            {
-                DropMeniGiaoVien.Show(btnsinhvien, btngiaovien.Width , btnsinhvien.Height);
-            }
-        }
+    
 
       
 
@@ -220,6 +226,175 @@ namespace Login.FromMain
             btnhethong.BackColor = Color.Empty;
         }
 
+      
+
+        private void timeDate_Tick(object sender, EventArgs e)
+        {
+            DateTime dateTime = DateTime.Now;
+            lblDate.Text = String.Format("Lịch Hôm Nay Là : " + "{0:dd-MM-yyyy - hh:mm:ss tt}", dateTime);
+
+        }
+
+        private void btnsinhvien_Click_1(object sender, EventArgs e)
+        {
+            if (PanelMenu.Width > 224)
+            {
+                TimeSinhVien.Enabled = true;
+            }
+            else
+            {
+                DropMenuSinhVien.Show(btnhethong, btnsinhvien.Width, btnhethong.Height);
+            }
+        }
+
+        private void btngiaovien_Click_1(object sender, EventArgs e)
+        {
+            if (PanelMenu.Width > 224)
+            {
+                TimeGiaoVien.Enabled = true;
+            }
+            else
+            {
+                DropMenuGiaoVien.Show(btnsinhvien, btngiaovien.Width, btnsinhvien.Height);
+            }
+        }
+
+        private void TimeHeThong_Tick(object sender, EventArgs e)
+        {
+            if(MenuHethong == true)
+            {
+                panelhethong.Height += 7;
+                if(panelhethong.Height > 157)
+                {
+                    TimeHeThong.Enabled = false;
+                    MenuHethong = false;
+                }
+            }
+            else
+            {
+               
+                    panelhethong.Height -= 7;
+                    if (panelhethong.Height < 1)
+                    {
+                        TimeHeThong.Enabled = false;
+                        MenuHethong = true;
+                    }
+                
+            }
+
+        }
+
+        private void TimeSinhVien_Tick(object sender, EventArgs e)
+        {
+            if (MenuSinhvien == true)
+            {
+                panelsinhvien.Height += 7;
+                if (panelsinhvien.Height > 115)
+                {
+                    TimeSinhVien.Enabled = false;
+                    MenuSinhvien = false;
+                }
+            }
+            else
+            {
+
+                panelsinhvien.Height -= 7;
+                if (panelsinhvien.Height < 1)
+                {
+                    TimeSinhVien.Enabled = false;
+                    MenuSinhvien = true;
+                }
+
+            }
+        }
+
+        private void TimeGiaoVien_Tick(object sender, EventArgs e)
+        {
+
+            if (Menugiaovien == true)
+            {
+                panelgiaovien.Height += 7;
+                if (panelgiaovien.Height > 115)
+                {
+                    TimeGiaoVien.Enabled = false;
+                    Menugiaovien = false;
+                }
+            }
+            else
+            {
+
+                panelgiaovien.Height -= 7;
+                if (panelgiaovien.Height < 1)
+                {
+                    TimeGiaoVien.Enabled = false;
+                    Menugiaovien = true;
+                }
+
+            }
+        }
+        /// <summary>
+        /// thiet lap tab
+        /// </summary>
+        #region Thiet Lap Tab DoTbar2
+        bool TrangThaiMo = false;
+        public delegate void _dedongtab();
+        
+        public From_Main frm;
+        string tieudeTab;
+        private bool CheckOpenTab(String name)
+        {
+            for(int i = 0; i < tc_Main.Tabs.Count; i++)
+            {
+                if(tc_Main.Tabs[i].Text == name)
+                {
+                    tc_Main.SelectedTabIndex = i ;
+                    return true;
+                }
+
+            }
+            return false;
+        }
+     
+       
+
+        #endregion
+
+        /// 
+        /// add tab  from quan li tai khoan khi nhan button quan li tai khoan
+        private void btnQuanLitaikhoan_Click(object sender, EventArgs e)
+        {
+            this.TrangThaiMo = true;
+            this.tieudeTab = "Quản Lí Tài Khoản";
+            if(!CheckOpenTab(tieudeTab))
+            {
+                TabItem tab = tc_Main.CreateTab(tieudeTab);
+                tab.Name = "Quản Lí Tai Khoản";
+                From_quanLiTaiKhoan from_QuanLiTaiKhoan = new From_quanLiTaiKhoan()
+                {
+
+                    from_QuanLiTaiKhoan = this,
+                    TopLevel = false,
+                    Dock =DockStyle.Fill
+                };
+                tab.AttachedControl.Controls.Add(from_QuanLiTaiKhoan);
+                from_QuanLiTaiKhoan.Show();
+                tc_Main.SelectedTabIndex = tc_Main.Tabs.Count - 1;
+
+
+
+                }
+        }
+
+        private void tc_Main_TabItemClose(object sender, TabStripActionEventArgs e)
+        {
+            if (MessageBox.Show("Bạn Có Muốn Thoát Trang Này Không ", "Thông Báo",MessageBoxButtons.OKCancel,MessageBoxIcon.Warning) != DialogResult.Cancel)
+            {
+                TabItem tab = tc_Main.SelectedTab;
+                tc_Main.Tabs.Remove(tab);
+            }
+          
+        }
+
         private void btnsinhvien_MouseEnter(object sender, EventArgs e)
         {
             btnsinhvien.BackColor = Color.Orange;
@@ -239,7 +414,15 @@ namespace Login.FromMain
         {
             btngiaovien.BackColor = Color.Empty;
         }
-}
 
+        private void btnTrangChu_MouseEnter(object sender, EventArgs e)
+        {
+            btnTrangChu.BackColor = Color.Red;
+        }
 
+        private void btnTrangChu_MouseLeave(object sender, EventArgs e)
+        {
+            btnTrangChu.BackColor = Color.Empty;
+        }
+    }
 }
