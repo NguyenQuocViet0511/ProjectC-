@@ -75,6 +75,7 @@ namespace Login.FromMain
             this.quảnLíSinhViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLíDanhSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nhậpĐiểmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             this.PanelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img)).BeginInit();
@@ -86,6 +87,7 @@ namespace Login.FromMain
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).BeginInit();
+            this.tabControl1.SuspendLayout();
             this.DropMenuHeThong.SuspendLayout();
             this.DropMenuSinhVien.SuspendLayout();
             this.DropMenuGiaoVien.SuspendLayout();
@@ -591,6 +593,7 @@ namespace Login.FromMain
             this.tabControl1.CanReorderTabs = true;
             this.tabControl1.CloseButtonOnTabsVisible = true;
             this.tabControl1.CloseButtonPosition = DevComponents.DotNetBar.eTabCloseButtonPosition.Right;
+            this.tabControl1.Controls.Add(this.label1);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(250, 48);
             this.tabControl1.Name = "tabControl1";
@@ -716,6 +719,15 @@ namespace Login.FromMain
             this.nhậpĐiểmToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.nhậpĐiểmToolStripMenuItem.Text = "Nhập Điểm";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(370, 274);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "label1";
+            // 
             // From_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -743,6 +755,8 @@ namespace Login.FromMain
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabControl1.PerformLayout();
             this.DropMenuHeThong.ResumeLayout(false);
             this.DropMenuSinhVien.ResumeLayout(false);
             this.DropMenuGiaoVien.ResumeLayout(false);
@@ -796,5 +810,6 @@ namespace Login.FromMain
         private CustomControls.RJControls.RJButton BtnQuanLiSinhVien;
         private System.Windows.Forms.PictureBox img;
         private CustomControls.RJControls.RJButton btnimg;
+        private System.Windows.Forms.Label label1;
     }
 }
