@@ -1,12 +1,14 @@
 ﻿using Login.Data;
 using Login.DataUser;
 using Login.Fromlogin;
+using Login.MyCustome;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,7 +17,7 @@ namespace Login
 {
     public partial class Frm_Login : Form
     {
-
+        private bool Hide = true;
         public Frm_Login()
         {
             InitializeComponent();
@@ -56,7 +58,7 @@ namespace Login
                 if (KiemTraTaiKhoanDangNhap(txtTenDangNhap.Text, txtMatkhau.Text))
                 {
 
-                    MessageBox.Show("Bạn Đã Đăng Nhập Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MyMessageBox_1.ShowBox("Bạn Đã Đăng Nhập Thành Công", "Thông Báo");
                     this.Close();
                 
                  }else
@@ -95,13 +97,18 @@ namespace Login
         }
 
 
-
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
 
         private void LQuenMatKhau_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             Form_QuenMatKhau form_QuenMatKhau = new Form_QuenMatKhau();
             form_QuenMatKhau.ShowDialog();
+           
         }
 
         private void LQuenMatKhau_MouseHover(object sender, EventArgs e)
@@ -111,22 +118,56 @@ namespace Login
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn có Muốn Thoát chương trình không ", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            String result = MyMessageBox.ShowBox("Bạn có Muốn Thoát không ", "Thông Báo");
 
-            if (result == DialogResult.OK)
+            if (result.Equals("1"))
             {
 
                 Application.Exit();
-
-
 
             }
         }
 
         private void LDangKyTaiKhoan_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             Form_DangKy form_DangKy = new Form_DangKy();
             form_DangKy.ShowDialog();
+   
         }
-    }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            if(Hide == true)
+            {
+                txtMatkhau.UseSystemPasswordChar = false;
+                lblhide.Image = global::Login.Properties.Resources.eye_26px;
+                Hide = false;
+            }
+            else
+            {
+                txtMatkhau.UseSystemPasswordChar = true;
+                lblhide.Image = global::Login.Properties.Resources.invisible_26px;
+                Hide = true;
+            }
+        }
+
+      
+
+        private void rjButton1_Click_1(object sender, EventArgs e)
+        {
+            String Result = MyMessageBox.ShowBox("Bạn Có Muốn Thoát Không", "Thông Báo");
+            if (Result.Equals("1"))
+            {
+                Application.Exit();
+            }
+        }
+
+        private void panel3_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+    
+}
 }

@@ -11,12 +11,20 @@ using System.ComponentModel;
 
 namespace CustomControls.RJControls
 {
-    public class RJButton : Button
+    public class RJButton : Button  
     {
         //Fields
         private int borderSize = 0;
         private int borderRadius = 0;
         private Color borderColor = Color.PaleVioletRed;
+        private Color Background;
+        private Color BackgroundL = Color.PaleVioletRed;
+        private Color BackgroundClick;
+        private Image ImgRight;
+   
+        
+
+
 
         //Properties
         [Category("RJ Code Advance")]
@@ -29,7 +37,18 @@ namespace CustomControls.RJControls
                 this.Invalidate();
             }
         }
-
+        [Category("RJ Code Advance")]
+        public Color BackGroundEnter
+        {
+            get { return this.Background; }
+            set { this.Background = value; }
+        }
+        [Category("RJ Code Advance")]
+        public Color BackGroundRelease
+        {
+            get { return this.BackgroundL; }
+            set { this.BackgroundL = value; }
+        }
         [Category("RJ Code Advance")]
         public int BorderRadius
         {
@@ -53,11 +72,21 @@ namespace CustomControls.RJControls
         }
 
         [Category("RJ Code Advance")]
+        public Color Backgroundclick
+        {
+            get { return this.BackgroundClick; }
+            set
+            {
+                BackgroundClick = value; 
+            }
+        }
+        [Category("RJ Code Advance")]
         public Color BackgroundColor
         {
             get { return this.BackColor; }
             set { this.BackColor = value; }
         }
+
 
         [Category("RJ Code Advance")]
         public Color TextColor
@@ -65,6 +94,23 @@ namespace CustomControls.RJControls
             get { return this.ForeColor; }
             set { this.ForeColor = value; }
         }
+
+        [Category("RJ Code Advance")]
+        public Image ImageRight
+        {
+            get { return this.ImgRight; }
+            set { this.ImgRight = value;
+ 
+
+
+
+
+
+
+            }
+        }
+
+ 
 
         //Constructor
         public RJButton()
@@ -95,7 +141,7 @@ namespace CustomControls.RJControls
         protected override void OnPaint(PaintEventArgs pevent)
         {
             base.OnPaint(pevent);
-           
+
 
             Rectangle rectSurface = this.ClientRectangle;
             Rectangle rectBorder = Rectangle.Inflate(rectSurface, -borderSize, -borderSize);
@@ -153,5 +199,22 @@ namespace CustomControls.RJControls
             if (borderRadius > this.Height)
                 borderRadius = this.Height;
         }
+        protected override void OnMouseEnter(EventArgs e)
+        {
+            this.BackColor = BackGroundEnter;
+            base.OnMouseEnter(e);
+        }
+
+        protected override void OnMouseLeave(EventArgs e)
+        {
+            this.BackColor = BackGroundRelease;
+            base.OnMouseLeave(e);
+        }
+        protected override void OnMouseClick(MouseEventArgs e)
+        {
+            this.BackColor = Backgroundclick;
+            base.OnMouseClick(e);
+        }
+
     }
 }

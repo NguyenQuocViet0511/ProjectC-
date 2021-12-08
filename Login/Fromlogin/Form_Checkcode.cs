@@ -45,12 +45,21 @@ namespace Login.Fromlogin
 
         private void lblQuayLai_Click(object sender, EventArgs e)
         {
-
+      
+            Frm_Login frm_Login = new Frm_Login();
+            this.Dispose();
+            frm_Login.ShowDialog();
+     
         }
 
         private void lblQuayLai_MouseHover(object sender, EventArgs e)
         {
             lblQuayLai.ForeColor = Color.Red;
+        }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

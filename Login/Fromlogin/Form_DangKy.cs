@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Net.Mail;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -27,7 +28,12 @@ namespace Login.Fromlogin
 
         private void lblQuayLai_Click(object sender, EventArgs e)
         {
-            this.Close();
+         
+            Frm_Login frm_Login = new Frm_Login();
+            this.Dispose();
+            frm_Login.ShowDialog();
+            
+
         }
 
         private void lblQuayLai_MouseHover(object sender, EventArgs e)
@@ -215,5 +221,29 @@ namespace Login.Fromlogin
 
 
         }
-}
+
+     
+
+        private void rjButton1_Click_1(object sender, EventArgs e)
+        {
+            Frm_Login frm_Login = new Frm_Login();
+            this.Hide();
+            frm_Login.ShowDialog();
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        private void panel3_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+    }
 }

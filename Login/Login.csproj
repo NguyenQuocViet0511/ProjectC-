@@ -112,6 +112,18 @@
     </Compile>
     <Compile Include="MyCustome\MenuColorTable.cs" />
     <Compile Include="MyCustome\MenuRenderer.cs" />
+    <Compile Include="MyCustome\MyMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyCustome\MyMessageBox.Designer.cs">
+      <DependentUpon>MyMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyCustome\MyMessageBox_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyCustome\MyMessageBox_1.Designer.cs">
+      <DependentUpon>MyMessageBox_1.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyCustome\RJButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -152,6 +164,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainHeThong\From_TrangChu.resx">
       <DependentUpon>From_TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyCustome\MyMessageBox.resx">
+      <DependentUpon>MyMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyCustome\MyMessageBox_1.resx">
+      <DependentUpon>MyMessageBox_1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -280,6 +298,132 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user_shield_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\access_denied_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulleted_list_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data_backup_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_32px_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_instagram_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_instagram_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_rounded_down_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power_off_button_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\query_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system_administrator_male_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_groups_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title_bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spam_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invisible_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_26px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check Circle_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test_account_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand_arrow_24px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subtract_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subtract_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_pointing_left_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more_than_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collapse_arrow_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bitcoin Key_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NFT User_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manager_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\management_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\curriculum_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tuition_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conference_foreground_selected_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school_building_50px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,10 @@
+C:\Users\admin\Downloads\MessageBoxExample\MessageBoxExample\bin\Debug\MessageBoxExample.exe
+C:\Users\admin\Downloads\MessageBoxExample\MessageBoxExample\bin\Debug\MessageBoxExample.pdb
+C:\Users\admin\Downloads\MessageBoxExample\MessageBoxExample\obj\Debug\MessageBoxExample.csproj.AssemblyReference.cache
+C:\Users\admin\Downloads\MessageBoxExample\MessageBoxExample\obj\Debug\MessageBoxExample.Form1.resources
+C:\Users\admin\Downloads\MessageBoxExample\MessageBoxExample\obj\Debug\MessageBoxExample.MyMessageBox.resources
+C:\Users\admin\Downloads\MessageBoxExample\MessageBoxExample\obj\Debug\MessageBoxExample.Properties.Resources.resources
+C:\Users\admin\Downloads\MessageBoxExample\MessageBoxExample\obj\Debug\MessageBoxExample.csproj.GenerateResource.cache
+C:\Users\admin\Downloads\MessageBoxExample\MessageBoxExample\obj\Debug\MessageBoxExample.csproj.CoreCompileInputs.cache
+C:\Users\admin\Downloads\MessageBoxExample\MessageBoxExample\obj\Debug\MessageBoxExample.exe
+C:\Users\admin\Downloads\MessageBoxExample\MessageBoxExample\obj\Debug\MessageBoxExample.pdb
