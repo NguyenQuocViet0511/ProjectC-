@@ -83,3 +83,5 @@ C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.exe
 C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.pdb
 C:\Users\admin\Desktop\ProjectC-\Login\bin\Debug\Login.pdb
 C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.FromMain.Form_DoiMatkhau.From_doiMatKhau.resources
+C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.FromMain.Form_ThongTinCaNhan.From_ThongTinCaNhan.resources

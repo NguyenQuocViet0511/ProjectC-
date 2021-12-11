@@ -134,9 +134,9 @@ namespace Login
             // 
             this.lblhide.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblhide.Image = global::Login.Properties.Resources.invisible_26px;
-            this.lblhide.Location = new System.Drawing.Point(481, 117);
+            this.lblhide.Location = new System.Drawing.Point(481, 110);
             this.lblhide.Name = "lblhide";
-            this.lblhide.Size = new System.Drawing.Size(30, 27);
+            this.lblhide.Size = new System.Drawing.Size(30, 34);
             this.lblhide.TabIndex = 16;
             this.lblhide.Click += new System.EventHandler(this.label4_Click);
             // 

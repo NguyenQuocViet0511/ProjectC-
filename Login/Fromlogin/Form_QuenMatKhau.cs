@@ -53,8 +53,11 @@ namespace Login.Fromlogin
                 {
                     Const.User.MaID1 = Const.ListUser[j].MaID1;
                     Const.User.HovaTen1 = Const.ListUser[j].HovaTen1;
+                    Const.User.GioiTinh1 = Const.ListUser[j].GioiTinh1;
+                    Const.User.Ngaysinh1 = Const.ListUser[j].Ngaysinh1;
                     Const.User.TenTaiKhoan1 = Const.ListUser[j].TenTaiKhoan1;
                     Const.User.Matkhau1 = Const.ListUser[j].Matkhau1;
+                    Const.User.DiaChi1 = Const.ListUser[j].DiaChi1;
                     Const.User.Quyen1 = Const.ListUser[j].Quyen1;
                     return true;
                 }

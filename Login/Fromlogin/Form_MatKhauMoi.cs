@@ -33,7 +33,9 @@ namespace Login.Fromlogin
                         Const.ListUser[i].Matkhau1 = txtMatkhauMoi.Text;
                         MessageBox.Show("Mật Khẩu Mới Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         ListUser.GhiFile(Const.Pathfile);
+                        Frm_Login frm_Login = new Frm_Login();
                         this.Close();
+                        frm_Login.ShowDialog();
                     }
                     else
                     {

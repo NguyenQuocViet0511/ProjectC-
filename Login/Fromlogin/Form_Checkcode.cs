@@ -35,7 +35,10 @@ namespace Login.Fromlogin
                 ListUser listUser = new ListUser();
                 listUser.GhiFile(Const.Pathfile);
                 MessageBox.Show("Đăng Ký Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Frm_Login frm_Login = new Frm_Login();
                 this.Close();
+                frm_Login.ShowDialog();
+               
             }
             else
             {

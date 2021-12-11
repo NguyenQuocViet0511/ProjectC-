@@ -14,6 +14,7 @@ namespace Login.Data
       static  public String Pathfile = String.Format(@"{0}\DanhSachUser.ini", Application.StartupPath);
       static  public List<String> CheckuserName = new List<string>();
       static public List<String> CheckEmail = new List<string>();
-      static public User User = new User();  
+      static public User User = new User();
+      static public User UserLogin = new User();
     }
 }

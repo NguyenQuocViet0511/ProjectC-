@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevComponents.DotNetBar;
+using Login.Data;
+using Login.FromMain.Form_DoiMatkhau;
 using Login.MainHeThong;
 using Login.MyCustome;
 
@@ -19,10 +21,6 @@ namespace Login.FromMain
     {
         
         private bool openMenu = true;
-        private bool MenuHethong = true;
-        private bool Menugiaovien = true;
-        private bool MenuSinhvien = true;
-
         public bool OpenMenu { get => openMenu; set => openMenu = value; }
 
         public From_Main()
@@ -30,26 +28,19 @@ namespace Login.FromMain
           
             InitializeComponent();
             //Add();
+          
             MenuBar();
-            MenuDrop();
             timeDate.Enabled = true;
-            DropMenuHeThong.IsMainMenu = true;
-            DropMenuGiaoVien.IsMainMenu = true;
-            DropMenuSinhVien.IsMainMenu = true;
-        }
-
-        private void MenuDrop()
-
-        {
            
-
-
         }
+
+   
 
         private void From_Main_Load(object sender, EventArgs e)
         {
             Frm_Login frm_Login = new Frm_Login();
             frm_Login.ShowDialog();
+            lblLoginName.Text = "Đang Đăng Nhập Bởi Người Dùng " + Const.UserLogin.HovaTen1;
         }
         private void MenuBar()
         {
@@ -63,7 +54,7 @@ namespace Login.FromMain
                     menuButton.Text = "";
                     btnimg.Dock = DockStyle.Top;
                     btnimg.Visible = true;
-                    btnimg.Padding = new System.Windows.Forms.Padding(0,20,0,0);
+                    btnimg.Padding = new System.Windows.Forms.Padding(0,10,0,0);
                     img.Visible = false;
                     menuButton.ImageAlign = ContentAlignment.MiddleCenter;
                     menuButton.Padding = new System.Windows.Forms.Padding(0);
@@ -101,33 +92,13 @@ namespace Login.FromMain
             DateTime dateTime = DateTime.Now;
             lblDate.Text = String.Format("Lịch Hôm Nay Là : " + "{0:dd-MM-yyyy - hh:mm:ss tt}", dateTime);
 
-        }  
-        /// <summary>
-        /// thiet lap tab
-        /// </summary>
-        #region Thiet Lap Tab DoTbar2
-        bool TrangThaiMo = false;
-        public delegate void _dedongtab();
-        
-        public From_Main frm;
-        string tieudeTab;
-        //private bool CheckOpenTab(String name)
-        //{
-        //    for(int i = 0; i < tc_Main.Tabs.Count; i++)
-        //    {
-        //        if(tc_Main.Tabs[i].Text == name)
-        //        {
-        //            tc_Main.SelectedTabIndex = i ;
-        //            return true;
-        //        }
+        }
 
-        //    }
-        //    return false;
-        //}
-     
-       
 
-        #endregion
+
+
+
+
 
         /// 
         /// add tab  from quan li tai khoan khi nhan button quan li tai khoan
@@ -171,26 +142,7 @@ namespace Login.FromMain
 
             }
 
-    //    private void Add()
-    //    {
-    //        this.TrangThaiMo = true;
-    //        this.tieudeTab = "Trang Chủ";
-    //        if (!CheckOpenTab(tieudeTab))
-    //        {
-    //            TabItem tab = tc_Main.CreateTab(tieudeTab);
-    //            tab.Name = "Trang Chủ";
-    //            From_TrangChu from_TrangChu = new From_TrangChu()
-    //            {
-
-    //                from_TrangChu = this,
-    //                TopLevel = false,
-    //                Dock = DockStyle.Fill
-    //            };
-    //            tab.AttachedControl.Controls.Add(from_TrangChu);
-    //            from_TrangChu.Show();
-    //            tc_Main.SelectedTabIndex = tc_Main.Tabs.Count - 1;
-    //        }
-    //}
+   
 
         private void quảnLíTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -228,25 +180,9 @@ namespace Login.FromMain
 
 
 
-            //private void tc_Main_TabItemClose(object sender, TabStripActionEventArgs e)
-            //{
-            //    if (MessageBox.Show("Bạn Có Muốn Thoát Trang Này Không ", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) != DialogResult.Cancel)
-            //    {
-            //        TabItem tab = tc_Main.SelectedTab;
-            //        tc_Main.Tabs.Remove(tab);
-            //    }
-            //}
+          
         }
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-
-        private void panel2_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
+     
 
         private void BntMenu_Click(object sender, EventArgs e)
         {
@@ -287,6 +223,7 @@ namespace Login.FromMain
             {
                 MenuBar();
             }
+            DoiMatkhau();
         }
 
         private void BtnThongtinBanThan_Click(object sender, EventArgs e)
@@ -295,6 +232,7 @@ namespace Login.FromMain
             {
                 MenuBar();
             }
+            ThongtincaNhan();
         }
 
         private void BtnQuanLiLop_Click(object sender, EventArgs e)
@@ -312,5 +250,81 @@ namespace Login.FromMain
                 MenuBar();
             }
         }
+
+        private void tabMain_TabItemClose(object sender, TabStripActionEventArgs e)
+        {
+            String Result = MyMessageBox.ShowBox("Bạn Có Muốn Thoát Không ", "Thông Báo");
+            if(Result.Equals("1"))
+            {
+                TabItem tab = tabMain.SelectedTab;
+                tabMain.Tabs.Remove(tab);
+            }
+
+        }
+        #region TabControl 
+        bool TrangThaiMo = false;
+        public delegate void _dedongtab();
+        public From_Main frm;
+        string tieudeTab;
+        //kiem tra Tab Mo
+        private bool CheckOpenTab(String name)
+        {
+            for (int i = 0; i < tabMain.Tabs.Count; i++)
+            {
+                if (tabMain.Tabs[i].Text == name)
+                {
+                    tabMain.SelectedTabIndex = i;
+                    return true;
+                }
+
+            }
+            return false;
+        }
+        //Tab doi Mat Khau
+        private void DoiMatkhau()
+        {
+
+            this.TrangThaiMo = true;
+            this.tieudeTab = "Đổi Mật Khẩu";
+            if (!CheckOpenTab(tieudeTab))
+            {
+                TabItem tab = tabMain.CreateTab(tieudeTab);
+                tab.Name = "Đổi Mật Khẩu";
+                From_doiMatKhau from_DoiMatKhau = new From_doiMatKhau()
+                {
+
+                    from_DoiMatKhau = this,
+                    TopLevel = false,
+                    Dock = DockStyle.Fill
+                };
+                tab.AttachedControl.Controls.Add(from_DoiMatKhau);
+                from_DoiMatKhau.Show();
+                tabMain.SelectedTabIndex = tabMain.Tabs.Count - 1;
+            }
+        }
+        //Tab Thong Tin ca nhan
+        private void ThongtincaNhan()
+        {
+
+            this.TrangThaiMo = true;
+            this.tieudeTab = "Thông Tin Cá Nhân";
+            if (!CheckOpenTab(tieudeTab))
+            {
+                TabItem tab = tabMain.CreateTab(tieudeTab);
+                tab.Name = "Thông Tin Cá Nhân";
+                Form_ThongTinCaNhan.From_ThongTinCaNhan thongTinCaNhan = new Form_ThongTinCaNhan.From_ThongTinCaNhan()
+                {
+
+                    thongTinCaNhan = this,
+                    TopLevel = false,
+                    Dock = DockStyle.Fill
+                };
+                tab.AttachedControl.Controls.Add(thongTinCaNhan);
+                thongTinCaNhan.Show();
+                tabMain.SelectedTabIndex = tabMain.Tabs.Count - 1;
+            }
+        }
+
+        #endregion
     }
 }
