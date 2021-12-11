@@ -92,6 +92,18 @@
     <Compile Include="Fromlogin\Form_QuenMatKhau.Designer.cs">
       <DependentUpon>Form_QuenMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="FromMain\Form_DoiMatkhau\From_doiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromMain\Form_DoiMatkhau\From_doiMatKhau.Designer.cs">
+      <DependentUpon>From_doiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromMain\Form_ThongTinCaNhan\From_ThongTinCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromMain\Form_ThongTinCaNhan\From_ThongTinCaNhan.Designer.cs">
+      <DependentUpon>From_ThongTinCaNhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FromMain\From_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +167,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Fromlogin\Form_QuenMatKhau.resx">
       <DependentUpon>Form_QuenMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromMain\Form_DoiMatkhau\From_doiMatKhau.resx">
+      <DependentUpon>From_doiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromMain\Form_ThongTinCaNhan\From_ThongTinCaNhan.resx">
+      <DependentUpon>From_ThongTinCaNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FromMain\From_Main.resx">
       <DependentUpon>From_Main.cs</DependentUpon>
@@ -424,6 +442,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\school_building_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logohoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\261820035_579649566444966_4437106567275194228_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\261820035_579649566444966_4437106567275194228_n1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\short_hair_girl_key_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_100px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_30px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

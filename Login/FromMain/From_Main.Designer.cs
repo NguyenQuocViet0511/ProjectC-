@@ -38,30 +38,30 @@ namespace Login.FromMain
             this.TimeGiaoVien = new System.Windows.Forms.Timer(this.components);
             this.tabItem3 = new DevComponents.DotNetBar.TabItem(this.components);
             this.PanelMenu = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.img = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.lblLoginName = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.tabMain = new DevComponents.DotNetBar.TabControl();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.btnDropCreen = new CustomControls.RJControls.RJButton();
+            this.BntMenu = new CustomControls.RJControls.RJButton();
+            this.BtnThoat = new CustomControls.RJControls.RJButton();
             this.BtnQuanLiSinhVien = new CustomControls.RJControls.RJButton();
             this.BtnQuanLiLop = new CustomControls.RJControls.RJButton();
             this.BtnThongtinBanThan = new CustomControls.RJControls.RJButton();
             this.BtndoimatKhau = new CustomControls.RJControls.RJButton();
             this.BtnAdmin = new CustomControls.RJControls.RJButton();
             this.btnTrangChu = new CustomControls.RJControls.RJButton();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnimg = new CustomControls.RJControls.RJButton();
-            this.img = new System.Windows.Forms.PictureBox();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.btnDropCreen = new CustomControls.RJControls.RJButton();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.btnZoomCreen = new CustomControls.RJControls.RJButton();
-            this.BntMenu = new CustomControls.RJControls.RJButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BtnThoat = new CustomControls.RJControls.RJButton();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.lblLoginName = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.tabControl1 = new DevComponents.DotNetBar.TabControl();
             this.DropMenuHeThong = new CustomControls.RJControls.RJDropdownMenu(this.components);
             this.quảnLíTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,10 +82,11 @@ namespace Login.FromMain
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabMain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.DropMenuHeThong.SuspendLayout();
             this.DropMenuSinhVien.SuspendLayout();
             this.DropMenuGiaoVien.SuspendLayout();
@@ -123,7 +124,7 @@ namespace Login.FromMain
             // 
             // PanelMenu
             // 
-            this.PanelMenu.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.PanelMenu.Controls.Add(this.BtnQuanLiSinhVien);
             this.PanelMenu.Controls.Add(this.BtnQuanLiLop);
             this.PanelMenu.Controls.Add(this.BtnThongtinBanThan);
@@ -139,180 +140,6 @@ namespace Login.FromMain
             this.PanelMenu.Size = new System.Drawing.Size(250, 749);
             this.PanelMenu.TabIndex = 10;
             // 
-            // BtnQuanLiSinhVien
-            // 
-            this.BtnQuanLiSinhVien.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.BtnQuanLiSinhVien.Backgroundclick = System.Drawing.Color.Empty;
-            this.BtnQuanLiSinhVien.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.BtnQuanLiSinhVien.BackGroundEnter = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.BtnQuanLiSinhVien.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
-            this.BtnQuanLiSinhVien.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.BtnQuanLiSinhVien.BorderRadius = 0;
-            this.BtnQuanLiSinhVien.BorderSize = 0;
-            this.BtnQuanLiSinhVien.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnQuanLiSinhVien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnQuanLiSinhVien.FlatAppearance.BorderSize = 0;
-            this.BtnQuanLiSinhVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnQuanLiSinhVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BtnQuanLiSinhVien.ForeColor = System.Drawing.Color.White;
-            this.BtnQuanLiSinhVien.Image = global::Login.Properties.Resources.management_30px;
-            this.BtnQuanLiSinhVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnQuanLiSinhVien.ImageRight = global::Login.Properties.Resources.access_denied_32px;
-            this.BtnQuanLiSinhVien.Location = new System.Drawing.Point(0, 388);
-            this.BtnQuanLiSinhVien.Name = "BtnQuanLiSinhVien";
-            this.BtnQuanLiSinhVien.Size = new System.Drawing.Size(250, 52);
-            this.BtnQuanLiSinhVien.TabIndex = 8;
-            this.BtnQuanLiSinhVien.Tag = " Quản Lí Sinh Viên";
-            this.BtnQuanLiSinhVien.Text = "Quản Lí Sinh Viên";
-            this.BtnQuanLiSinhVien.TextColor = System.Drawing.Color.White;
-            this.BtnQuanLiSinhVien.UseVisualStyleBackColor = false;
-            this.BtnQuanLiSinhVien.Click += new System.EventHandler(this.BtnQuanLiSinhVien_Click);
-            // 
-            // BtnQuanLiLop
-            // 
-            this.BtnQuanLiLop.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.BtnQuanLiLop.Backgroundclick = System.Drawing.Color.Empty;
-            this.BtnQuanLiLop.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.BtnQuanLiLop.BackGroundEnter = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.BtnQuanLiLop.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
-            this.BtnQuanLiLop.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.BtnQuanLiLop.BorderRadius = 0;
-            this.BtnQuanLiLop.BorderSize = 0;
-            this.BtnQuanLiLop.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnQuanLiLop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnQuanLiLop.FlatAppearance.BorderSize = 0;
-            this.BtnQuanLiLop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnQuanLiLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BtnQuanLiLop.ForeColor = System.Drawing.Color.White;
-            this.BtnQuanLiLop.Image = global::Login.Properties.Resources.manager_30px;
-            this.BtnQuanLiLop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnQuanLiLop.ImageRight = global::Login.Properties.Resources.access_denied_32px;
-            this.BtnQuanLiLop.Location = new System.Drawing.Point(0, 336);
-            this.BtnQuanLiLop.Name = "BtnQuanLiLop";
-            this.BtnQuanLiLop.Size = new System.Drawing.Size(250, 52);
-            this.BtnQuanLiLop.TabIndex = 7;
-            this.BtnQuanLiLop.Tag = "Quản Lí Lớp";
-            this.BtnQuanLiLop.Text = "Quản Lí Lớp";
-            this.BtnQuanLiLop.TextColor = System.Drawing.Color.White;
-            this.BtnQuanLiLop.UseVisualStyleBackColor = false;
-            this.BtnQuanLiLop.Click += new System.EventHandler(this.BtnQuanLiLop_Click);
-            // 
-            // BtnThongtinBanThan
-            // 
-            this.BtnThongtinBanThan.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.BtnThongtinBanThan.Backgroundclick = System.Drawing.Color.Empty;
-            this.BtnThongtinBanThan.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.BtnThongtinBanThan.BackGroundEnter = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.BtnThongtinBanThan.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
-            this.BtnThongtinBanThan.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.BtnThongtinBanThan.BorderRadius = 0;
-            this.BtnThongtinBanThan.BorderSize = 0;
-            this.BtnThongtinBanThan.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnThongtinBanThan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnThongtinBanThan.FlatAppearance.BorderSize = 0;
-            this.BtnThongtinBanThan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnThongtinBanThan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BtnThongtinBanThan.ForeColor = System.Drawing.Color.White;
-            this.BtnThongtinBanThan.Image = global::Login.Properties.Resources.NFT_User_30px;
-            this.BtnThongtinBanThan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnThongtinBanThan.ImageRight = global::Login.Properties.Resources.access_denied_32px;
-            this.BtnThongtinBanThan.Location = new System.Drawing.Point(0, 284);
-            this.BtnThongtinBanThan.Name = "BtnThongtinBanThan";
-            this.BtnThongtinBanThan.Size = new System.Drawing.Size(250, 52);
-            this.BtnThongtinBanThan.TabIndex = 6;
-            this.BtnThongtinBanThan.Tag = "    Thông Tin Bản Thân";
-            this.BtnThongtinBanThan.Text = "Thông Tin Bản Thân";
-            this.BtnThongtinBanThan.TextColor = System.Drawing.Color.White;
-            this.BtnThongtinBanThan.UseVisualStyleBackColor = false;
-            this.BtnThongtinBanThan.Click += new System.EventHandler(this.BtnThongtinBanThan_Click);
-            // 
-            // BtndoimatKhau
-            // 
-            this.BtndoimatKhau.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.BtndoimatKhau.Backgroundclick = System.Drawing.Color.Empty;
-            this.BtndoimatKhau.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.BtndoimatKhau.BackGroundEnter = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.BtndoimatKhau.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
-            this.BtndoimatKhau.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.BtndoimatKhau.BorderRadius = 0;
-            this.BtndoimatKhau.BorderSize = 0;
-            this.BtndoimatKhau.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtndoimatKhau.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtndoimatKhau.FlatAppearance.BorderSize = 0;
-            this.BtndoimatKhau.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtndoimatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BtndoimatKhau.ForeColor = System.Drawing.Color.White;
-            this.BtndoimatKhau.Image = global::Login.Properties.Resources.Bitcoin_Key_30px;
-            this.BtndoimatKhau.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtndoimatKhau.ImageRight = global::Login.Properties.Resources.access_denied_32px;
-            this.BtndoimatKhau.Location = new System.Drawing.Point(0, 232);
-            this.BtndoimatKhau.Name = "BtndoimatKhau";
-            this.BtndoimatKhau.Size = new System.Drawing.Size(250, 52);
-            this.BtndoimatKhau.TabIndex = 4;
-            this.BtndoimatKhau.Tag = "Đổi Mật Khẩu";
-            this.BtndoimatKhau.Text = "Đổi Mật Khẩu";
-            this.BtndoimatKhau.TextColor = System.Drawing.Color.White;
-            this.BtndoimatKhau.UseVisualStyleBackColor = false;
-            this.BtndoimatKhau.Click += new System.EventHandler(this.BtndoimatKhau_Click);
-            // 
-            // BtnAdmin
-            // 
-            this.BtnAdmin.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.BtnAdmin.Backgroundclick = System.Drawing.Color.Empty;
-            this.BtnAdmin.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.BtnAdmin.BackGroundEnter = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.BtnAdmin.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
-            this.BtnAdmin.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.BtnAdmin.BorderRadius = 0;
-            this.BtnAdmin.BorderSize = 0;
-            this.BtnAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAdmin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnAdmin.FlatAppearance.BorderSize = 0;
-            this.BtnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BtnAdmin.ForeColor = System.Drawing.Color.White;
-            this.BtnAdmin.Image = global::Login.Properties.Resources.system_administrator_male_32px;
-            this.BtnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAdmin.ImageRight = null;
-            this.BtnAdmin.Location = new System.Drawing.Point(0, 180);
-            this.BtnAdmin.Name = "BtnAdmin";
-            this.BtnAdmin.Size = new System.Drawing.Size(250, 52);
-            this.BtnAdmin.TabIndex = 3;
-            this.BtnAdmin.Tag = "Admin";
-            this.BtnAdmin.Text = "Admin";
-            this.BtnAdmin.TextColor = System.Drawing.Color.White;
-            this.BtnAdmin.UseVisualStyleBackColor = false;
-            this.BtnAdmin.Click += new System.EventHandler(this.BtnAdmin_Click);
-            // 
-            // btnTrangChu
-            // 
-            this.btnTrangChu.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnTrangChu.Backgroundclick = System.Drawing.Color.Empty;
-            this.btnTrangChu.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnTrangChu.BackGroundEnter = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnTrangChu.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
-            this.btnTrangChu.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnTrangChu.BorderRadius = 0;
-            this.btnTrangChu.BorderSize = 0;
-            this.btnTrangChu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTrangChu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTrangChu.FlatAppearance.BorderSize = 0;
-            this.btnTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnTrangChu.ForeColor = System.Drawing.Color.White;
-            this.btnTrangChu.Image = global::Login.Properties.Resources.home_30px;
-            this.btnTrangChu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTrangChu.ImageRight = global::Login.Properties.Resources.access_denied_32px;
-            this.btnTrangChu.Location = new System.Drawing.Point(0, 128);
-            this.btnTrangChu.Name = "btnTrangChu";
-            this.btnTrangChu.Size = new System.Drawing.Size(250, 52);
-            this.btnTrangChu.TabIndex = 2;
-            this.btnTrangChu.Tag = "Trang Chủ";
-            this.btnTrangChu.Text = "Trang Chủ";
-            this.btnTrangChu.TextColor = System.Drawing.Color.White;
-            this.btnTrangChu.UseVisualStyleBackColor = false;
-            this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click_1);
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnimg);
@@ -323,179 +150,53 @@ namespace Login.FromMain
             this.panel1.Size = new System.Drawing.Size(250, 128);
             this.panel1.TabIndex = 1;
             // 
-            // btnimg
-            // 
-            this.btnimg.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnimg.Backgroundclick = System.Drawing.Color.Empty;
-            this.btnimg.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnimg.BackGroundEnter = System.Drawing.Color.Empty;
-            this.btnimg.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
-            this.btnimg.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnimg.BorderRadius = 0;
-            this.btnimg.BorderSize = 0;
-            this.btnimg.FlatAppearance.BorderSize = 0;
-            this.btnimg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnimg.ForeColor = System.Drawing.Color.White;
-            this.btnimg.Image = global::Login.Properties.Resources.school_building_50px;
-            this.btnimg.ImageRight = null;
-            this.btnimg.Location = new System.Drawing.Point(213, 33);
-            this.btnimg.Name = "btnimg";
-            this.btnimg.Size = new System.Drawing.Size(31, 40);
-            this.btnimg.TabIndex = 1;
-            this.btnimg.TextColor = System.Drawing.Color.White;
-            this.btnimg.UseVisualStyleBackColor = false;
-            this.btnimg.Visible = false;
-            // 
             // img
             // 
-            this.img.Image = global::Login.Properties.Resources._263177636_458089092342503_7954596673940287683_n;
-            this.img.Location = new System.Drawing.Point(24, 12);
+            this.img.BackColor = System.Drawing.Color.White;
+            this.img.Image = global::Login.Properties.Resources._261820035_579649566444966_4437106567275194228_n1;
+            this.img.Location = new System.Drawing.Point(47, 3);
             this.img.Name = "img";
-            this.img.Size = new System.Drawing.Size(185, 80);
+            this.img.Size = new System.Drawing.Size(159, 107);
+            this.img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.img.TabIndex = 0;
             this.img.TabStop = false;
             // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.Backgroundclick = System.Drawing.Color.Empty;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BackGroundEnter = System.Drawing.Color.Red;
-            this.rjButton1.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 0;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rjButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Image = global::Login.Properties.Resources.Logout_26px;
-            this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton1.ImageRight = null;
-            this.rjButton1.Location = new System.Drawing.Point(0, 660);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(250, 39);
-            this.rjButton1.TabIndex = 0;
-            this.rjButton1.Tag = "Thoát";
-            this.rjButton1.Text = "Thoát";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
-            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.btnDropCreen);
             this.panel2.Controls.Add(this.pictureBox5);
-            this.panel2.Controls.Add(this.btnZoomCreen);
             this.panel2.Controls.Add(this.BntMenu);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.BtnThoat);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(250, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(990, 48);
             this.panel2.TabIndex = 11;
-            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+      
+
             // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.White;
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox6.Location = new System.Drawing.Point(810, 0);
+            this.pictureBox6.Location = new System.Drawing.Point(870, 0);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(3, 48);
             this.pictureBox6.TabIndex = 9;
             this.pictureBox6.TabStop = false;
             // 
-            // btnDropCreen
-            // 
-            this.btnDropCreen.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnDropCreen.Backgroundclick = System.Drawing.Color.Empty;
-            this.btnDropCreen.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnDropCreen.BackGroundEnter = System.Drawing.Color.Red;
-            this.btnDropCreen.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
-            this.btnDropCreen.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnDropCreen.BorderRadius = 0;
-            this.btnDropCreen.BorderSize = 0;
-            this.btnDropCreen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDropCreen.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnDropCreen.FlatAppearance.BorderSize = 0;
-            this.btnDropCreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDropCreen.ForeColor = System.Drawing.Color.White;
-            this.btnDropCreen.Image = global::Login.Properties.Resources.subtract_32px1;
-            this.btnDropCreen.ImageRight = null;
-            this.btnDropCreen.Location = new System.Drawing.Point(813, 0);
-            this.btnDropCreen.Name = "btnDropCreen";
-            this.btnDropCreen.Size = new System.Drawing.Size(57, 48);
-            this.btnDropCreen.TabIndex = 8;
-            this.btnDropCreen.TextColor = System.Drawing.Color.White;
-            this.btnDropCreen.UseVisualStyleBackColor = false;
-            this.btnDropCreen.Click += new System.EventHandler(this.btnDropCreen_Click);
-            // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.White;
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox5.Location = new System.Drawing.Point(870, 0);
+            this.pictureBox5.Location = new System.Drawing.Point(930, 0);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(3, 48);
             this.pictureBox5.TabIndex = 7;
             this.pictureBox5.TabStop = false;
-            // 
-            // btnZoomCreen
-            // 
-            this.btnZoomCreen.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnZoomCreen.Backgroundclick = System.Drawing.Color.Empty;
-            this.btnZoomCreen.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnZoomCreen.BackGroundEnter = System.Drawing.Color.Red;
-            this.btnZoomCreen.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
-            this.btnZoomCreen.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnZoomCreen.BorderRadius = 0;
-            this.btnZoomCreen.BorderSize = 0;
-            this.btnZoomCreen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnZoomCreen.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnZoomCreen.FlatAppearance.BorderSize = 0;
-            this.btnZoomCreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnZoomCreen.ForeColor = System.Drawing.Color.White;
-            this.btnZoomCreen.Image = global::Login.Properties.Resources._1;
-            this.btnZoomCreen.ImageRight = null;
-            this.btnZoomCreen.Location = new System.Drawing.Point(873, 0);
-            this.btnZoomCreen.Name = "btnZoomCreen";
-            this.btnZoomCreen.Size = new System.Drawing.Size(57, 48);
-            this.btnZoomCreen.TabIndex = 6;
-            this.btnZoomCreen.TextColor = System.Drawing.Color.White;
-            this.btnZoomCreen.UseVisualStyleBackColor = false;
-            this.btnZoomCreen.Click += new System.EventHandler(this.btnZoomCreen_Click);
-            // 
-            // BntMenu
-            // 
-            this.BntMenu.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.BntMenu.Backgroundclick = System.Drawing.Color.Empty;
-            this.BntMenu.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.BntMenu.BackGroundEnter = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BntMenu.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
-            this.BntMenu.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.BntMenu.BorderRadius = 0;
-            this.BntMenu.BorderSize = 0;
-            this.BntMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BntMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.BntMenu.FlatAppearance.BorderSize = 0;
-            this.BntMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BntMenu.ForeColor = System.Drawing.Color.White;
-            this.BntMenu.Image = global::Login.Properties.Resources.arrow_pointing_left_32px;
-            this.BntMenu.ImageRight = null;
-            this.BntMenu.Location = new System.Drawing.Point(3, 0);
-            this.BntMenu.Name = "BntMenu";
-            this.BntMenu.Size = new System.Drawing.Size(54, 48);
-            this.BntMenu.TabIndex = 4;
-            this.BntMenu.TextColor = System.Drawing.Color.White;
-            this.BntMenu.UseVisualStyleBackColor = false;
-            this.BntMenu.Click += new System.EventHandler(this.BntMenu_Click);
             // 
             // pictureBox2
             // 
@@ -507,44 +208,9 @@ namespace Login.FromMain
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Location = new System.Drawing.Point(930, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(3, 48);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // BtnThoat
-            // 
-            this.BtnThoat.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.BtnThoat.Backgroundclick = System.Drawing.Color.Empty;
-            this.BtnThoat.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.BtnThoat.BackGroundEnter = System.Drawing.Color.Red;
-            this.BtnThoat.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
-            this.BtnThoat.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.BtnThoat.BorderRadius = 0;
-            this.BtnThoat.BorderSize = 0;
-            this.BtnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnThoat.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BtnThoat.FlatAppearance.BorderSize = 0;
-            this.BtnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnThoat.ForeColor = System.Drawing.Color.White;
-            this.BtnThoat.Image = global::Login.Properties.Resources.close_window_32px;
-            this.BtnThoat.ImageRight = null;
-            this.BtnThoat.Location = new System.Drawing.Point(933, 0);
-            this.BtnThoat.Name = "BtnThoat";
-            this.BtnThoat.Size = new System.Drawing.Size(57, 48);
-            this.BtnThoat.TabIndex = 1;
-            this.BtnThoat.TextColor = System.Drawing.Color.White;
-            this.BtnThoat.UseVisualStyleBackColor = false;
-            this.BtnThoat.Click += new System.EventHandler(this.BtnThoat_Click_1);
-            // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Controls.Add(this.lblLoginName);
             this.panel3.Controls.Add(this.lblDate);
@@ -585,21 +251,343 @@ namespace Login.FromMain
             this.lblDate.Size = new System.Drawing.Size(337, 20);
             this.lblDate.TabIndex = 0;
             // 
-            // tabControl1
+            // tabMain
             // 
-            this.tabControl1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.tabControl1.CanReorderTabs = true;
-            this.tabControl1.CloseButtonOnTabsVisible = true;
-            this.tabControl1.CloseButtonPosition = DevComponents.DotNetBar.eTabCloseButtonPosition.Right;
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(250, 48);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedTabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.tabControl1.SelectedTabIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(990, 662);
-            this.tabControl1.TabIndex = 16;
-            this.tabControl1.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
-            this.tabControl1.Text = "tabControl1";
+            this.tabMain.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tabMain.CanReorderTabs = true;
+            this.tabMain.CloseButtonOnTabsVisible = true;
+            this.tabMain.CloseButtonPosition = DevComponents.DotNetBar.eTabCloseButtonPosition.Right;
+            this.tabMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabMain.Location = new System.Drawing.Point(250, 48);
+            this.tabMain.Name = "tabMain";
+            this.tabMain.SelectedTabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.tabMain.SelectedTabIndex = 0;
+            this.tabMain.Size = new System.Drawing.Size(990, 662);
+            this.tabMain.TabIndex = 16;
+            this.tabMain.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
+            this.tabMain.Text = "tabControl1";
+            this.tabMain.TabItemClose += new DevComponents.DotNetBar.TabStrip.UserActionEventHandler(this.tabMain_TabItemClose);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox3.Location = new System.Drawing.Point(250, 48);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(3, 662);
+            this.pictureBox3.TabIndex = 20;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.White;
+            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox7.Location = new System.Drawing.Point(253, 706);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(987, 4);
+            this.pictureBox7.TabIndex = 21;
+            this.pictureBox7.TabStop = false;
+            // 
+            // btnDropCreen
+            // 
+            this.btnDropCreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnDropCreen.Backgroundclick = System.Drawing.Color.Empty;
+            this.btnDropCreen.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnDropCreen.BackGroundEnter = System.Drawing.Color.Red;
+            this.btnDropCreen.BackGroundRelease = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnDropCreen.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnDropCreen.BorderRadius = 0;
+            this.btnDropCreen.BorderSize = 0;
+            this.btnDropCreen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDropCreen.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnDropCreen.FlatAppearance.BorderSize = 0;
+            this.btnDropCreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDropCreen.ForeColor = System.Drawing.Color.White;
+            this.btnDropCreen.Image = global::Login.Properties.Resources.subtract_32px1;
+            this.btnDropCreen.ImageRight = null;
+            this.btnDropCreen.Location = new System.Drawing.Point(873, 0);
+            this.btnDropCreen.Name = "btnDropCreen";
+            this.btnDropCreen.Size = new System.Drawing.Size(57, 48);
+            this.btnDropCreen.TabIndex = 8;
+            this.btnDropCreen.TextColor = System.Drawing.Color.White;
+            this.btnDropCreen.UseVisualStyleBackColor = false;
+            this.btnDropCreen.Click += new System.EventHandler(this.btnDropCreen_Click);
+            // 
+            // BntMenu
+            // 
+            this.BntMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BntMenu.Backgroundclick = System.Drawing.Color.Empty;
+            this.BntMenu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BntMenu.BackGroundEnter = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BntMenu.BackGroundRelease = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BntMenu.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.BntMenu.BorderRadius = 0;
+            this.BntMenu.BorderSize = 0;
+            this.BntMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BntMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.BntMenu.FlatAppearance.BorderSize = 0;
+            this.BntMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BntMenu.ForeColor = System.Drawing.Color.White;
+            this.BntMenu.Image = global::Login.Properties.Resources.arrow_pointing_left_32px;
+            this.BntMenu.ImageRight = null;
+            this.BntMenu.Location = new System.Drawing.Point(3, 0);
+            this.BntMenu.Name = "BntMenu";
+            this.BntMenu.Size = new System.Drawing.Size(54, 48);
+            this.BntMenu.TabIndex = 4;
+            this.BntMenu.TextColor = System.Drawing.Color.White;
+            this.BntMenu.UseVisualStyleBackColor = false;
+            this.BntMenu.Click += new System.EventHandler(this.BntMenu_Click);
+            // 
+            // BtnThoat
+            // 
+            this.BtnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnThoat.Backgroundclick = System.Drawing.Color.Empty;
+            this.BtnThoat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnThoat.BackGroundEnter = System.Drawing.Color.Red;
+            this.BtnThoat.BackGroundRelease = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnThoat.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.BtnThoat.BorderRadius = 0;
+            this.BtnThoat.BorderSize = 0;
+            this.BtnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnThoat.Dock = System.Windows.Forms.DockStyle.Right;
+            this.BtnThoat.FlatAppearance.BorderSize = 0;
+            this.BtnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnThoat.ForeColor = System.Drawing.Color.White;
+            this.BtnThoat.Image = global::Login.Properties.Resources.close_window_32px;
+            this.BtnThoat.ImageRight = null;
+            this.BtnThoat.Location = new System.Drawing.Point(933, 0);
+            this.BtnThoat.Name = "BtnThoat";
+            this.BtnThoat.Size = new System.Drawing.Size(57, 48);
+            this.BtnThoat.TabIndex = 1;
+            this.BtnThoat.TextColor = System.Drawing.Color.White;
+            this.BtnThoat.UseVisualStyleBackColor = false;
+            this.BtnThoat.Click += new System.EventHandler(this.BtnThoat_Click_1);
+            // 
+            // BtnQuanLiSinhVien
+            // 
+            this.BtnQuanLiSinhVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnQuanLiSinhVien.Backgroundclick = System.Drawing.Color.Empty;
+            this.BtnQuanLiSinhVien.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnQuanLiSinhVien.BackGroundEnter = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.BtnQuanLiSinhVien.BackGroundRelease = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnQuanLiSinhVien.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.BtnQuanLiSinhVien.BorderRadius = 0;
+            this.BtnQuanLiSinhVien.BorderSize = 0;
+            this.BtnQuanLiSinhVien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnQuanLiSinhVien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnQuanLiSinhVien.FlatAppearance.BorderSize = 0;
+            this.BtnQuanLiSinhVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnQuanLiSinhVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BtnQuanLiSinhVien.ForeColor = System.Drawing.Color.White;
+            this.BtnQuanLiSinhVien.Image = global::Login.Properties.Resources.management_30px;
+            this.BtnQuanLiSinhVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnQuanLiSinhVien.ImageRight = global::Login.Properties.Resources.access_denied_32px;
+            this.BtnQuanLiSinhVien.Location = new System.Drawing.Point(0, 388);
+            this.BtnQuanLiSinhVien.Name = "BtnQuanLiSinhVien";
+            this.BtnQuanLiSinhVien.Size = new System.Drawing.Size(250, 52);
+            this.BtnQuanLiSinhVien.TabIndex = 8;
+            this.BtnQuanLiSinhVien.Tag = " Quản Lí Sinh Viên";
+            this.BtnQuanLiSinhVien.Text = "Quản Lí Sinh Viên";
+            this.BtnQuanLiSinhVien.TextColor = System.Drawing.Color.White;
+            this.BtnQuanLiSinhVien.UseVisualStyleBackColor = false;
+            this.BtnQuanLiSinhVien.Click += new System.EventHandler(this.BtnQuanLiSinhVien_Click);
+            // 
+            // BtnQuanLiLop
+            // 
+            this.BtnQuanLiLop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnQuanLiLop.Backgroundclick = System.Drawing.Color.Empty;
+            this.BtnQuanLiLop.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnQuanLiLop.BackGroundEnter = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.BtnQuanLiLop.BackGroundRelease = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnQuanLiLop.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.BtnQuanLiLop.BorderRadius = 0;
+            this.BtnQuanLiLop.BorderSize = 0;
+            this.BtnQuanLiLop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnQuanLiLop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnQuanLiLop.FlatAppearance.BorderSize = 0;
+            this.BtnQuanLiLop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnQuanLiLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BtnQuanLiLop.ForeColor = System.Drawing.Color.White;
+            this.BtnQuanLiLop.Image = global::Login.Properties.Resources.manager_30px;
+            this.BtnQuanLiLop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnQuanLiLop.ImageRight = global::Login.Properties.Resources.access_denied_32px;
+            this.BtnQuanLiLop.Location = new System.Drawing.Point(0, 336);
+            this.BtnQuanLiLop.Name = "BtnQuanLiLop";
+            this.BtnQuanLiLop.Size = new System.Drawing.Size(250, 52);
+            this.BtnQuanLiLop.TabIndex = 7;
+            this.BtnQuanLiLop.Tag = "Quản Lí Lớp";
+            this.BtnQuanLiLop.Text = "Quản Lí Lớp";
+            this.BtnQuanLiLop.TextColor = System.Drawing.Color.White;
+            this.BtnQuanLiLop.UseVisualStyleBackColor = false;
+            this.BtnQuanLiLop.Click += new System.EventHandler(this.BtnQuanLiLop_Click);
+            // 
+            // BtnThongtinBanThan
+            // 
+            this.BtnThongtinBanThan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnThongtinBanThan.Backgroundclick = System.Drawing.Color.Empty;
+            this.BtnThongtinBanThan.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnThongtinBanThan.BackGroundEnter = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.BtnThongtinBanThan.BackGroundRelease = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnThongtinBanThan.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.BtnThongtinBanThan.BorderRadius = 0;
+            this.BtnThongtinBanThan.BorderSize = 0;
+            this.BtnThongtinBanThan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnThongtinBanThan.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnThongtinBanThan.FlatAppearance.BorderSize = 0;
+            this.BtnThongtinBanThan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnThongtinBanThan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BtnThongtinBanThan.ForeColor = System.Drawing.Color.White;
+            this.BtnThongtinBanThan.Image = global::Login.Properties.Resources.NFT_User_30px;
+            this.BtnThongtinBanThan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnThongtinBanThan.ImageRight = global::Login.Properties.Resources.access_denied_32px;
+            this.BtnThongtinBanThan.Location = new System.Drawing.Point(0, 284);
+            this.BtnThongtinBanThan.Name = "BtnThongtinBanThan";
+            this.BtnThongtinBanThan.Size = new System.Drawing.Size(250, 52);
+            this.BtnThongtinBanThan.TabIndex = 6;
+            this.BtnThongtinBanThan.Tag = "    Thông Tin Bản Thân";
+            this.BtnThongtinBanThan.Text = "Thông Tin Bản Thân";
+            this.BtnThongtinBanThan.TextColor = System.Drawing.Color.White;
+            this.BtnThongtinBanThan.UseVisualStyleBackColor = false;
+            this.BtnThongtinBanThan.Click += new System.EventHandler(this.BtnThongtinBanThan_Click);
+            // 
+            // BtndoimatKhau
+            // 
+            this.BtndoimatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtndoimatKhau.Backgroundclick = System.Drawing.Color.Empty;
+            this.BtndoimatKhau.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtndoimatKhau.BackGroundEnter = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.BtndoimatKhau.BackGroundRelease = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtndoimatKhau.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.BtndoimatKhau.BorderRadius = 0;
+            this.BtndoimatKhau.BorderSize = 0;
+            this.BtndoimatKhau.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtndoimatKhau.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtndoimatKhau.FlatAppearance.BorderSize = 0;
+            this.BtndoimatKhau.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtndoimatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BtndoimatKhau.ForeColor = System.Drawing.Color.White;
+            this.BtndoimatKhau.Image = global::Login.Properties.Resources.Bitcoin_Key_30px;
+            this.BtndoimatKhau.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtndoimatKhau.ImageRight = global::Login.Properties.Resources.access_denied_32px;
+            this.BtndoimatKhau.Location = new System.Drawing.Point(0, 232);
+            this.BtndoimatKhau.Name = "BtndoimatKhau";
+            this.BtndoimatKhau.Size = new System.Drawing.Size(250, 52);
+            this.BtndoimatKhau.TabIndex = 4;
+            this.BtndoimatKhau.Tag = "Đổi Mật Khẩu";
+            this.BtndoimatKhau.Text = "Đổi Mật Khẩu";
+            this.BtndoimatKhau.TextColor = System.Drawing.Color.White;
+            this.BtndoimatKhau.UseVisualStyleBackColor = false;
+            this.BtndoimatKhau.Click += new System.EventHandler(this.BtndoimatKhau_Click);
+            // 
+            // BtnAdmin
+            // 
+            this.BtnAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnAdmin.Backgroundclick = System.Drawing.Color.Empty;
+            this.BtnAdmin.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnAdmin.BackGroundEnter = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.BtnAdmin.BackGroundRelease = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnAdmin.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.BtnAdmin.BorderRadius = 0;
+            this.BtnAdmin.BorderSize = 0;
+            this.BtnAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAdmin.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnAdmin.FlatAppearance.BorderSize = 0;
+            this.BtnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BtnAdmin.ForeColor = System.Drawing.Color.White;
+            this.BtnAdmin.Image = global::Login.Properties.Resources.system_administrator_male_32px;
+            this.BtnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAdmin.ImageRight = null;
+            this.BtnAdmin.Location = new System.Drawing.Point(0, 180);
+            this.BtnAdmin.Name = "BtnAdmin";
+            this.BtnAdmin.Size = new System.Drawing.Size(250, 52);
+            this.BtnAdmin.TabIndex = 3;
+            this.BtnAdmin.Tag = "Admin";
+            this.BtnAdmin.Text = "Admin";
+            this.BtnAdmin.TextColor = System.Drawing.Color.White;
+            this.BtnAdmin.UseVisualStyleBackColor = false;
+            this.BtnAdmin.Click += new System.EventHandler(this.BtnAdmin_Click);
+            // 
+            // btnTrangChu
+            // 
+            this.btnTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnTrangChu.Backgroundclick = System.Drawing.Color.Empty;
+            this.btnTrangChu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnTrangChu.BackGroundEnter = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnTrangChu.BackGroundRelease = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnTrangChu.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnTrangChu.BorderRadius = 0;
+            this.btnTrangChu.BorderSize = 0;
+            this.btnTrangChu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTrangChu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTrangChu.FlatAppearance.BorderSize = 0;
+            this.btnTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnTrangChu.ForeColor = System.Drawing.Color.White;
+            this.btnTrangChu.Image = global::Login.Properties.Resources.home_30px;
+            this.btnTrangChu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTrangChu.ImageRight = global::Login.Properties.Resources.access_denied_32px;
+            this.btnTrangChu.Location = new System.Drawing.Point(0, 128);
+            this.btnTrangChu.Name = "btnTrangChu";
+            this.btnTrangChu.Size = new System.Drawing.Size(250, 52);
+            this.btnTrangChu.TabIndex = 2;
+            this.btnTrangChu.Tag = "Trang Chủ";
+            this.btnTrangChu.Text = "Trang Chủ";
+            this.btnTrangChu.TextColor = System.Drawing.Color.White;
+            this.btnTrangChu.UseVisualStyleBackColor = false;
+            this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click_1);
+            // 
+            // btnimg
+            // 
+            this.btnimg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnimg.Backgroundclick = System.Drawing.Color.Empty;
+            this.btnimg.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnimg.BackGroundEnter = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnimg.BackGroundRelease = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnimg.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnimg.BorderRadius = 0;
+            this.btnimg.BorderSize = 0;
+            this.btnimg.FlatAppearance.BorderSize = 0;
+            this.btnimg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnimg.ForeColor = System.Drawing.Color.White;
+            this.btnimg.Image = global::Login.Properties.Resources.logo3;
+            this.btnimg.ImageRight = null;
+            this.btnimg.Location = new System.Drawing.Point(160, 23);
+            this.btnimg.Name = "btnimg";
+            this.btnimg.Size = new System.Drawing.Size(84, 78);
+            this.btnimg.TabIndex = 1;
+            this.btnimg.TextColor = System.Drawing.Color.White;
+            this.btnimg.UseVisualStyleBackColor = false;
+            this.btnimg.Visible = false;
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.rjButton1.Backgroundclick = System.Drawing.Color.Empty;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.rjButton1.BackGroundEnter = System.Drawing.Color.Red;
+            this.rjButton1.BackGroundRelease = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 0;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rjButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Image = global::Login.Properties.Resources.Logout_26px;
+            this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton1.ImageRight = null;
+            this.rjButton1.Location = new System.Drawing.Point(0, 660);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(250, 39);
+            this.rjButton1.TabIndex = 0;
+            this.rjButton1.Tag = "Thoát";
+            this.rjButton1.Text = "Thoát";
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
             // DropMenuHeThong
             // 
@@ -723,7 +711,9 @@ namespace Login.FromMain
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1240, 749);
             this.ControlBox = false;
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.tabMain);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.PanelMenu);
@@ -739,10 +729,11 @@ namespace Login.FromMain
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabMain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.DropMenuHeThong.ResumeLayout(false);
             this.DropMenuSinhVien.ResumeLayout(false);
             this.DropMenuGiaoVien.ResumeLayout(false);
@@ -778,17 +769,15 @@ namespace Login.FromMain
         private System.Windows.Forms.Label lblLoginName;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private CustomControls.RJControls.RJButton BntMenu;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox6;
         private CustomControls.RJControls.RJButton btnDropCreen;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private CustomControls.RJControls.RJButton btnZoomCreen;
         private CustomControls.RJControls.RJButton rjButton1;
         private CustomControls.RJControls.RJButton btnTrangChu;
         private System.Windows.Forms.Panel panel1;
-        private DevComponents.DotNetBar.TabControl tabControl1;
+        private DevComponents.DotNetBar.TabControl tabMain;
         private CustomControls.RJControls.RJButton BtnQuanLiLop;
         private CustomControls.RJControls.RJButton BtnThongtinBanThan;
         private CustomControls.RJControls.RJButton BtndoimatKhau;
@@ -796,5 +785,7 @@ namespace Login.FromMain
         private CustomControls.RJControls.RJButton BtnQuanLiSinhVien;
         private System.Windows.Forms.PictureBox img;
         private CustomControls.RJControls.RJButton btnimg;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

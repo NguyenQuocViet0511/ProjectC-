@@ -25,7 +25,7 @@ namespace Login.DataUser
                 {
                     for (int i = 0; i < Const.ListUser.Count; i++)
                     {
-                        SW.WriteLine(String.Format("{0},{1},{2},{3},{4},{5}", Const.ListUser[i].MaID1, Const.ListUser[i].HovaTen1, Const.ListUser[i].TenTaiKhoan1, Const.ListUser[i].Matkhau1, Const.ListUser[i].Email1, Const.ListUser[i].Quyen1));
+                        SW.WriteLine(String.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8}", Const.ListUser[i].MaID1, Const.ListUser[i].HovaTen1, Const.ListUser[i].GioiTinh1, Const.ListUser[i].Ngaysinh1, Const.ListUser[i].TenTaiKhoan1, Const.ListUser[i].Matkhau1, Const.ListUser[i].Email1, Const.ListUser[i].DiaChi1, Const.ListUser[i].Quyen1));
                     }
                 }
             }
@@ -49,10 +49,13 @@ namespace Login.DataUser
                             user = new User();
                             user.MaID1 = Convert.ToInt32(Tach[0]);
                             user.HovaTen1 = Tach[1];
-                            user.TenTaiKhoan1 = Tach[2];
-                            user.Matkhau1 = Tach[3];
-                            user.Email1 = Tach[4];
-                            user.Quyen1 = Tach[5];
+                            user.GioiTinh1 = Tach[2];
+                            user.Ngaysinh1 = Tach[3];
+                            user.TenTaiKhoan1 = Tach[4];
+                            user.Matkhau1 = Tach[5];
+                            user.Email1 = Tach[6];
+                            user.DiaChi1 = Tach[7];
+                            user.Quyen1 = Tach[8];
                             
                             Const.ListUser.Add(user);
                         }

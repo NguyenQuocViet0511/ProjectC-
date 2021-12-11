@@ -90,6 +90,7 @@ namespace Login
             {
                 if(Const.ListUser[i].TenTaiKhoan1.Equals(TenTaiKhoan) && Const.ListUser[i].Matkhau1.Equals(MatKhau))
                 {
+                    Const.UserLogin = Const.ListUser[i];
                     return true;
                 }
             }
