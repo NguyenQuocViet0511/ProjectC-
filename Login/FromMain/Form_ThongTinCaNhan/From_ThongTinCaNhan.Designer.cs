@@ -73,35 +73,37 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1155, 40);
+            this.panel3.Size = new System.Drawing.Size(1155, 70);
             this.panel3.TabIndex = 30;
             // 
             // label6
             // 
+            this.label6.BackColor = System.Drawing.Color.MidnightBlue;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(39, 0);
+            this.label6.Location = new System.Drawing.Point(81, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(1116, 36);
+            this.label6.Size = new System.Drawing.Size(1074, 66);
             this.label6.TabIndex = 23;
             this.label6.Text = "Thông Tin Cá Nhân";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
+            this.label5.BackColor = System.Drawing.Color.MidnightBlue;
             this.label5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label5.Image = global::Login.Properties.Resources.user_30px;
+            this.label5.Image = global::Login.Properties.Resources.NFT_User_30px;
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 36);
+            this.label5.Size = new System.Drawing.Size(81, 66);
             this.label5.TabIndex = 22;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 36);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 66);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(1155, 4);
             this.pictureBox3.TabIndex = 20;
@@ -110,13 +112,15 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             // panel4
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.pictureBox5);
             this.panel4.Controls.Add(this.pictureBox9);
             this.panel4.Controls.Add(this.pictureBox8);
             this.panel4.Controls.Add(this.pictureBox7);
             this.panel4.Controls.Add(this.pictureBox6);
             this.panel4.Controls.Add(this.panel2);
-            this.panel4.Location = new System.Drawing.Point(265, 62);
+            this.panel4.Location = new System.Drawing.Point(265, 47);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(617, 646);
             this.panel4.TabIndex = 2;
@@ -125,7 +129,7 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             // 
             this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.Image = global::Login.Properties.Resources.user_100px1;
-            this.pictureBox5.Location = new System.Drawing.Point(259, 18);
+            this.pictureBox5.Location = new System.Drawing.Point(258, 17);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(100, 100);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -138,7 +142,7 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox9.Location = new System.Drawing.Point(3, 0);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(611, 3);
+            this.pictureBox9.Size = new System.Drawing.Size(609, 3);
             this.pictureBox9.TabIndex = 5;
             this.pictureBox9.TabStop = false;
             // 
@@ -146,9 +150,9 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.White;
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox8.Location = new System.Drawing.Point(3, 643);
+            this.pictureBox8.Location = new System.Drawing.Point(3, 641);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(611, 3);
+            this.pictureBox8.Size = new System.Drawing.Size(609, 3);
             this.pictureBox8.TabIndex = 4;
             this.pictureBox8.TabStop = false;
             // 
@@ -156,9 +160,9 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.White;
             this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox7.Location = new System.Drawing.Point(614, 0);
+            this.pictureBox7.Location = new System.Drawing.Point(612, 0);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(3, 646);
+            this.pictureBox7.Size = new System.Drawing.Size(3, 644);
             this.pictureBox7.TabIndex = 3;
             this.pictureBox7.TabStop = false;
             // 
@@ -168,7 +172,7 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox6.Location = new System.Drawing.Point(0, 0);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(3, 646);
+            this.pictureBox6.Size = new System.Drawing.Size(3, 644);
             this.pictureBox6.TabIndex = 2;
             this.pictureBox6.TabStop = false;
             // 
@@ -187,7 +191,7 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.btn);
-            this.panel2.Location = new System.Drawing.Point(35, 124);
+            this.panel2.Location = new System.Drawing.Point(34, 123);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(549, 491);
             this.panel2.TabIndex = 0;
@@ -289,11 +293,11 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             // 
             // btn
             // 
-            this.btn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btn.Backgroundclick = System.Drawing.Color.Red;
-            this.btn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btn.BackGroundEnter = System.Drawing.Color.MediumSlateBlue;
-            this.btn.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
+            this.btn.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btn.Backgroundclick = System.Drawing.Color.MidnightBlue;
+            this.btn.BackgroundColor = System.Drawing.Color.MidnightBlue;
+            this.btn.BackGroundEnter = System.Drawing.Color.Red;
+            this.btn.BackGroundRelease = System.Drawing.Color.MidnightBlue;
             this.btn.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn.BorderRadius = 0;
             this.btn.BorderSize = 0;
@@ -313,12 +317,12 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 40);
+            this.panel1.Location = new System.Drawing.Point(0, 70);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1155, 838);
+            this.panel1.Size = new System.Drawing.Size(1155, 808);
             this.panel1.TabIndex = 31;
             // 
             // From_ThongTinCaNhan

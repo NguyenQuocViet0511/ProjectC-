@@ -30,7 +30,6 @@ namespace Login.FromMain.Form_DoiMatkhau
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -56,6 +55,7 @@ namespace Login.FromMain.Form_DoiMatkhau
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
@@ -79,59 +79,51 @@ namespace Login.FromMain.Form_DoiMatkhau
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1201, 40);
+            this.panel3.Size = new System.Drawing.Size(1223, 70);
             this.panel3.TabIndex = 10;
-            // 
-            // label6
-            // 
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(39, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(1162, 36);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Đổi Mật Khẩu";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
+            this.label5.BackColor = System.Drawing.Color.MidnightBlue;
             this.label5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label5.Image = global::Login.Properties.Resources.key_26px;
+            this.label5.Image = global::Login.Properties.Resources.key_32px;
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 36);
+            this.label5.Size = new System.Drawing.Size(74, 66);
             this.label5.TabIndex = 22;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 36);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 66);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1201, 4);
+            this.pictureBox3.Size = new System.Drawing.Size(1223, 4);
             this.pictureBox3.TabIndex = 20;
             this.pictureBox3.TabStop = false;
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 40);
+            this.panel1.Location = new System.Drawing.Point(0, 70);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1201, 542);
+            this.panel1.Size = new System.Drawing.Size(1223, 685);
             this.panel1.TabIndex = 11;
             // 
             // panel4
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.pictureBox9);
             this.panel4.Controls.Add(this.pictureBox8);
             this.panel4.Controls.Add(this.pictureBox7);
             this.panel4.Controls.Add(this.pictureBox6);
             this.panel4.Controls.Add(this.panel2);
             this.panel4.Controls.Add(this.pictureBox5);
-            this.panel4.Location = new System.Drawing.Point(280, 21);
+            this.panel4.Location = new System.Drawing.Point(291, 92);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(621, 509);
             this.panel4.TabIndex = 2;
@@ -142,7 +134,7 @@ namespace Login.FromMain.Form_DoiMatkhau
             this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox9.Location = new System.Drawing.Point(3, 0);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(615, 3);
+            this.pictureBox9.Size = new System.Drawing.Size(613, 3);
             this.pictureBox9.TabIndex = 5;
             this.pictureBox9.TabStop = false;
             // 
@@ -150,9 +142,9 @@ namespace Login.FromMain.Form_DoiMatkhau
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.White;
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox8.Location = new System.Drawing.Point(3, 506);
+            this.pictureBox8.Location = new System.Drawing.Point(3, 504);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(615, 3);
+            this.pictureBox8.Size = new System.Drawing.Size(613, 3);
             this.pictureBox8.TabIndex = 4;
             this.pictureBox8.TabStop = false;
             // 
@@ -160,9 +152,9 @@ namespace Login.FromMain.Form_DoiMatkhau
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.White;
             this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox7.Location = new System.Drawing.Point(618, 0);
+            this.pictureBox7.Location = new System.Drawing.Point(616, 0);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(3, 509);
+            this.pictureBox7.Size = new System.Drawing.Size(3, 507);
             this.pictureBox7.TabIndex = 3;
             this.pictureBox7.TabStop = false;
             // 
@@ -172,7 +164,7 @@ namespace Login.FromMain.Form_DoiMatkhau
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox6.Location = new System.Drawing.Point(0, 0);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(3, 509);
+            this.pictureBox6.Size = new System.Drawing.Size(3, 507);
             this.pictureBox6.TabIndex = 2;
             this.pictureBox6.TabStop = false;
             // 
@@ -180,7 +172,6 @@ namespace Login.FromMain.Form_DoiMatkhau
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.btndoimatkhau);
             this.panel2.Controls.Add(this.lblmatkhaucu);
             this.panel2.Controls.Add(this.lblnhaplaimatkhau);
@@ -196,18 +187,18 @@ namespace Login.FromMain.Form_DoiMatkhau
             this.panel2.Controls.Add(this.txtmatkhaumoi);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(39, 133);
+            this.panel2.Location = new System.Drawing.Point(38, 132);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(549, 345);
             this.panel2.TabIndex = 0;
             // 
             // btndoimatkhau
             // 
-            this.btndoimatkhau.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btndoimatkhau.Backgroundclick = System.Drawing.Color.Red;
-            this.btndoimatkhau.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btndoimatkhau.BackGroundEnter = System.Drawing.Color.MediumSlateBlue;
-            this.btndoimatkhau.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
+            this.btndoimatkhau.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btndoimatkhau.Backgroundclick = System.Drawing.Color.MidnightBlue;
+            this.btndoimatkhau.BackgroundColor = System.Drawing.Color.MidnightBlue;
+            this.btndoimatkhau.BackGroundEnter = System.Drawing.Color.Red;
+            this.btndoimatkhau.BackGroundRelease = System.Drawing.Color.MidnightBlue;
             this.btndoimatkhau.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btndoimatkhau.BorderRadius = 0;
             this.btndoimatkhau.BorderSize = 0;
@@ -257,7 +248,7 @@ namespace Login.FromMain.Form_DoiMatkhau
             this.txtmatkhaucu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtmatkhaucu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtmatkhaucu.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtmatkhaucu.Location = new System.Drawing.Point(59, 23);
+            this.txtmatkhaucu.Location = new System.Drawing.Point(61, 25);
             this.txtmatkhaucu.Name = "txtmatkhaucu";
             this.txtmatkhaucu.Size = new System.Drawing.Size(459, 32);
             this.txtmatkhaucu.TabIndex = 25;
@@ -372,19 +363,32 @@ namespace Login.FromMain.Form_DoiMatkhau
             // 
             this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.Image = global::Login.Properties.Resources.short_hair_girl_key_100px;
-            this.pictureBox5.Location = new System.Drawing.Point(268, 11);
+            this.pictureBox5.Location = new System.Drawing.Point(267, 10);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(100, 100);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
             // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.MidnightBlue;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(74, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(1149, 66);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Đổi Mật Khẩu";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // From_doiMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1201, 582);
+            this.ClientSize = new System.Drawing.Size(1223, 755);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
@@ -413,7 +417,6 @@ namespace Login.FromMain.Form_DoiMatkhau
         #endregion
 
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
@@ -439,5 +442,6 @@ namespace Login.FromMain.Form_DoiMatkhau
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -27,5 +27,10 @@ namespace Login.MainHeThong
         {
 
         }
+
+        public static implicit operator From_quanLiTaiKhoan(From_Main v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

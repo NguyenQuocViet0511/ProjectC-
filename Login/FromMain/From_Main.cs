@@ -52,6 +52,7 @@ namespace Login.FromMain
                 foreach (Button menuButton in PanelMenu.Controls.OfType<Button>())
                 {
                     menuButton.Text = "";
+                    btnimg.Image = global::Login.Properties.Resources.logo3;
                     btnimg.Dock = DockStyle.Top;
                     btnimg.Visible = true;
                     btnimg.Padding = new System.Windows.Forms.Padding(0,10,0,0);
@@ -206,6 +207,7 @@ namespace Login.FromMain
             {
                 MenuBar();
             }
+            Trangchu();
           
         }
 
@@ -215,6 +217,7 @@ namespace Login.FromMain
             {
                 MenuBar();
             }
+            admin();
         }
 
         private void BtndoimatKhau_Click(object sender, EventArgs e)
@@ -251,16 +254,7 @@ namespace Login.FromMain
             }
         }
 
-        private void tabMain_TabItemClose(object sender, TabStripActionEventArgs e)
-        {
-            String Result = MyMessageBox.ShowBox("Bạn Có Muốn Thoát Không ", "Thông Báo");
-            if(Result.Equals("1"))
-            {
-                TabItem tab = tabMain.SelectedTab;
-                tabMain.Tabs.Remove(tab);
-            }
-
-        }
+   
         #region TabControl 
         bool TrangThaiMo = false;
         public delegate void _dedongtab();
@@ -324,7 +318,60 @@ namespace Login.FromMain
                 tabMain.SelectedTabIndex = tabMain.Tabs.Count - 1;
             }
         }
+        //quan li tai khoan
+        private void admin()
+        {
 
+            this.TrangThaiMo = true;
+            this.tieudeTab = "Quản Lí Tài Khoản";
+            if (!CheckOpenTab(tieudeTab))
+            {
+                TabItem tab = tabMain.CreateTab(tieudeTab);
+                tab.Name = "Quản Lí Tài Khoản";
+                From_quanLiTaiKhoan from_QuanLiTaiKhoan = new From_quanLiTaiKhoan()
+                {
+
+                    from_QuanLiTaiKhoan = this,
+                    TopLevel = false,
+                    Dock = DockStyle.Fill
+                };
+                tab.AttachedControl.Controls.Add(from_QuanLiTaiKhoan);
+                from_QuanLiTaiKhoan.Show();
+                tabMain.SelectedTabIndex = tabMain.Tabs.Count - 1;
+            }
+        }
+        //trang chu
+        private void Trangchu()
+        {
+
+            this.TrangThaiMo = true;
+            this.tieudeTab = "Trang Chủ";
+            if (!CheckOpenTab(tieudeTab))
+            {
+                TabItem tab = tabMain.CreateTab(tieudeTab);
+                tab.Name = "Trang Chủ";
+                From_TrangChu from_TrangChu = new From_TrangChu()
+                {
+
+                    from_TrangChu = this,
+                    TopLevel = false,
+                    Dock = DockStyle.Fill
+                };
+                tab.AttachedControl.Controls.Add(from_TrangChu);
+                from_TrangChu.Show();
+                tabMain.SelectedTabIndex = tabMain.Tabs.Count - 1;
+            }
+        }
         #endregion
+
+        private void tabMain_TabItemClose_1(object sender, TabStripActionEventArgs e)
+        {
+            String Result = MyMessageBox.ShowBox("Bạn Có Muốn Thoát Không ", "Thông Báo");
+            if (Result.Equals("1"))
+            {
+                TabItem tab = tabMain.SelectedTab;
+                tabMain.Tabs.Remove(tab);
+            }
+        }
     }
 }
