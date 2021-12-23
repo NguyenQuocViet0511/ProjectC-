@@ -138,7 +138,7 @@ namespace Login.FromMain
                 DropMenuHethong.Show(btnhethong, btnhethong.Width, 0);
             }
 
-
+            
         }
 
         private void btnsinhvien_Click(object sender, EventArgs e)

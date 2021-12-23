@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -89,6 +90,12 @@
     <Compile Include="Fromlogin\Form_QuenMatKhau.Designer.cs">
       <DependentUpon>Form_QuenMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="FromMain\Frm_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromMain\Frm_Admin.Designer.cs">
+      <DependentUpon>Frm_Admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FromMain\From_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Fromlogin\Form_QuenMatKhau.resx">
       <DependentUpon>Form_QuenMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromMain\Frm_Admin.resx">
+      <DependentUpon>Frm_Admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FromMain\From_Main.resx">
       <DependentUpon>From_Main.cs</DependentUpon>
