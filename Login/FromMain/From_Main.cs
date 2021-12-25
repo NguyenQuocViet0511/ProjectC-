@@ -141,7 +141,7 @@ namespace Login.FromMain
         {
             //Add();
 
-            }
+        }
 
    
 
@@ -274,6 +274,18 @@ namespace Login.FromMain
             }
             return false;
         }
+        //
+        private void Dongtab()
+        {
+            foreach (TabItem item in tabMain.Tabs)
+            {
+                if (item.IsSelected)
+                {
+                    tabMain.Tabs.Remove(item);
+                    return;
+                }
+            }
+        }
         //Tab doi Mat Khau
         private void DoiMatkhau()
         {
@@ -353,6 +365,7 @@ namespace Login.FromMain
                 From_TrangChu from_TrangChu = new From_TrangChu()
                 {
 
+                    motabSV = new From_TrangChu._MotabSV(motabSV),
                     from_TrangChu = this,
                     TopLevel = false,
                     Dock = DockStyle.Fill
@@ -373,5 +386,21 @@ namespace Login.FromMain
                 tabMain.Tabs.Remove(tab);
             }
         }
+
+
+        //mo tab
+        public From_Main Frm;
+        public delegate void _MotabSV();
+        //
+
+       
+
+        private void motabSV()
+        {
+            ThongtincaNhan();
+        }
+        
+
+        //
     }
 }
