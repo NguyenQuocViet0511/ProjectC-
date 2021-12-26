@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,7 +23,11 @@ namespace Login.MyCustome
         {
             InitializeComponent();
         }
-
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+      
         public static string ShowBox(string txtMessage)
         {
             newMessageBox = new MyMessageBox();
@@ -95,19 +100,12 @@ namespace Login.MyCustome
             newMessageBox.Dispose();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+       
+
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 

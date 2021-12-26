@@ -71,6 +71,7 @@ namespace Login.MyCustome
             this.pictureBox1.Size = new System.Drawing.Size(416, 25);
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
             // lblMessage
             // 

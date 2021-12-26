@@ -82,18 +82,22 @@ namespace Login.MainHeThong
         //motab
         public delegate void _MotabSV();
         public _MotabSV motabSV;
+        //
+        public delegate void _MotabAdmin();
+        public _MotabAdmin motabAdmin;
+        //
         private void lblarow2_Click(object sender, EventArgs e)
         {
             motabSV();
         }
-        //LoadData
-      
+        private void lblarow_Click(object sender, EventArgs e)
+        {
+            motabAdmin();
+        }
 
-    
 
         private void txttimkiem_TextChanged(object sender, EventArgs e)
-        {
-          
+        {      
 
             BindingSource bindingSource = new BindingSource();
 
@@ -113,6 +117,8 @@ namespace Login.MainHeThong
             DataGripSV.DataSource = myObjList;
 
         }
+
+      
 
 
 

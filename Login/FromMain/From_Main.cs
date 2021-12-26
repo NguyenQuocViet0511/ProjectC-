@@ -27,7 +27,7 @@ namespace Login.FromMain
         {
           
             InitializeComponent();
-            //Add();
+            Trangchu();
           
             MenuBar();
             timeDate.Enabled = true;
@@ -342,7 +342,7 @@ namespace Login.FromMain
                 tab.Name = "Quản Lí Tài Khoản";
                 From_quanLiTaiKhoan from_QuanLiTaiKhoan = new From_quanLiTaiKhoan()
                 {
-
+                    
                     from_QuanLiTaiKhoan = this,
                     TopLevel = false,
                     Dock = DockStyle.Fill
@@ -366,6 +366,7 @@ namespace Login.FromMain
                 {
 
                     motabSV = new From_TrangChu._MotabSV(motabSV),
+                    motabAdmin = new From_TrangChu._MotabAdmin(motabAdmin),
                     from_TrangChu = this,
                     TopLevel = false,
                     Dock = DockStyle.Fill
@@ -391,15 +392,20 @@ namespace Login.FromMain
         //mo tab
         public From_Main Frm;
         public delegate void _MotabSV();
+        public delegate void _MotabAdmin();
+       
         //
 
-       
+
 
         private void motabSV()
         {
             ThongtincaNhan();
         }
-        
+        private void motabAdmin()
+        {
+            admin();
+        }
 
         //
     }

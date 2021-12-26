@@ -30,12 +30,12 @@ namespace Login.MainHeThong
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -88,6 +88,7 @@ namespace Login.MainHeThong
             this.label20 = new System.Windows.Forms.Label();
             this.txttimkiem = new System.Windows.Forms.TextBox();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
@@ -105,6 +106,7 @@ namespace Login.MainHeThong
             ((System.ComponentModel.ISupportInitialize)(this.DataGripSV)).BeginInit();
             this.panel12.SuspendLayout();
             this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -177,6 +179,7 @@ namespace Login.MainHeThong
             this.lblarow.TabIndex = 5;
             this.lblarow.Text = "nhấn vào đây";
             this.lblarow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblarow.Click += new System.EventHandler(this.lblarow_Click);
             // 
             // label10
             // 
@@ -403,18 +406,18 @@ namespace Login.MainHeThong
             // LiveChart
             // 
             this.LiveChart.BackColor = System.Drawing.Color.MidnightBlue;
-            chartArea2.Name = "ChartArea1";
-            this.LiveChart.ChartAreas.Add(chartArea2);
+            chartArea1.Name = "ChartArea1";
+            this.LiveChart.ChartAreas.Add(chartArea1);
             this.LiveChart.Dock = System.Windows.Forms.DockStyle.Bottom;
-            legend2.Name = "Legend1";
-            this.LiveChart.Legends.Add(legend2);
+            legend1.Name = "Legend1";
+            this.LiveChart.Legends.Add(legend1);
             this.LiveChart.Location = new System.Drawing.Point(0, 224);
             this.LiveChart.Name = "LiveChart";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series2.Legend = "Legend1";
-            series2.Name = "Sinh Viên";
-            this.LiveChart.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Legend = "Legend1";
+            series1.Name = "Sinh Viên";
+            this.LiveChart.Series.Add(series1);
             this.LiveChart.Size = new System.Drawing.Size(536, 281);
             this.LiveChart.TabIndex = 36;
             this.LiveChart.Text = "chart1";
@@ -569,14 +572,14 @@ namespace Login.MainHeThong
             this.DataGripSV.AllowUserToAddRows = false;
             this.DataGripSV.AllowUserToDeleteRows = false;
             this.DataGripSV.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGripSV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGripSV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DataGripSV.ColumnHeadersHeight = 40;
             this.DataGripSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DataGripSV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -587,26 +590,27 @@ namespace Login.MainHeThong
             this.NGAYSINH,
             this.DIACHI,
             this.LOP});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGripSV.DefaultCellStyle = dataGridViewCellStyle5;
+            this.DataGripSV.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGripSV.DefaultCellStyle = dataGridViewCellStyle2;
             this.DataGripSV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGripSV.Location = new System.Drawing.Point(0, 0);
             this.DataGripSV.Name = "DataGripSV";
             this.DataGripSV.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGripSV.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGripSV.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.DataGripSV.RowHeadersVisible = false;
             this.DataGripSV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataGripSV.Size = new System.Drawing.Size(536, 420);
@@ -696,11 +700,11 @@ namespace Login.MainHeThong
             this.txttimkiem.Size = new System.Drawing.Size(502, 31);
             this.txttimkiem.TabIndex = 0;
             this.txttimkiem.TextChanged += new System.EventHandler(this.txttimkiem_TextChanged);
-            
             // 
             // panel14
             // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel14.BackColor = System.Drawing.SystemColors.Control;
+            this.panel14.Controls.Add(this.pictureBox1);
             this.panel14.Controls.Add(this.panel1);
             this.panel14.Controls.Add(this.panel2);
             this.panel14.Controls.Add(this.panel5);
@@ -709,6 +713,16 @@ namespace Login.MainHeThong
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(1242, 238);
             this.panel14.TabIndex = 39;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.pictureBox1.Location = new System.Drawing.Point(49, 228);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1134, 10);
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
             // 
             // From_TrangChu
             // 
@@ -721,7 +735,7 @@ namespace Login.MainHeThong
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel3);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "From_TrangChu";
             this.Text = "From_TrangChu";
@@ -744,6 +758,7 @@ namespace Login.MainHeThong
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -802,5 +817,6 @@ namespace Login.MainHeThong
         private System.Windows.Forms.DataGridViewTextBoxColumn NGAYSINH;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIACHI;
         private System.Windows.Forms.DataGridViewTextBoxColumn LOP;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
