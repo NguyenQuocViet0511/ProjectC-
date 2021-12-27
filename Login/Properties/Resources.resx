@@ -121,11 +121,8 @@
   <data name="user_shield_36px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_shield_36px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="classroom_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\classroom_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logout_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logout_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="subtract_32px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subtract_32px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,6 +133,9 @@
   <data name="invisible_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\invisible_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="male_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\male_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="query_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\query_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,8 +145,8 @@
   <data name="read_online_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\read_online_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Chim" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Chim.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrow_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="student_male_30px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\student_male_30px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,14 +154,14 @@
   <data name="read_online_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\read_online_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="add_layer_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_layer_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="system_administrator_male_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\system_administrator_male_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="left_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\left_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="menu_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="expand_arrow_24px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\expand_arrow_24px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,8 +193,11 @@
   <data name="expand_arrow_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\expand_arrow_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="education_36px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\education_36px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user_groups_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_groups_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="spam_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\spam_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,17 +211,17 @@
   <data name="icons8_secured_letter_20px_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_secured_letter_20px_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="user_groups_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_groups_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="263177636_458089092342503_7954596673940287683_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\263177636_458089092342503_7954596673940287683_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="menu_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="test_account_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\test_account_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NFT User_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NFT User_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="manager_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\manager_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="key_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\key_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -231,9 +234,6 @@
   </data>
   <data name="icons8_instagram_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_instagram_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow_pointing_left_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrow_pointing_left_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="file_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\file_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,11 +256,11 @@
   <data name="logo11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="manager_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\manager_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Chim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chim.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="subtract_32px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\subtract_32px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Check Circle_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Check Circle_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eye_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eye_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,6 +271,9 @@
   <data name="gear_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gear_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="NFT User_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NFT User_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="access_denied_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\access_denied_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -280,11 +283,11 @@
   <data name="home_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Check Circle_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Check Circle_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="data_backup_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data_backup_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="administrative_tools_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\administrative_tools_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -294,6 +297,15 @@
   </data>
   <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="education_36px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\education_36px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="school_building_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\school_building_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="menu_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -316,8 +328,8 @@
   <data name="top-phan-mem-quan-ly-hoc-sinh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\top-phan-mem-quan-ly-hoc-sinh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="password_1_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\password_1_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="edit_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logout_rounded_down_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logout_rounded_down_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -325,29 +337,38 @@
   <data name="user_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="school_building_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\school_building_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="classroom_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\classroom_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="login_26px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login_26px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="data_backup_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\data_backup_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="password_1_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\password_1_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="female_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\female_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_name_20px_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_name_20px_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrow_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrow_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrow_pointing_left_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_pointing_left_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logout_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logout_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add_layer_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_layer_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pass" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -367,14 +388,14 @@
   <data name="short_hair_girl_key_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\short_hair_girl_key_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user_groups_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user_groups_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="administrative_tools_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\administrative_tools_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logout_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logout_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="263317886_239586268129945_2944993818996751779_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\263317886_239586268129945_2944993818996751779_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -382,7 +403,7 @@
   <data name="management_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\management_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user_groups_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user_groups_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ok_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ok_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

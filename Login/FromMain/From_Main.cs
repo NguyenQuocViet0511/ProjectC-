@@ -372,6 +372,7 @@ namespace Login.FromMain
                     Dock = DockStyle.Fill
                 };
                 tab.AttachedControl.Controls.Add(from_TrangChu);
+       
                 from_TrangChu.Show();
                 tabMain.SelectedTabIndex = tabMain.Tabs.Count - 1;
             }

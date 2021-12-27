@@ -32,8 +32,9 @@ namespace Login.MainHeThong
             load();
         }
 
-        private void AddChart()
+        public void AddChart()
         {
+            
             ListSinhVien listSinhVien = new ListSinhVien();
             listSinhVien.DocFile(Const.PathfileSV);
             int sumNam = 0;
@@ -53,6 +54,7 @@ namespace Login.MainHeThong
             lblNam.Text = String.Format("" + sumNam);
             lblNu.Text = String.Format("" + sumNu);
             lblsum.Text = String.Format("" + sumTong);
+
             LiveChart.Series["Sinh Viên"].Points.AddXY("Nam", sumNam);
             LiveChart.Series["Sinh Viên"].Points.AddXY("Nữ", sumNu);
 
@@ -99,7 +101,7 @@ namespace Login.MainHeThong
         private void txttimkiem_TextChanged(object sender, EventArgs e)
         {      
 
-            BindingSource bindingSource = new BindingSource();
+
 
             BindingList<SinhVien> filtered = new BindingList<SinhVien>(myObjList.Where(sinhvien => sinhvien.HovaTen1.Contains(txttimkiem.Text)).ToList());
             DataGripSV.DataSource = filtered;

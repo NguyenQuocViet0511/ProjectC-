@@ -114,3 +114,4 @@ C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\LiveCharts.pdb
 C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\LiveCharts.xml
 C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.MainHeThong.From_ThemAndSua.resources

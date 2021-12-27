@@ -123,6 +123,26 @@ namespace Login.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_layer_100px {
+            get {
+                object obj = ResourceManager.GetObject("add_layer_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap add_layer_50px {
+            get {
+                object obj = ResourceManager.GetObject("add_layer_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap administrative_tools_100px {
             get {
                 object obj = ResourceManager.GetObject("administrative_tools_100px", resourceCulture);
@@ -273,6 +293,26 @@ namespace Login.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Delete_20px {
+            get {
+                object obj = ResourceManager.GetObject("Delete_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit_20px {
+            get {
+                object obj = ResourceManager.GetObject("edit_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap education_30px {
             get {
                 object obj = ResourceManager.GetObject("education_30px", resourceCulture);
@@ -326,6 +366,16 @@ namespace Login.Properties {
         internal static System.Drawing.Bitmap eye_32px {
             get {
                 object obj = ResourceManager.GetObject("eye_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap female_20px {
+            get {
+                object obj = ResourceManager.GetObject("female_20px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -573,6 +623,16 @@ namespace Login.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap male_20px {
+            get {
+                object obj = ResourceManager.GetObject("male_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap management_30px {
             get {
                 object obj = ResourceManager.GetObject("management_30px", resourceCulture);
@@ -656,6 +716,16 @@ namespace Login.Properties {
         internal static System.Drawing.Bitmap NFT_User_30px {
             get {
                 object obj = ResourceManager.GetObject("NFT User_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ok_20px {
+            get {
+                object obj = ResourceManager.GetObject("ok_20px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

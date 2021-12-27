@@ -131,6 +131,12 @@
     <Compile Include="MainHeThong\From_quanLiTaiKhoan.Designer.cs">
       <DependentUpon>From_quanLiTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainHeThong\From_ThemAndSua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainHeThong\From_ThemAndSua.Designer.cs">
+      <DependentUpon>From_ThemAndSua.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainHeThong\From_TrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainHeThong\From_quanLiTaiKhoan.resx">
       <DependentUpon>From_quanLiTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainHeThong\From_ThemAndSua.resx">
+      <DependentUpon>From_ThemAndSua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainHeThong\From_TrangChu.resx">
       <DependentUpon>From_TrangChu.cs</DependentUpon>
@@ -503,6 +512,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user_groups_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_layer_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_layer_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok_20px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
