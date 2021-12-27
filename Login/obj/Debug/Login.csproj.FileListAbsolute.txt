@@ -108,3 +108,5 @@ C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
 C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.csproj.CopyComplete
 C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.exe
 C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.pdb
+C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.FromMain.Form_QuanLySinhVien.Form_QuanLySinhVien.resources
+C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.FromMain.Form_QuanLySinhVien.Form_AddUser.resources

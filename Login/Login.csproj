@@ -99,6 +99,18 @@
     <Compile Include="FromMain\Form_DoiMatkhau\From_doiMatKhau.Designer.cs">
       <DependentUpon>From_doiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="FromMain\Form_QuanLySinhVien\Form_AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromMain\Form_QuanLySinhVien\Form_AddUser.Designer.cs">
+      <DependentUpon>Form_AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromMain\Form_QuanLySinhVien\Form_QuanLySinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromMain\Form_QuanLySinhVien\Form_QuanLySinhVien.Designer.cs">
+      <DependentUpon>Form_QuanLySinhVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="FromMain\Form_ThongTinCaNhan\From_ThongTinCaNhan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +183,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FromMain\Form_DoiMatkhau\From_doiMatKhau.resx">
       <DependentUpon>From_doiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromMain\Form_QuanLySinhVien\Form_AddUser.resx">
+      <DependentUpon>Form_AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromMain\Form_QuanLySinhVien\Form_QuanLySinhVien.resx">
+      <DependentUpon>Form_QuanLySinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FromMain\Form_ThongTinCaNhan\From_ThongTinCaNhan.resx">
       <DependentUpon>From_ThongTinCaNhan.cs</DependentUpon>
