@@ -136,7 +136,6 @@
     <Compile Include="FromMain\From_Main.Designer.cs">
       <DependentUpon>From_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="LiveChart\TongSinhVien.cs" />
     <Compile Include="MainHeThong\From_quanLiTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
