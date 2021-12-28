@@ -5,7 +5,6 @@ using System.Windows.Forms;
 using DevComponents.DotNetBar;
 using Login.Data;
 using Login.FromMain.Form_DoiMatkhau;
-using Login.FromMain.Form_QuanLySinhVien;
 using Login.MainHeThong;
 using Login.MyCustome;
 
@@ -246,6 +245,7 @@ namespace Login.FromMain
             {
                 MenuBar();
             }
+            QuanLiSinhVien();
         }
 
    
@@ -382,7 +382,16 @@ namespace Login.FromMain
             {
                 TabItem tab = tabMain.CreateTab(tieudeTab);
                 tab.Name = "Trang Chủ";
-              
+                Form_QuanLySinhVien.Form_QuanLySinhVien form_QuanLySinhVien = new Form_QuanLySinhVien.Form_QuanLySinhVien()
+                {
+
+                    form_QuanLySinhVien = this,
+                    TopLevel = false,
+                    Dock = DockStyle.Fill
+                };
+                tab.AttachedControl.Controls.Add(form_QuanLySinhVien);
+                form_QuanLySinhVien.Show();
+                tabMain.SelectedTabIndex = tabMain.Tabs.Count - 1;
             }
         }
         #endregion

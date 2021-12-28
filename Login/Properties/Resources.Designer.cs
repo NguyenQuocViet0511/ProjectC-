@@ -143,6 +143,16 @@ namespace Login.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_new_30px {
+            get {
+                object obj = ResourceManager.GetObject("add_new_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap administrative_tools_100px {
             get {
                 object obj = ResourceManager.GetObject("administrative_tools_100px", resourceCulture);
@@ -396,6 +406,16 @@ namespace Login.Properties {
         internal static System.Drawing.Bitmap file_32px_color {
             get {
                 object obj = ResourceManager.GetObject("file_32px_color", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap file_excel_30px {
+            get {
+                object obj = ResourceManager.GetObject("file_excel_30px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -40,13 +40,13 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.btn_Huy = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_ID = new System.Windows.Forms.TextBox();
+            this.txt_MaSV = new System.Windows.Forms.TextBox();
             this.txt_DiaChi = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbltieude = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -130,6 +130,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.btn_Them.TabIndex = 11;
             this.btn_Them.Text = "Thêm";
             this.btn_Them.UseVisualStyleBackColor = false;
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // btn_Huy
             // 
@@ -144,7 +145,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.btn_Huy.TabIndex = 12;
             this.btn_Huy.Text = "Huỷ";
             this.btn_Huy.UseVisualStyleBackColor = false;
-            this.btn_Huy.Click += new System.EventHandler(this.button2_Click);
+            this.btn_Huy.Click += new System.EventHandler(this.btn_Huy_Click);
             // 
             // label6
             // 
@@ -164,13 +165,12 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.label2.TabIndex = 2;
             this.label2.Text = "Mã Sinh Viên:";
             // 
-            // txt_ID
+            // txt_MaSV
             // 
-            this.txt_ID.Location = new System.Drawing.Point(190, 85);
-            this.txt_ID.Name = "txt_ID";
-            this.txt_ID.Size = new System.Drawing.Size(382, 30);
-            this.txt_ID.TabIndex = 3;
-            this.txt_ID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txt_MaSV.Location = new System.Drawing.Point(190, 85);
+            this.txt_MaSV.Name = "txt_MaSV";
+            this.txt_MaSV.Size = new System.Drawing.Size(382, 30);
+            this.txt_MaSV.TabIndex = 3;
             // 
             // txt_DiaChi
             // 
@@ -221,18 +221,19 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.pictureBox4.TabIndex = 19;
             this.pictureBox4.TabStop = false;
             // 
-            // label1
+            // lbltieude
             // 
-            this.label1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(640, 66);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Thêm Sinh Viên";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbltieude.BackColor = System.Drawing.Color.MidnightBlue;
+            this.lbltieude.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbltieude.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltieude.ForeColor = System.Drawing.Color.White;
+            this.lbltieude.Location = new System.Drawing.Point(3, 3);
+            this.lbltieude.Name = "lbltieude";
+            this.lbltieude.Size = new System.Drawing.Size(640, 66);
+            this.lbltieude.TabIndex = 20;
+            this.lbltieude.Text = "Thêm Sinh Viên";
+            this.lbltieude.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbltieude.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lbltieude_MouseDown);
             // 
             // Form_AddUser
             // 
@@ -240,7 +241,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(646, 488);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbltieude);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -256,12 +257,13 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.Controls.Add(this.rdo_Nam);
             this.Controls.Add(this.txt_Name);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txt_ID);
+            this.Controls.Add(this.txt_MaSV);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form_AddUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_AddUser";
             this.Load += new System.EventHandler(this.Form_AddUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -285,12 +287,12 @@ namespace Login.FromMain.Form_QuanLySinhVien
         private System.Windows.Forms.Button btn_Huy;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txt_ID;
+        private System.Windows.Forms.TextBox txt_MaSV;
         private System.Windows.Forms.TextBox txt_DiaChi;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbltieude;
     }
 }

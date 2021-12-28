@@ -23,7 +23,7 @@ namespace Login.DataSinhVien
                 {
                     for (int i = 0; i < Const.ListSinhVien.Count; i++)
                     {
-                        SW.WriteLine(String.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8}", Const.ListSinhVien[i].STT1, Const.ListSinhVien[i].MaSV1, Const.ListSinhVien[i].HovaTen1, Const.ListSinhVien[i].GioiTinh1, Const.ListSinhVien[i].NgaySinh1, Const.ListSinhVien[i].DiaChi1, Const.ListSinhVien[i].Lop1));
+                        SW.WriteLine(String.Format("{0},{1},{2},{3},{4},{5},{6}", Const.ListSinhVien[i].STT1, Const.ListSinhVien[i].MaSV1, Const.ListSinhVien[i].HovaTen1, Const.ListSinhVien[i].GioiTinh1, Const.ListSinhVien[i].NgaySinh1, Const.ListSinhVien[i].DiaChi1, Const.ListSinhVien[i].Lop1));
                     }
                 }
             }

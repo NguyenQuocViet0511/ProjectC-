@@ -1,120 +1,12 @@
-D:\C#\Quay Số\QuaySo\Login\bin\Debug\Login.exe.config
-D:\C#\Quay Số\QuaySo\Login\bin\Debug\Login.exe
-D:\C#\Quay Số\QuaySo\Login\bin\Debug\Login.pdb
-D:\C#\Quay Số\QuaySo\Login\obj\Debug\Login.csproj.AssemblyReference.cache
-D:\C#\Quay Số\QuaySo\Login\obj\Debug\Login.Frm_Login.resources
-D:\C#\Quay Số\QuaySo\Login\obj\Debug\Login.Properties.Resources.resources
-D:\C#\Quay Số\QuaySo\Login\obj\Debug\Login.csproj.GenerateResource.cache
-D:\C#\Quay Số\QuaySo\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
-D:\C#\Quay Số\QuaySo\Login\obj\Debug\Login.exe
-D:\C#\Quay Số\QuaySo\Login\obj\Debug\Login.pdb
-C:\Users\admin\Downloads\QuaySo\Login\bin\Debug\Login.exe.config
-C:\Users\admin\Downloads\QuaySo\Login\bin\Debug\Login.exe
-C:\Users\admin\Downloads\QuaySo\Login\bin\Debug\Login.pdb
-C:\Users\admin\Downloads\QuaySo\Login\obj\Debug\Login.csproj.AssemblyReference.cache
-C:\Users\admin\Downloads\QuaySo\Login\obj\Debug\Login.Frm_Login.resources
-C:\Users\admin\Downloads\QuaySo\Login\obj\Debug\Login.Properties.Resources.resources
-C:\Users\admin\Downloads\QuaySo\Login\obj\Debug\Login.csproj.GenerateResource.cache
-C:\Users\admin\Downloads\QuaySo\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
-C:\Users\admin\Downloads\QuaySo\Login\obj\Debug\Login.exe
-C:\Users\admin\Downloads\QuaySo\Login\obj\Debug\Login.pdb
-C:\Users\admin\Downloads\QuaySo\Login\obj\Debug\Login.FromMain.resources
-D:\C#\QuaySo\Login\obj\Debug\Login.csproj.AssemblyReference.cache
-D:\C#\QuaySo\Login\obj\Debug\Login.Frm_Login.resources
-D:\C#\QuaySo\Login\obj\Debug\Login.FromMain.resources
-D:\C#\QuaySo\Login\obj\Debug\Login.Properties.Resources.resources
-D:\C#\QuaySo\Login\obj\Debug\Login.csproj.GenerateResource.cache
-D:\C#\QuaySo\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
-D:\C#\QuaySo\Login\obj\Debug\Login.exe
-D:\C#\QuaySo\Login\obj\Debug\Login.pdb
-D:\C#\QuaySo\Login\bin\Debug\Login.exe.config
-D:\C#\QuaySo\Login\bin\Debug\Login.exe
-D:\C#\QuaySo\Login\bin\Debug\Login.pdb
-C:\Users\admin\Desktop\QuaySo\Login\bin\Debug\Login.exe.config
-C:\Users\admin\Desktop\QuaySo\Login\bin\Debug\Login.exe
-C:\Users\admin\Desktop\QuaySo\Login\bin\Debug\Login.pdb
-C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.csproj.AssemblyReference.cache
-C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.Frm_Login.resources
-C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.Properties.Resources.resources
-C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.csproj.GenerateResource.cache
-C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
-C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.exe
-C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.pdb
-C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.FromMain.From_Main.resources
-C:\Users\admin\Desktop\QuaySo\Login\obj\Debug\Login.Fromlogin.Form_DangKy.resources
-C:\Users\admin\Desktop\ProjectC--main\Login\bin\Debug\Login.exe.config
-C:\Users\admin\Desktop\ProjectC--main\Login\bin\Debug\Login.exe
-C:\Users\admin\Desktop\ProjectC--main\Login\bin\Debug\Login.pdb
-C:\Users\admin\Desktop\ProjectC--main\Login\bin\Debug\DevComponents.DotNetBar2.dll
-C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.Frm_Login.resources
-C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.Fromlogin.Form_Checkcode.resources
-C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.Fromlogin.Form_CheckCodeQuenMatKhau.resources
-C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.Fromlogin.Form_DangKy.resources
-C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.Fromlogin.Form_MatKhauMoi.resources
-C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.Fromlogin.Form_QuenMatKhau.resources
-C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.FromMain.From_Main.resources
-C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.MainHeThong.From_quanLiTaiKhoan.resources
-C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.MainHeThong.From_TrangChu.resources
-C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.Properties.Resources.resources
-C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.csproj.GenerateResource.cache
-C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
-C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.csproj.CopyComplete
-C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.exe
-C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.pdb
-C:\Users\admin\Desktop\ProjectC--main\Login\obj\Debug\Login.csproj.AssemblyReference.cache
-C:\Users\admin\Desktop\ProjectC-\Login\bin\Debug\Login.exe
-C:\Users\admin\Desktop\ProjectC-\Login\bin\Debug\Login.exe.config
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.Frm_Login.resources
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_Checkcode.resources
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_CheckCodeQuenMatKhau.resources
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_DangKy.resources
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_MatKhauMoi.resources
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_QuenMatKhau.resources
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.FromMain.From_Main.resources
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.MainHeThong.From_quanLiTaiKhoan.resources
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.MainHeThong.From_TrangChu.resources
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.MyCustome.MyMessageBox.resources
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.MyCustome.MyMessageBox_1.resources
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.Properties.Resources.resources
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.csproj.GenerateResource.cache
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.csproj.CopyComplete
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.exe
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.pdb
-C:\Users\admin\Desktop\ProjectC-\Login\bin\Debug\Login.pdb
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.csproj.AssemblyReference.cache
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.FromMain.Form_DoiMatkhau.From_doiMatKhau.resources
-C:\Users\admin\Desktop\ProjectC-\Login\obj\Debug\Login.FromMain.Form_ThongTinCaNhan.From_ThongTinCaNhan.resources
-<<<<<<< HEAD
-C:\C#\New folder\ProjectC-\Login\bin\Debug\Login.exe.config
-C:\C#\New folder\ProjectC-\Login\bin\Debug\Login.exe
-C:\C#\New folder\ProjectC-\Login\bin\Debug\Login.pdb
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.csproj.AssemblyReference.cache
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.Frm_Login.resources
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_Checkcode.resources
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_CheckCodeQuenMatKhau.resources
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_DangKy.resources
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_MatKhauMoi.resources
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_QuenMatKhau.resources
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.FromMain.Form_DoiMatkhau.From_doiMatKhau.resources
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.FromMain.Form_ThongTinCaNhan.From_ThongTinCaNhan.resources
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.FromMain.From_Main.resources
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.MainHeThong.From_quanLiTaiKhoan.resources
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.MainHeThong.From_TrangChu.resources
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.MyCustome.MyMessageBox.resources
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.MyCustome.MyMessageBox_1.resources
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.Properties.Resources.resources
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.csproj.GenerateResource.cache
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.csproj.CopyComplete
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.exe
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.pdb
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.FromMain.Form_QuanLySinhVien.Form_QuanLySinhVien.resources
-C:\C#\New folder\ProjectC-\Login\obj\Debug\Login.FromMain.Form_QuanLySinhVien.Form_AddUser.resources
-=======
 C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\Login.exe.config
 C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\Login.exe
 C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\Login.pdb
+C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\LiveCharts.dll
+C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\LiveCharts.pdb
+C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\LiveCharts.xml
+C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\LiveCharts.Wpf.xml
 C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.csproj.AssemblyReference.cache
 C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.Frm_Login.resources
 C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_Checkcode.resources
@@ -123,9 +15,12 @@ C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_DangKy.
 C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_MatKhauMoi.resources
 C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_QuenMatKhau.resources
 C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.FromMain.Form_DoiMatkhau.From_doiMatKhau.resources
+C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.FromMain.Form_QuanLySinhVien.Form_AddUser.resources
+C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.FromMain.Form_QuanLySinhVien.Form_QuanLySinhVien.resources
 C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.FromMain.Form_ThongTinCaNhan.From_ThongTinCaNhan.resources
 C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.FromMain.From_Main.resources
 C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.MainHeThong.From_quanLiTaiKhoan.resources
+C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.MainHeThong.From_ThemAndSua.resources
 C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.MainHeThong.From_TrangChu.resources
 C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.MyCustome.MyMessageBox.resources
 C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.MyCustome.MyMessageBox_1.resources
@@ -135,43 +30,3 @@ C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.csproj.CoreCompileInpu
 C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.csproj.CopyComplete
 C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.exe
 C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.pdb
-C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\LiveCharts.dll
-C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\LiveCharts.Wpf.dll
-C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\LiveCharts.pdb
-C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\LiveCharts.xml
-C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\LiveCharts.Wpf.pdb
-C:\Users\admin\Desktop\C#\ProjectC-\Login\bin\Debug\LiveCharts.Wpf.xml
-C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.MainHeThong.From_ThemAndSua.resources
->>>>>>> main
-C:\Users\admin\Desktop\Form\ProjectC-\Login\bin\Debug\Login.exe.config
-C:\Users\admin\Desktop\Form\ProjectC-\Login\bin\Debug\Login.exe
-C:\Users\admin\Desktop\Form\ProjectC-\Login\bin\Debug\Login.pdb
-C:\Users\admin\Desktop\Form\ProjectC-\Login\bin\Debug\LiveCharts.dll
-C:\Users\admin\Desktop\Form\ProjectC-\Login\bin\Debug\LiveCharts.Wpf.dll
-C:\Users\admin\Desktop\Form\ProjectC-\Login\bin\Debug\LiveCharts.pdb
-C:\Users\admin\Desktop\Form\ProjectC-\Login\bin\Debug\LiveCharts.xml
-C:\Users\admin\Desktop\Form\ProjectC-\Login\bin\Debug\LiveCharts.Wpf.pdb
-C:\Users\admin\Desktop\Form\ProjectC-\Login\bin\Debug\LiveCharts.Wpf.xml
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.csproj.AssemblyReference.cache
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.Frm_Login.resources
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_Checkcode.resources
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_CheckCodeQuenMatKhau.resources
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_DangKy.resources
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_MatKhauMoi.resources
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.Fromlogin.Form_QuenMatKhau.resources
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.FromMain.Form_DoiMatkhau.From_doiMatKhau.resources
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.FromMain.Form_QuanLySinhVien.Form_AddUser.resources
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.FromMain.Form_QuanLySinhVien.Form_QuanLySinhVien.resources
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.FromMain.Form_ThongTinCaNhan.From_ThongTinCaNhan.resources
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.FromMain.From_Main.resources
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.MainHeThong.From_quanLiTaiKhoan.resources
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.MainHeThong.From_ThemAndSua.resources
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.MainHeThong.From_TrangChu.resources
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.MyCustome.MyMessageBox.resources
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.MyCustome.MyMessageBox_1.resources
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.Properties.Resources.resources
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.csproj.GenerateResource.cache
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.csproj.CopyComplete
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.exe
-C:\Users\admin\Desktop\Form\ProjectC-\Login\obj\Debug\Login.pdb

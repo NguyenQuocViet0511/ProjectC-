@@ -20,9 +20,9 @@ namespace Login.MainHeThong
         static int index = -1;
         internal From_Main from_QuanLiTaiKhoan;
         ListUser listUser = new ListUser();
-        public From_Main frm;
-        public delegate void _dedongtab();
-        public _dedongtab Dedongtab;
+        //public From_Main frm;
+        //public delegate void _dedongtab();
+        //public _dedongtab Dedongtab;
         public From_quanLiTaiKhoan()
         {
             InitializeComponent();
@@ -103,7 +103,7 @@ namespace Login.MainHeThong
                 }
             }
         }
-
+        
         private void txttimkiem_TextChanged(object sender, EventArgs e)
         {
 

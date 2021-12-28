@@ -41,7 +41,7 @@ namespace Login.DataSinhVien
         {
             if (obj is SinhVien)
             {
-                return this.MaSV.Equals(((SinhVien)obj).MaSV1);
+                return this.STT.Equals(((SinhVien)obj).STT1);
             }
             return false;
         }
