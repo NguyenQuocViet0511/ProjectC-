@@ -95,7 +95,7 @@ namespace Login.MyCustome
             this.pictureBox5.Size = new System.Drawing.Size(442, 2);
             this.pictureBox5.TabIndex = 21;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+          
             // 
             // pictureBox4
             // 
@@ -106,7 +106,7 @@ namespace Login.MyCustome
             this.pictureBox4.Size = new System.Drawing.Size(2, 157);
             this.pictureBox4.TabIndex = 20;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+          
             // 
             // pictureBox3
             // 
@@ -127,7 +127,7 @@ namespace Login.MyCustome
             this.pictureBox2.Size = new System.Drawing.Size(446, 2);
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+         
             // 
             // pictureBox1
             // 
@@ -137,6 +137,7 @@ namespace Login.MyCustome
             this.pictureBox1.Size = new System.Drawing.Size(447, 25);
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
             // lblMessage
             // 

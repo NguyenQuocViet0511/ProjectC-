@@ -27,7 +27,7 @@ namespace Login.FromMain
         {
           
             InitializeComponent();
-            //Add();
+            Trangchu();
           
             MenuBar();
             timeDate.Enabled = true;
@@ -141,7 +141,7 @@ namespace Login.FromMain
         {
             //Add();
 
-            }
+        }
 
    
 
@@ -274,6 +274,18 @@ namespace Login.FromMain
             }
             return false;
         }
+        //
+        private void Dongtab()
+        {
+            foreach (TabItem item in tabMain.Tabs)
+            {
+                if (item.IsSelected)
+                {
+                    tabMain.Tabs.Remove(item);
+                    return;
+                }
+            }
+        }
         //Tab doi Mat Khau
         private void DoiMatkhau()
         {
@@ -330,7 +342,7 @@ namespace Login.FromMain
                 tab.Name = "Quản Lí Tài Khoản";
                 From_quanLiTaiKhoan from_QuanLiTaiKhoan = new From_quanLiTaiKhoan()
                 {
-
+                    
                     from_QuanLiTaiKhoan = this,
                     TopLevel = false,
                     Dock = DockStyle.Fill
@@ -353,11 +365,14 @@ namespace Login.FromMain
                 From_TrangChu from_TrangChu = new From_TrangChu()
                 {
 
+                    motabSV = new From_TrangChu._MotabSV(motabSV),
+                    motabAdmin = new From_TrangChu._MotabAdmin(motabAdmin),
                     from_TrangChu = this,
                     TopLevel = false,
                     Dock = DockStyle.Fill
                 };
                 tab.AttachedControl.Controls.Add(from_TrangChu);
+       
                 from_TrangChu.Show();
                 tabMain.SelectedTabIndex = tabMain.Tabs.Count - 1;
             }
@@ -373,5 +388,26 @@ namespace Login.FromMain
                 tabMain.Tabs.Remove(tab);
             }
         }
+
+
+        //mo tab
+        public From_Main Frm;
+        public delegate void _MotabSV();
+        public delegate void _MotabAdmin();
+       
+        //
+
+
+
+        private void motabSV()
+        {
+            ThongtincaNhan();
+        }
+        private void motabAdmin()
+        {
+            admin();
+        }
+
+        //
     }
 }

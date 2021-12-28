@@ -47,7 +47,7 @@ namespace Login.MyCustome
             // 
             // lblTimer
             // 
-            this.lblTimer.Location = new System.Drawing.Point(14, 181);
+            this.lblTimer.Location = new System.Drawing.Point(14, 152);
             this.lblTimer.Name = "lblTimer";
             this.lblTimer.Size = new System.Drawing.Size(20, 13);
             this.lblTimer.TabIndex = 22;
@@ -71,6 +71,7 @@ namespace Login.MyCustome
             this.pictureBox1.Size = new System.Drawing.Size(416, 25);
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
             // lblMessage
             // 
@@ -80,7 +81,7 @@ namespace Login.MyCustome
             this.lblMessage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblMessage.Location = new System.Drawing.Point(13, 40);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(390, 115);
+            this.lblMessage.Size = new System.Drawing.Size(390, 83);
             this.lblMessage.TabIndex = 20;
             this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -90,7 +91,7 @@ namespace Login.MyCustome
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox3.Location = new System.Drawing.Point(413, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(2, 211);
+            this.pictureBox3.Size = new System.Drawing.Size(2, 182);
             this.pictureBox3.TabIndex = 24;
             this.pictureBox3.TabStop = false;
             // 
@@ -100,7 +101,7 @@ namespace Login.MyCustome
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(2, 211);
+            this.pictureBox2.Size = new System.Drawing.Size(2, 182);
             this.pictureBox2.TabIndex = 25;
             this.pictureBox2.TabStop = false;
             // 
@@ -119,7 +120,7 @@ namespace Login.MyCustome
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOK.ForeColor = System.Drawing.Color.White;
             this.btnOK.ImageRight = null;
-            this.btnOK.Location = new System.Drawing.Point(314, 168);
+            this.btnOK.Location = new System.Drawing.Point(314, 139);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(89, 26);
             this.btnOK.TabIndex = 23;
@@ -132,7 +133,7 @@ namespace Login.MyCustome
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Black;
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox4.Location = new System.Drawing.Point(2, 209);
+            this.pictureBox4.Location = new System.Drawing.Point(2, 180);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(411, 2);
             this.pictureBox4.TabIndex = 26;
@@ -153,7 +154,7 @@ namespace Login.MyCustome
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.ClientSize = new System.Drawing.Size(415, 211);
+            this.ClientSize = new System.Drawing.Size(415, 182);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
