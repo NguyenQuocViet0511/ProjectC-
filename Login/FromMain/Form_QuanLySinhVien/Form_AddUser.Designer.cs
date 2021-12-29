@@ -34,7 +34,6 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.rdo_Nam = new System.Windows.Forms.RadioButton();
             this.rdo_Nu = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.txt_NgaySinh = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btn_Them = new System.Windows.Forms.Button();
             this.btn_Huy = new System.Windows.Forms.Button();
@@ -42,15 +41,16 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.label2 = new System.Windows.Forms.Label();
             this.txt_MaSV = new System.Windows.Forms.TextBox();
             this.txt_DiaChi = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lbltieude = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Date = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_Name
@@ -99,14 +99,6 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.label4.Size = new System.Drawing.Size(96, 25);
             this.label4.TabIndex = 8;
             this.label4.Text = "Giới Tính:";
-            // 
-            // txt_NgaySinh
-            // 
-            this.txt_NgaySinh.Location = new System.Drawing.Point(190, 225);
-            this.txt_NgaySinh.Name = "txt_NgaySinh";
-            this.txt_NgaySinh.Size = new System.Drawing.Size(382, 30);
-            this.txt_NgaySinh.TabIndex = 10;
-            this.txt_NgaySinh.Text = " ";
             // 
             // label5
             // 
@@ -181,46 +173,6 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.txt_DiaChi.TabIndex = 14;
             this.txt_DiaChi.Text = " ";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(646, 3);
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 485);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(646, 3);
-            this.pictureBox2.TabIndex = 17;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox3.Location = new System.Drawing.Point(643, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(3, 482);
-            this.pictureBox3.TabIndex = 18;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(3, 482);
-            this.pictureBox4.TabIndex = 19;
-            this.pictureBox4.TabStop = false;
-            // 
             // lbltieude
             // 
             this.lbltieude.BackColor = System.Drawing.Color.MidnightBlue;
@@ -235,12 +187,64 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.lbltieude.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbltieude.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lbltieude_MouseDown);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(3, 482);
+            this.pictureBox4.TabIndex = 19;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox3.Location = new System.Drawing.Point(643, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(3, 482);
+            this.pictureBox3.TabIndex = 18;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 485);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(646, 3);
+            this.pictureBox2.TabIndex = 17;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(646, 3);
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Date
+            // 
+            this.Date.CustomFormat = "dd/MM/yyyy";
+            this.Date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Date.Location = new System.Drawing.Point(190, 225);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(380, 30);
+            this.Date.TabIndex = 21;
+            this.Date.Value = new System.DateTime(2021, 12, 23, 0, 0, 0, 0);
+          
+            // 
             // Form_AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(646, 488);
+            this.Controls.Add(this.Date);
             this.Controls.Add(this.lbltieude);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -250,7 +254,6 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btn_Huy);
             this.Controls.Add(this.btn_Them);
-            this.Controls.Add(this.txt_NgaySinh);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.rdo_Nu);
@@ -266,10 +269,10 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_AddUser";
             this.Load += new System.EventHandler(this.Form_AddUser_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,7 +284,6 @@ namespace Login.FromMain.Form_QuanLySinhVien
         private System.Windows.Forms.RadioButton rdo_Nam;
         private System.Windows.Forms.RadioButton rdo_Nu;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt_NgaySinh;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btn_Them;
         private System.Windows.Forms.Button btn_Huy;
@@ -294,5 +296,6 @@ namespace Login.FromMain.Form_QuanLySinhVien
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lbltieude;
+        private System.Windows.Forms.DateTimePicker Date;
     }
 }

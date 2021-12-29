@@ -62,7 +62,9 @@ namespace Login.FromMain.Form_QuanLySinhVien
             {
                 rdo_Nu.Checked = true;
             }
-            txt_NgaySinh.Text = SinhvienEdit.NgaySinh1.ToString();
+            
+
+            Date.Value =  DateTime.Parse(SinhvienEdit.NgaySinh1.ToString());
             txt_DiaChi.Text = SinhvienEdit.DiaChi1.ToString();
            
 
@@ -128,7 +130,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
 
             if (Open == true)
             {
-                if (!String.IsNullOrEmpty(txt_MaSV.Text) && !String.IsNullOrEmpty(txt_DiaChi.Text) && !String.IsNullOrEmpty(txt_Name.Text) && !String.IsNullOrEmpty(txt_NgaySinh.Text) && rdo_Nu.Checked == true || rdo_Nam.Checked == true)
+                if (!String.IsNullOrEmpty(txt_MaSV.Text) && !String.IsNullOrEmpty(txt_DiaChi.Text) && !String.IsNullOrEmpty(txt_Name.Text)  && rdo_Nu.Checked == true || rdo_Nam.Checked == true)
                 {
                     LoadId();
                     SinhVien sinhVien;
@@ -150,7 +152,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
                         {
                             sinhVien.GioiTinh1 = "Nữ";
                         }
-                        sinhVien.NgaySinh1 = txt_NgaySinh.Text;
+                        sinhVien.NgaySinh1 = Date.Value.Month + "/" + Date.Value.Day + "/" + Date.Value.Year;
                         sinhVien.DiaChi1 = txt_DiaChi.Text;
                         Const.ListSinhVien.Add(sinhVien);
                         ListSinhVien.GhiFile(Const.PathfileSV);
@@ -177,7 +179,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
                         {
                             Const.ListSinhVien[i].GioiTinh1 = "Nữ";
                         }
-                        Const.ListSinhVien[i].NgaySinh1 = txt_NgaySinh.Text;
+                        Const.ListSinhVien[i].NgaySinh1 = Date.Value.Month + "/" + Date.Value.Day + "/" + Date.Value.Year;
                         Const.ListSinhVien[i].DiaChi1 = txt_DiaChi.Text;
                         MessageBox.Show("Sửa Thông Tin Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
@@ -190,5 +192,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
                 }
             }
         }
+
+       
     }
 }

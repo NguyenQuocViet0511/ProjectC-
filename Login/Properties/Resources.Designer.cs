@@ -113,6 +113,16 @@ namespace Login.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3 {
+            get {
+                object obj = ResourceManager.GetObject("3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap access_denied_32px {
             get {
                 object obj = ResourceManager.GetObject("access_denied_32px", resourceCulture);
@@ -816,6 +826,16 @@ namespace Login.Properties {
         internal static System.Drawing.Bitmap read_online_20px {
             get {
                 object obj = ResourceManager.GetObject("read_online_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap refresh_shield_30px {
+            get {
+                object obj = ResourceManager.GetObject("refresh_shield_30px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

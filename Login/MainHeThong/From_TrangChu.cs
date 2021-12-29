@@ -90,7 +90,7 @@ namespace Login.MainHeThong
         //
         private void lblarow2_Click(object sender, EventArgs e)
         {
-            motabSV();
+     
         }
         private void lblarow_Click(object sender, EventArgs e)
         {
@@ -109,7 +109,7 @@ namespace Login.MainHeThong
         }
         private void load()
         {
-
+            myObjList.Clear();
             ListSinhVien listSinhVien = new ListSinhVien();
             listSinhVien.DocFile(Const.PathfileSV);
             for (int i = 0;i < Const.ListSinhVien.Count; i++)
@@ -120,7 +120,36 @@ namespace Login.MainHeThong
 
         }
 
-      
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            if (checkBox1.Checked == true)
+            {
+                BindingList<SinhVien> filtered = new BindingList<SinhVien>(myObjList.Where(sinhvien => sinhvien.Lop1.Contains(cbnlop.SelectedItem.ToString())).ToList());
+                DataGripSV.DataSource = filtered;
+            }
+           
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked == true)
+            {
+
+            }
+            else
+            {
+                load();
+            }
+        }
+
+        private void lblarow1_Click(object sender, EventArgs e)
+        {
+            motabSV();
+        }
+
+
 
 
 

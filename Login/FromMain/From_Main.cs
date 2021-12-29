@@ -418,7 +418,7 @@ namespace Login.FromMain
 
         private void motabSV()
         {
-            ThongtincaNhan();
+            QuanLiSinhVien();
         }
         private void motabAdmin()
         {

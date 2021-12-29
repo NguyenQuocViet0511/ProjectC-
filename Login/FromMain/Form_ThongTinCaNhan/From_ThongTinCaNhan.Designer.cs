@@ -42,7 +42,6 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtHoVaten = new System.Windows.Forms.TextBox();
             this.txtgioitinh = new System.Windows.Forms.TextBox();
-            this.txtngaysinh = new System.Windows.Forms.TextBox();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.txtdiachi = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,6 +51,7 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             this.label1 = new System.Windows.Forms.Label();
             this.btn = new CustomControls.RJControls.RJButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Date = new System.Windows.Forms.DateTimePicker();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
@@ -180,9 +180,9 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.Date);
             this.panel2.Controls.Add(this.txtHoVaten);
             this.panel2.Controls.Add(this.txtgioitinh);
-            this.panel2.Controls.Add(this.txtngaysinh);
             this.panel2.Controls.Add(this.txtemail);
             this.panel2.Controls.Add(this.txtdiachi);
             this.panel2.Controls.Add(this.label7);
@@ -213,15 +213,6 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             this.txtgioitinh.Name = "txtgioitinh";
             this.txtgioitinh.Size = new System.Drawing.Size(374, 40);
             this.txtgioitinh.TabIndex = 40;
-            // 
-            // txtngaysinh
-            // 
-            this.txtngaysinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtngaysinh.Location = new System.Drawing.Point(150, 150);
-            this.txtngaysinh.Multiline = true;
-            this.txtngaysinh.Name = "txtngaysinh";
-            this.txtngaysinh.Size = new System.Drawing.Size(374, 40);
-            this.txtngaysinh.TabIndex = 39;
             // 
             // txtemail
             // 
@@ -325,6 +316,18 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             this.panel1.Size = new System.Drawing.Size(1155, 718);
             this.panel1.TabIndex = 31;
             // 
+            // Date
+            // 
+            this.Date.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Date.CustomFormat = "dd/MM/yyyy";
+            this.Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Date.Location = new System.Drawing.Point(150, 155);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(374, 31);
+            this.Date.TabIndex = 42;
+            this.Date.Value = new System.DateTime(2021, 12, 23, 0, 0, 0, 0);
+            // 
             // From_ThongTinCaNhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -375,8 +378,8 @@ namespace Login.FromMain.Form_ThongTinCaNhan
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtHoVaten;
         private System.Windows.Forms.TextBox txtgioitinh;
-        private System.Windows.Forms.TextBox txtngaysinh;
         private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.TextBox txtdiachi;
+        private System.Windows.Forms.DateTimePicker Date;
     }
 }

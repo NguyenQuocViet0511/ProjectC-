@@ -35,7 +35,7 @@ namespace Login.FromMain.Form_ThongTinCaNhan
         {
             txtHoVaten.Text = Const.UserLogin.HovaTen1;
             txtgioitinh.Text = Const.UserLogin.GioiTinh1;
-            txtngaysinh.Text = Const.UserLogin.Ngaysinh1;
+            Date.Value = DateTime.Parse(Const.UserLogin.Ngaysinh1);
             txtemail.Text = Const.UserLogin.Email1;
             txtdiachi.Text = Const.UserLogin.DiaChi1;
         }
@@ -43,7 +43,7 @@ namespace Login.FromMain.Form_ThongTinCaNhan
         {
             txtHoVaten.Text = Const.UserLogin.HovaTen1;
             txtgioitinh.Text = Const.UserLogin.GioiTinh1;
-            txtngaysinh.Text = Const.UserLogin.Ngaysinh1;
+            Date.Value = DateTime.Parse(Const.UserLogin.Ngaysinh1);
             txtemail.Text = Const.UserLogin.Email1;
             txtdiachi.Text = Const.UserLogin.DiaChi1;
         }
@@ -55,10 +55,25 @@ namespace Login.FromMain.Form_ThongTinCaNhan
                 txtemail.Enabled = false;
                 txtgioitinh.Enabled = false;
                 txtHoVaten.Enabled = false;
-                txtngaysinh.Enabled = false;
+                Date.Enabled = false;
       
         }
+        private bool KiemTraTenEmail()
+        {
+            ListUser listUser = new ListUser();
+            listUser.DocFile(Const.Pathfile);
+            string Email = txtemail.Text;
 
+            for (int j = 0; j < Const.ListUser.Count; j++)
+            {
+                if (Email.Equals(Const.ListUser[j].Email1))
+                {
+                    return true;
+                }
+
+            }
+            return false;
+        }
         private void btn_Click(object sender, EventArgs e)
         {
             if(oppen == true)
@@ -67,7 +82,7 @@ namespace Login.FromMain.Form_ThongTinCaNhan
                 txtemail.Enabled = true;
                 txtgioitinh.Enabled = true;
                 txtHoVaten.Enabled = true;
-                txtngaysinh.Enabled = true;
+                Date.Enabled = true;
                 btn.Text = "Đồng ý";
                 oppen = false;
             }
@@ -85,13 +100,22 @@ namespace Login.FromMain.Form_ThongTinCaNhan
                         {
                             Const.ListUser[i].HovaTen1 = txtHoVaten.Text;
                             Const.ListUser[i].GioiTinh1 = txtgioitinh.Text;
-                            Const.ListUser[i].Ngaysinh1 = txtngaysinh.Text;
-                            Const.ListUser[i].Email1 = txtemail.Text;
+                            Const.ListUser[i].Ngaysinh1 = Date.Value.Month + "/" + Date.Value.Day + "/" + Date.Value.Year;
+                            if(KiemTraTenEmail())
+                            {
+                                MessageBox.Show("Email Này Đã Tồn Tại Vui Lòng Thử Email Khác", "Thông Báo ", MessageBoxButtons.OK);
+                            }
+                            else
+                            {
+                                Const.ListUser[i].Email1 = txtemail.Text;
+                            }
+
+
                             Const.ListUser[i].DiaChi1 = txtdiachi.Text;
                             // add new moi
                             Const.UserLogin.HovaTen1 = txtHoVaten.Text;
                             Const.UserLogin.GioiTinh1 = txtgioitinh.Text;
-                            Const.UserLogin.Ngaysinh1 = txtngaysinh.Text;
+                            Const.UserLogin.Ngaysinh1 = Date.Value.Month + "/" + Date.Value.Day + "/" + Date.Value.Year;
                             Const.UserLogin.Email1 = txtemail.Text;
                             Const.UserLogin.DiaChi1 = txtdiachi.Text;
                             listUser.GhiFile(Const.Pathfile);

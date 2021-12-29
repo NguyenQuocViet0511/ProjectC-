@@ -106,5 +106,116 @@ namespace Login.FromMain.Form_QuanLySinhVien
                 form_AddUser.ShowDialog();
             }
         }
+        private void loadDataText()
+        {
+            ListSinhVien.DocFile(Const.PathfileSV);
+        }
+        private void txttimkiemtheoten_TextChanged(object sender, EventArgs e)
+        {
+            BindingList<SinhVien> Fitter = new BindingList<SinhVien>(ListSinhVienfillter.Where(SinhVien => SinhVien.HovaTen1.Contains(txttimkiemtheoten.Text)).ToList());
+            dataGridView.DataSource = Fitter;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+           
+                BindingList<SinhVien> Fitter = new BindingList<SinhVien>(ListSinhVienfillter.Where(SinhVien => Convert.ToString(SinhVien.MaSV1).Contains(txttimkiemtheoma.Text)).ToList());
+                dataGridView.DataSource = Fitter;
+            
+           
+        }
+
+        private void btnphanlop_Click(object sender, EventArgs e)
+        {
+            if(cknphanlop.Checked == true)
+            {
+                loadDataText();
+                for (int i = 0; i < Const.ListSinhVien.Count; i++)
+                {
+                    if(Const.ListSinhVien[i].Equals(SinhVien))
+                    {
+                        if(String.IsNullOrEmpty(Const.ListSinhVien[i].Lop1))
+                        {
+                            Const.ListSinhVien[i].Lop1 = cbnPhanLop.SelectedItem.ToString();
+                            ListSinhVien.GhiFile(Const.PathfileSV);
+                            loadData();
+                            MessageBox.Show("Phân Lớp Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Sinh Viên Này Đã Có Lớp", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+
+
+                    }
+                }
+
+            }
+        }
+
+        private void btnchuyenlop_Click(object sender, EventArgs e)
+        {
+            if (cknchuyenlop.Checked == true)
+            {
+                loadDataText();
+                for (int i = 0; i < Const.ListSinhVien.Count; i++)
+                {                   
+                    if (Const.ListSinhVien[i].Equals(SinhVien))
+                    {
+                        if(!String.IsNullOrEmpty(Const.ListSinhVien[i].Lop1))
+                        {
+                            Const.ListSinhVien[i].Lop1 = cbnChuyenLop.SelectedItem.ToString();
+                            ListSinhVien.GhiFile(Const.PathfileSV);
+                            loadData();
+                            MessageBox.Show("Chuyển Lớp Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Sinh Viên Này Chưa Có Lớp", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+
+
+
+                    }
+                }
+
+            }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(ckntimkiemtheolop.Checked == true)
+            {
+                cbnTimKiemLop.Visible = true;
+                BindingList<SinhVien> Fitter = new BindingList<SinhVien>(ListSinhVienfillter.Where(SinhVien => SinhVien.Lop1.Contains(cbnTimKiemLop.SelectedItem.ToString())).ToList());
+                dataGridView.DataSource = Fitter;
+            }
+     
+            
+          
+        }
+
+        private void btnrefresh_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        private void ckntimkiemtheolop_CheckedChanged(object sender, EventArgs e)
+        {
+            if(ckntimkiemtheolop.Checked == true)
+            {
+                
+            }
+            else
+            {
+                LoadData();
+            }
+        }
+
+        private void btnin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
