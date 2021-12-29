@@ -100,17 +100,8 @@ namespace Login.FromMain.Form_ThongTinCaNhan
                         {
                             Const.ListUser[i].HovaTen1 = txtHoVaten.Text;
                             Const.ListUser[i].GioiTinh1 = txtgioitinh.Text;
-                            Const.ListUser[i].Ngaysinh1 = Date.Value.Month + "/" + Date.Value.Day + "/" + Date.Value.Year;
-                            if(KiemTraTenEmail())
-                            {
-                                MessageBox.Show("Email Này Đã Tồn Tại Vui Lòng Thử Email Khác", "Thông Báo ", MessageBoxButtons.OK);
-                            }
-                            else
-                            {
-                                Const.ListUser[i].Email1 = txtemail.Text;
-                            }
-
-
+                            Const.ListUser[i].Ngaysinh1 = Date.Value.Month + "/" + Date.Value.Day + "/" + Date.Value.Year;                      
+                            Const.ListUser[i].Email1 = txtemail.Text;
                             Const.ListUser[i].DiaChi1 = txtdiachi.Text;
                             // add new moi
                             Const.UserLogin.HovaTen1 = txtHoVaten.Text;

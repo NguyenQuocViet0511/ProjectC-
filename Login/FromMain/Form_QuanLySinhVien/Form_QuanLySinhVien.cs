@@ -214,7 +214,21 @@ namespace Login.FromMain.Form_QuanLySinhVien
 
         private void btnin_Click(object sender, EventArgs e)
         {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            // saveFileDialog.InitialDirectory = @"d:\";//Hien thi thu muc khoi tao
+            saveFileDialog.RestoreDirectory = true;
 
+            saveFileDialog.Filter = "Text files (*.xls)|*.xls|All files (*.*)|*.*";//Lọc loại file
+            saveFileDialog.DefaultExt = "xls";//Phần mở rộng mặc định
+            saveFileDialog.AddExtension = true;
+
+            saveFileDialog.Title = "Lưu file Excel";//Tiêu đề của hộp thoại
+            saveFileDialog.FileName = string.Format("DanhSachSinhVien_{0}{1:00}{2:00}{3:00}", DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Minute);//trungthuong2021101801
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)//kiểm tra nếu nhấn vào button save trên hộp thoại
+            {
+                //nhanVienNhanGiaiDao.XuatExcel(saveFileDialog.FileName);
+                MessageBox.Show("Xuất file thành công");
+            }
         }
     }
 }

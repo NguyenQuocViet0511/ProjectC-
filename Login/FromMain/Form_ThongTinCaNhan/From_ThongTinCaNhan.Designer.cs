@@ -40,6 +40,7 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Date = new System.Windows.Forms.DateTimePicker();
             this.txtHoVaten = new System.Windows.Forms.TextBox();
             this.txtgioitinh = new System.Windows.Forms.TextBox();
             this.txtemail = new System.Windows.Forms.TextBox();
@@ -51,7 +52,6 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             this.label1 = new System.Windows.Forms.Label();
             this.btn = new CustomControls.RJControls.RJButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Date = new System.Windows.Forms.DateTimePicker();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
@@ -196,6 +196,18 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             this.panel2.Size = new System.Drawing.Size(549, 491);
             this.panel2.TabIndex = 0;
             // 
+            // Date
+            // 
+            this.Date.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Date.CustomFormat = "dd/MM/yyyy";
+            this.Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Date.Location = new System.Drawing.Point(150, 160);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(374, 26);
+            this.Date.TabIndex = 42;
+            this.Date.Value = new System.DateTime(2021, 12, 23, 0, 0, 0, 0);
+            // 
             // txtHoVaten
             // 
             this.txtHoVaten.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -315,18 +327,6 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1155, 718);
             this.panel1.TabIndex = 31;
-            // 
-            // Date
-            // 
-            this.Date.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Date.CustomFormat = "dd/MM/yyyy";
-            this.Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Date.Location = new System.Drawing.Point(150, 155);
-            this.Date.Name = "Date";
-            this.Date.Size = new System.Drawing.Size(374, 31);
-            this.Date.TabIndex = 42;
-            this.Date.Value = new System.DateTime(2021, 12, 23, 0, 0, 0, 0);
             // 
             // From_ThongTinCaNhan
             // 
