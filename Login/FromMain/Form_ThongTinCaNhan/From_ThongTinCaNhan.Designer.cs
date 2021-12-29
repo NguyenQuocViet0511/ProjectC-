@@ -206,7 +206,7 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             this.Date.Name = "Date";
             this.Date.Size = new System.Drawing.Size(374, 26);
             this.Date.TabIndex = 42;
-            this.Date.Value = new System.DateTime(2021, 12, 23, 0, 0, 0, 0);
+            this.Date.Value = new System.DateTime(2021, 12, 30, 0, 0, 0, 0);
             // 
             // txtHoVaten
             // 

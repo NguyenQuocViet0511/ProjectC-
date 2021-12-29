@@ -1,6 +1,7 @@
 ﻿using Login.Data;
 using Login.DataUser;
 using Login.Fromlogin;
+using Login.FromMain;
 using Login.MyCustome;
 using System;
 using System.Collections.Generic;
@@ -31,7 +32,8 @@ namespace Login
         }
 
 
-
+        public delegate void _LoadDataname();
+        public _LoadDataname LoadDataname;
         private void btnLogin_Click(object sender, EventArgs e)
         {
             ListUser listUser = new ListUser();
@@ -59,9 +61,13 @@ namespace Login
                 {
 
                     MyMessageBox_1.ShowBox("Bạn Đã Đăng Nhập Thành Công", "Thông Báo");
+                    LoadDataname();
+
                     this.Close();
-                
-                 }else
+                  
+
+                }
+                else
             {
                     LblThongBapTenDangNhap.Text = "Sai Tên Tài Khoản Hoặc Mật Khẩu";
                     LblThongBaoMatKhau.Text = "Sai Tên Tài Khoản Hoặc Mật Khẩu";

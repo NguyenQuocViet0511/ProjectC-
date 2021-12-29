@@ -47,6 +47,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
         {
             {
                 index = dataGridView.CurrentRow.Index;
+              
 
                 if (index >= 0)
                 {
@@ -129,56 +130,90 @@ namespace Login.FromMain.Form_QuanLySinhVien
         {
             if(cknphanlop.Checked == true)
             {
-                loadDataText();
-                for (int i = 0; i < Const.ListSinhVien.Count; i++)
+                if(index >= 0)
                 {
-                    if(Const.ListSinhVien[i].Equals(SinhVien))
+                    if (cbnPhanLop.SelectedIndex == -1)
                     {
-                        if(String.IsNullOrEmpty(Const.ListSinhVien[i].Lop1))
-                        {
-                            Const.ListSinhVien[i].Lop1 = cbnPhanLop.SelectedItem.ToString();
-                            ListSinhVien.GhiFile(Const.PathfileSV);
-                            loadData();
-                            MessageBox.Show("Phân Lớp Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Sinh Viên Này Đã Có Lớp", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
-
-
+                        MessageBox.Show("Bạn Chưa Chọn Lớp", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
+                    else
+                    {
+
+                        loadDataText();
+                        for (int i = 0; i < Const.ListSinhVien.Count; i++)
+                        {
+                            if (Const.ListSinhVien[i].Equals(SinhVien))
+                            {
+                                if (String.IsNullOrEmpty(Const.ListSinhVien[i].Lop1))
+                                {
+                                    Const.ListSinhVien[i].Lop1 = cbnPhanLop.SelectedItem.ToString();
+                                    ListSinhVien.GhiFile(Const.PathfileSV);
+                                    loadData();
+                                    MessageBox.Show("Phân Lớp Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Sinh Viên Này Đã Có Lớp", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                }
+
+
+                            }
+                        }
+                    }
+                }else
+
+                {
+                    MessageBox.Show("Bạn Chưa Chọn Sinh Viên Nào", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
-            }
+
+
+        }
         }
 
         private void btnchuyenlop_Click(object sender, EventArgs e)
         {
             if (cknchuyenlop.Checked == true)
             {
-                loadDataText();
-                for (int i = 0; i < Const.ListSinhVien.Count; i++)
-                {                   
-                    if (Const.ListSinhVien[i].Equals(SinhVien))
+
+                if (index >= 0)
+                {
+                    if (cbnChuyenLop.SelectedIndex == -1)
                     {
-                        if(!String.IsNullOrEmpty(Const.ListSinhVien[i].Lop1))
-                        {
-                            Const.ListSinhVien[i].Lop1 = cbnChuyenLop.SelectedItem.ToString();
-                            ListSinhVien.GhiFile(Const.PathfileSV);
-                            loadData();
-                            MessageBox.Show("Chuyển Lớp Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Sinh Viên Này Chưa Có Lớp", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
+                        MessageBox.Show("Bạn Chưa Chọn Lớp", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
+                    else
+                    {
+                        loadDataText();
+                        for (int i = 0; i < Const.ListSinhVien.Count; i++)
+                        {
+                            if (Const.ListSinhVien[i].Equals(SinhVien))
+                            {
+                                if (!String.IsNullOrEmpty(Const.ListSinhVien[i].Lop1))
+                                {
+                                    Const.ListSinhVien[i].Lop1 = cbnChuyenLop.SelectedItem.ToString();
+                                    ListSinhVien.GhiFile(Const.PathfileSV);
+                                    loadData();
+                                    MessageBox.Show("Chuyển Lớp Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Sinh Viên Này Chưa Có Lớp", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                }
+                            }
 
 
 
+                        }
                     }
                 }
+                else
+
+                {
+                    MessageBox.Show("Bạn Chưa Chọn Sinh Viên Nào", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+                   
 
             }
 
@@ -212,8 +247,16 @@ namespace Login.FromMain.Form_QuanLySinhVien
             }
         }
 
+       
         private void btnin_Click(object sender, EventArgs e)
         {
+            List<string> list = new List<string>();
+            //code Xuất Excel 
+            foreach (SinhVien item in Const.ListSinhVien)
+            {
+                string line = string.Format("{0},{1},{2},{3},{4},{5},{6}", item.STT1, item.MaSV1, item.HovaTen1, item.GioiTinh1, item.NgaySinh1, item.DiaChi1, item.Lop1);
+                list.Add(line);
+            }
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             // saveFileDialog.InitialDirectory = @"d:\";//Hien thi thu muc khoi tao
             saveFileDialog.RestoreDirectory = true;
@@ -226,10 +269,38 @@ namespace Login.FromMain.Form_QuanLySinhVien
             saveFileDialog.FileName = string.Format("DanhSachSinhVien_{0}{1:00}{2:00}{3:00}", DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Minute);//trungthuong2021101801
             if (saveFileDialog.ShowDialog() == DialogResult.OK)//kiểm tra nếu nhấn vào button save trên hộp thoại
             {
-                //nhanVienNhanGiaiDao.XuatExcel(saveFileDialog.FileName);
-                MessageBox.Show("Xuất file thành công");
+                //XuatFileExcel.XuatExcel(saveFileDialog.FileName, list, "Danh Sách Sinh Viên","","STT", "Mã Sinh Viên", "Họ Và Tên", "Giới Tính" , "Ngày Sinh", "Địa Chỉ", "Lớp");
+                XuatFileExcel.XuatExcel(saveFileDialog.FileName,dataGridView, "Danh Sách Sinh Viên");
+                MessageBox.Show("Xuất file thành công", "Thông Báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
+        }
+
+        private void cknphanlop_CheckedChanged(object sender, EventArgs e)
+        {
+            if(cknphanlop.Checked == true)
+            {
+
+            }
+            else
+            {
+                cbnPhanLop.SelectedIndex = -1;
+                cbnPhanLop.Items.Clear();
+            }
+        }
+
+        private void cknchuyenlop_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cknchuyenlop.Checked == true)
+            {
+
+            }
+            else
+            {
+                cbnChuyenLop.SelectedIndex = -1;
+                cbnChuyenLop.Items.Clear();
             }
         }
     }
+            
 }
 

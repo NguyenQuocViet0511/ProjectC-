@@ -125,7 +125,7 @@ namespace Login.Data
             { GC.Collect(); }
         }
 
-        public static void XuatExcel(string filePath, DataGridView dgv, int rowBegin = 1,
+        public static void XuatExcel(string filePath, DataGridView dgv, String Tieude, int rowBegin = 1,
             string fontName = "Arial", int fontsizeTieude = 14, int fonsizeNoiDung = 12)
         {
             Excel.Application xlApp = new Excel.Application();
@@ -150,20 +150,20 @@ namespace Login.Data
             //khoi bao mot so thuoc tinhs
             int row = rowBegin;
             //Them Tieu de
-            Range row1_TieuDe = ws.get_Range("A" + rowBegin.ToString(), "C" + rowBegin.ToString());
+            Range row1_TieuDe = ws.get_Range("A" + rowBegin.ToString(), "G" + rowBegin.ToString());
             row1_TieuDe.Merge();
             row1_TieuDe.Font.Bold = true;
             row1_TieuDe.Font.Name = fontName;
             row1_TieuDe.Font.Size = fontsizeTieude;
             row1_TieuDe.Cells.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
-            row1_TieuDe.Value2 = "Danh Sach ...";
+            row1_TieuDe.Value2 = Tieude;
 
             //Phan tieu de cua noi dung
             Range row3;
-            row = 3;
+            row = 2;
             string[] tencot = new string[] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
             int col = 0;
-            for (int i = 0; i < dgv.ColumnCount; i++)
+            for (int i = 2; i < dgv.ColumnCount; i++)
             {
                 if (dgv.Columns[i].Visible == true)
                 {
@@ -176,14 +176,14 @@ namespace Login.Data
                     col++;
                 }
             }
-            row = 4;
+            row = 3;
             //noi dung
-            for (int i = 0; i < dgv.RowCount; i++)
+            for (int i = 2; i < dgv.RowCount; i++)
             {
                 DataGridViewRow dr = dgv.Rows[i];
                 dynamic[] arr = new dynamic[100];
                 int colvalue = 0;
-                for (int column = 0; column < dgv.Columns.Count; column++)
+                for (int column = 2; column < dgv.Columns.Count; column++)
                 {
                     if (dgv.Columns[column].Visible == true)
                     {
@@ -198,7 +198,7 @@ namespace Login.Data
             }
 
             //Dong khung table
-            BorderAround(ws.get_Range("A3", "J" + (row - 1).ToString()));
+            BorderAround(ws.get_Range("A3", "G" + (row - 1).ToString()));
             //Save
             wb.SaveAs(filePath);
             wb.Close();

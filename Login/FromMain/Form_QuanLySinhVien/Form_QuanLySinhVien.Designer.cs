@@ -29,11 +29,13 @@ namespace Login.FromMain.Form_QuanLySinhVien
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txttimkiemtheoma = new System.Windows.Forms.TextBox();
             this.cbnTimKiemLop = new System.Windows.Forms.ComboBox();
             this.txttimkiemtheoten = new System.Windows.Forms.TextBox();
@@ -41,10 +43,16 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.ckntimkiemtheolop = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnrefresh = new CustomControls.RJControls.RJButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnin = new CustomControls.RJControls.RJButton();
             this.btnchuyenlop = new CustomControls.RJControls.RJButton();
             this.btnphanlop = new CustomControls.RJControls.RJButton();
             this.cbnChuyenLop = new System.Windows.Forms.ComboBox();
             this.cbnPhanLop = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnThem = new CustomControls.RJControls.RJButton();
             this.cknchuyenlop = new System.Windows.Forms.CheckBox();
             this.cknphanlop = new System.Windows.Forms.CheckBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -58,28 +66,20 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.buttonEdit = new System.Windows.Forms.DataGridViewImageColumn();
             this.ButtonDelete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnrefresh = new CustomControls.RJControls.RJButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnin = new CustomControls.RJControls.RJButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnThem = new CustomControls.RJControls.RJButton();
-            this.label3 = new System.Windows.Forms.Label();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -119,6 +119,27 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(833, 101);
             this.panel6.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(593, 23);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(169, 15);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Tìm Kiếm Theo Mã Sinh Viên";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox3.Location = new System.Drawing.Point(830, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(3, 101);
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
             // 
             // txttimkiemtheoma
             // 
@@ -209,6 +230,76 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.panel3.Size = new System.Drawing.Size(104, 101);
             this.panel3.TabIndex = 15;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox4.Location = new System.Drawing.Point(2, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(3, 101);
+            this.pictureBox4.TabIndex = 18;
+            this.pictureBox4.TabStop = false;
+            // 
+            // btnrefresh
+            // 
+            this.btnrefresh.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnrefresh.Backgroundclick = System.Drawing.Color.MediumSlateBlue;
+            this.btnrefresh.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnrefresh.BackGroundEnter = System.Drawing.Color.Red;
+            this.btnrefresh.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
+            this.btnrefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnrefresh.BorderRadius = 0;
+            this.btnrefresh.BorderSize = 0;
+            this.btnrefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnrefresh.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnrefresh.FlatAppearance.BorderSize = 0;
+            this.btnrefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrefresh.ForeColor = System.Drawing.Color.White;
+            this.btnrefresh.Image = global::Login.Properties.Resources.refresh_shield_30px;
+            this.btnrefresh.ImageRight = null;
+            this.btnrefresh.Location = new System.Drawing.Point(5, 0);
+            this.btnrefresh.Name = "btnrefresh";
+            this.btnrefresh.Size = new System.Drawing.Size(48, 101);
+            this.btnrefresh.TabIndex = 17;
+            this.btnrefresh.TextColor = System.Drawing.Color.White;
+            this.btnrefresh.UseVisualStyleBackColor = false;
+            this.btnrefresh.Click += new System.EventHandler(this.btnrefresh_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox2.Location = new System.Drawing.Point(53, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(3, 101);
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnin
+            // 
+            this.btnin.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnin.Backgroundclick = System.Drawing.Color.MediumSlateBlue;
+            this.btnin.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnin.BackGroundEnter = System.Drawing.Color.Red;
+            this.btnin.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
+            this.btnin.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnin.BorderRadius = 0;
+            this.btnin.BorderSize = 0;
+            this.btnin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnin.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnin.FlatAppearance.BorderSize = 0;
+            this.btnin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnin.ForeColor = System.Drawing.Color.White;
+            this.btnin.Image = global::Login.Properties.Resources.file_excel_30px;
+            this.btnin.ImageRight = null;
+            this.btnin.Location = new System.Drawing.Point(56, 0);
+            this.btnin.Name = "btnin";
+            this.btnin.Size = new System.Drawing.Size(48, 101);
+            this.btnin.TabIndex = 15;
+            this.btnin.TextColor = System.Drawing.Color.White;
+            this.btnin.UseVisualStyleBackColor = false;
+            this.btnin.Click += new System.EventHandler(this.btnin_Click);
+            // 
             // btnchuyenlop
             // 
             this.btnchuyenlop.BackColor = System.Drawing.Color.MediumSlateBlue;
@@ -278,6 +369,41 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.cbnPhanLop.Size = new System.Drawing.Size(143, 32);
             this.cbnPhanLop.TabIndex = 9;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Location = new System.Drawing.Point(479, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(3, 101);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnThem
+            // 
+            this.btnThem.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnThem.Backgroundclick = System.Drawing.Color.MediumSlateBlue;
+            this.btnThem.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnThem.BackGroundEnter = System.Drawing.Color.Red;
+            this.btnThem.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
+            this.btnThem.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnThem.BorderRadius = 0;
+            this.btnThem.BorderSize = 0;
+            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThem.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnThem.FlatAppearance.BorderSize = 0;
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThem.ForeColor = System.Drawing.Color.White;
+            this.btnThem.Image = global::Login.Properties.Resources.add_new_30px;
+            this.btnThem.ImageRight = null;
+            this.btnThem.Location = new System.Drawing.Point(482, 0);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(54, 101);
+            this.btnThem.TabIndex = 2;
+            this.btnThem.TextColor = System.Drawing.Color.White;
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
             // cknchuyenlop
             // 
             this.cknchuyenlop.AutoSize = true;
@@ -288,6 +414,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.cknchuyenlop.TabIndex = 1;
             this.cknchuyenlop.Text = "Chuyển Lớp";
             this.cknchuyenlop.UseVisualStyleBackColor = true;
+            this.cknchuyenlop.CheckedChanged += new System.EventHandler(this.cknchuyenlop_CheckedChanged);
             // 
             // cknphanlop
             // 
@@ -299,6 +426,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.cknphanlop.TabIndex = 0;
             this.cknphanlop.Text = "Phân Lớp";
             this.cknphanlop.UseVisualStyleBackColor = true;
+            this.cknphanlop.CheckedChanged += new System.EventHandler(this.cknphanlop_CheckedChanged);
             // 
             // statusStrip1
             // 
@@ -378,14 +506,14 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.dataGridView.AllowUserToAddRows = false;
             this.dataGridView.AllowUserToDeleteRows = false;
             this.dataGridView.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STT,
@@ -397,14 +525,14 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.LOP,
             this.buttonEdit,
             this.ButtonDelete});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.Location = new System.Drawing.Point(0, 167);
             this.dataGridView.Name = "dataGridView";
@@ -414,20 +542,6 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.dataGridView.Size = new System.Drawing.Size(1369, 461);
             this.dataGridView.TabIndex = 16;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::Login.Properties.Resources.edit_20px;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.ReadOnly = true;
-            // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = global::Login.Properties.Resources.Delete_20px;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.ReadOnly = true;
             // 
             // buttonEdit
             // 
@@ -443,131 +557,19 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.ButtonDelete.Name = "ButtonDelete";
             this.ButtonDelete.ReadOnly = true;
             // 
-            // pictureBox3
+            // dataGridViewImageColumn1
             // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox3.Location = new System.Drawing.Point(830, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(3, 101);
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::Login.Properties.Resources.edit_20px;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.ReadOnly = true;
             // 
-            // pictureBox4
+            // dataGridViewImageColumn2
             // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox4.Location = new System.Drawing.Point(2, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(3, 101);
-            this.pictureBox4.TabIndex = 18;
-            this.pictureBox4.TabStop = false;
-            // 
-            // btnrefresh
-            // 
-            this.btnrefresh.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnrefresh.Backgroundclick = System.Drawing.Color.MediumSlateBlue;
-            this.btnrefresh.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnrefresh.BackGroundEnter = System.Drawing.Color.Red;
-            this.btnrefresh.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
-            this.btnrefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnrefresh.BorderRadius = 0;
-            this.btnrefresh.BorderSize = 0;
-            this.btnrefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnrefresh.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnrefresh.FlatAppearance.BorderSize = 0;
-            this.btnrefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnrefresh.ForeColor = System.Drawing.Color.White;
-            this.btnrefresh.Image = global::Login.Properties.Resources.refresh_shield_30px;
-            this.btnrefresh.ImageRight = null;
-            this.btnrefresh.Location = new System.Drawing.Point(5, 0);
-            this.btnrefresh.Name = "btnrefresh";
-            this.btnrefresh.Size = new System.Drawing.Size(48, 101);
-            this.btnrefresh.TabIndex = 17;
-            this.btnrefresh.TextColor = System.Drawing.Color.White;
-            this.btnrefresh.UseVisualStyleBackColor = false;
-            this.btnrefresh.Click += new System.EventHandler(this.btnrefresh_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox2.Location = new System.Drawing.Point(53, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(3, 101);
-            this.pictureBox2.TabIndex = 16;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btnin
-            // 
-            this.btnin.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnin.Backgroundclick = System.Drawing.Color.MediumSlateBlue;
-            this.btnin.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnin.BackGroundEnter = System.Drawing.Color.Red;
-            this.btnin.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
-            this.btnin.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnin.BorderRadius = 0;
-            this.btnin.BorderSize = 0;
-            this.btnin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnin.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnin.FlatAppearance.BorderSize = 0;
-            this.btnin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnin.ForeColor = System.Drawing.Color.White;
-            this.btnin.Image = global::Login.Properties.Resources.file_excel_30px;
-            this.btnin.ImageRight = null;
-            this.btnin.Location = new System.Drawing.Point(56, 0);
-            this.btnin.Name = "btnin";
-            this.btnin.Size = new System.Drawing.Size(48, 101);
-            this.btnin.TabIndex = 15;
-            this.btnin.TextColor = System.Drawing.Color.White;
-            this.btnin.UseVisualStyleBackColor = false;
-            this.btnin.Click += new System.EventHandler(this.btnin_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Location = new System.Drawing.Point(479, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(3, 101);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnThem
-            // 
-            this.btnThem.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnThem.Backgroundclick = System.Drawing.Color.MediumSlateBlue;
-            this.btnThem.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnThem.BackGroundEnter = System.Drawing.Color.Red;
-            this.btnThem.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
-            this.btnThem.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnThem.BorderRadius = 0;
-            this.btnThem.BorderSize = 0;
-            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThem.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnThem.FlatAppearance.BorderSize = 0;
-            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Image = global::Login.Properties.Resources.add_new_30px;
-            this.btnThem.ImageRight = null;
-            this.btnThem.Location = new System.Drawing.Point(482, 0);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(54, 101);
-            this.btnThem.TabIndex = 2;
-            this.btnThem.TextColor = System.Drawing.Color.White;
-            this.btnThem.UseVisualStyleBackColor = false;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(593, 23);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 15);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Tìm Kiếm Theo Mã Sinh Viên";
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = global::Login.Properties.Resources.Delete_20px;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.ReadOnly = true;
             // 
             // Form_QuanLySinhVien
             // 
@@ -584,16 +586,16 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.panel2.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

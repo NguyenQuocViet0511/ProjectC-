@@ -31,8 +31,17 @@ namespace Login.FromMain
 
         private void From_Main_Load(object sender, EventArgs e)
         {
-            Frm_Login frm_Login = new Frm_Login();
+            Frm_Login frm_Login = new Frm_Login() { LoadDataname = new Frm_Login._LoadDataname(LoadDataname)};
+            
             frm_Login.ShowDialog();
+            lblLoginName.Text = "Đang Đăng Nhập Bởi Người Dùng " + Const.UserLogin.HovaTen1;
+        }
+        public delegate void _LoadDataname();
+      
+        public void LoadDataname()
+        {
+           
+          
             lblLoginName.Text = "Đang Đăng Nhập Bởi Người Dùng " + Const.UserLogin.HovaTen1;
         }
         private void MenuBar()
@@ -188,7 +197,11 @@ namespace Login.FromMain
             String Result = MyMessageBox.ShowBox("Bạn Có Muốn Đăng Xuất", "Thông Báo");
             if(Result.Equals("1"))
             {
-                Frm_Login frm_Login = new Frm_Login();
+                Const.UserLogin = null;
+                Frm_Login frm_Login = new Frm_Login() { LoadDataname = new Frm_Login._LoadDataname(LoadDataname) };
+
+                tabMain.Tabs.Clear();
+                Trangchu();
                 frm_Login.ShowDialog();
             }
            

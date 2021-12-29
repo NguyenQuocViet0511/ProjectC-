@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Login.DataSinhVien
 {
@@ -60,5 +61,22 @@ namespace Login.DataSinhVien
             }
 
         }
+        internal void XuatExcel(string path)
+        {
+            List<string> list = new List<string>();
+            //code Xuất Excel 
+            foreach (SinhVien item in Const.ListSinhVien)
+            {
+                string line = string.Format("{0},{1},{2},{3},{4},{5},{6}", item.STT1, item.MaSV1, item.HovaTen1, item.GioiTinh1,item.NgaySinh1,item.DiaChi1,item.Lop1);
+                list.Add(line);
+            }
+            string[] title = new string[]{
+                "ma so","Họ và tên","Phòng ban", "Giải","Thanh tien"
+            };
+            XuatFileExcel.XuatExcel(path, list, "Danh sách Sinh Viên ", "Đang Có", title);
+            // XuatFileExcel.XuatExcel(path, list, "Danh sách nhân viên trúng giải", "Đã ký", "id","name","phong ban");
+        }
+
+       
     }
 }

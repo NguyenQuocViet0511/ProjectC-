@@ -35,7 +35,16 @@ namespace Login.FromMain.Form_ThongTinCaNhan
         {
             txtHoVaten.Text = Const.UserLogin.HovaTen1;
             txtgioitinh.Text = Const.UserLogin.GioiTinh1;
-            Date.Value = DateTime.Parse(Const.UserLogin.Ngaysinh1);
+            if(String.IsNullOrEmpty(Const.UserLogin.Ngaysinh1))
+            {
+                Date.Value.AddDays(0);
+                Date.Value.AddMonths(0);
+            }
+            else
+            {
+                Date.Value = DateTime.Parse(Const.UserLogin.Ngaysinh1);
+            }
+         
             txtemail.Text = Const.UserLogin.Email1;
             txtdiachi.Text = Const.UserLogin.DiaChi1;
         }
@@ -43,7 +52,14 @@ namespace Login.FromMain.Form_ThongTinCaNhan
         {
             txtHoVaten.Text = Const.UserLogin.HovaTen1;
             txtgioitinh.Text = Const.UserLogin.GioiTinh1;
-            Date.Value = DateTime.Parse(Const.UserLogin.Ngaysinh1);
+            if (String.IsNullOrEmpty(Const.UserLogin.Ngaysinh1))
+            {
+                Date.Value.AddYears(1);
+            }
+            else
+            {
+                Date.Value = DateTime.Parse(Const.UserLogin.Ngaysinh1);
+            }
             txtemail.Text = Const.UserLogin.Email1;
             txtdiachi.Text = Const.UserLogin.DiaChi1;
         }
