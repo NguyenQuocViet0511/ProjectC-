@@ -1,4 +1,5 @@
 ﻿using Login.Data;
+using Login.DataQuyen;
 using Login.DataUser;
 using Login.FromMain;
 using Login.MyCustome;
@@ -131,6 +132,75 @@ namespace Login.MainHeThong
                 from_ThemAndSua.ShowDialog();
             }
             
+        }
+
+        private void btnrefresh_Click(object sender, EventArgs e)
+        {
+            loadData();
+        }
+        ListQuyen listQuyen = new ListQuyen();
+       
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+          
+            if (checkBox1.Checked == true)
+            {
+                listQuyen.DocFile(Const.PathfileQuyen);
+                List<String> Quyen = new List<string>();
+                for (int i = 0; i < Const.ListQuyen.Count; i++)
+                {
+                    Quyen.Add(Const.ListQuyen[i].Quyen1);
+                }
+                comboBox1.DataSource = Quyen;
+            }
+            else
+            {
+                comboBox1.SelectedIndex = -1;
+                comboBox1.DataSource = null;
+            }
+        }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked == true)
+            {
+                if(index >= 0)
+                {
+                    if (comboBox1.SelectedIndex == -1)
+                    {
+                        MessageBox.Show("Bạn Chưa Chọn Quyền", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        for (int i = 0; i < Const.ListUser.Count; i++)
+                        {
+                            if (Const.ListUser[i].Equals(User))
+                            {
+                                if (String.IsNullOrEmpty(Const.ListUser[i].Quyen1))
+                                {
+                                    Const.ListUser[i].Quyen1 = comboBox1.SelectedItem.ToString();
+                                    listUser.GhiFile(Const.Pathfile);
+                                    loadData();
+                                    MessageBox.Show("Phân Quyền Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                }
+                                else
+                                {
+                                    MessageBox.Show("User Này Đã Phân Quyền ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                }
+
+
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Bạn Chưa Chọn User Nào ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+
+            }
         }
     }
 }

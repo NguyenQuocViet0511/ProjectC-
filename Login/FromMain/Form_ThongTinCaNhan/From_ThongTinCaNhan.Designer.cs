@@ -210,7 +210,7 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             // 
             // txtHoVaten
             // 
-            this.txtHoVaten.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtHoVaten.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtHoVaten.Location = new System.Drawing.Point(150, 48);
             this.txtHoVaten.Multiline = true;
             this.txtHoVaten.Name = "txtHoVaten";
@@ -219,7 +219,7 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             // 
             // txtgioitinh
             // 
-            this.txtgioitinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtgioitinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtgioitinh.Location = new System.Drawing.Point(150, 100);
             this.txtgioitinh.Multiline = true;
             this.txtgioitinh.Name = "txtgioitinh";
@@ -228,7 +228,7 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             // 
             // txtemail
             // 
-            this.txtemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtemail.Location = new System.Drawing.Point(150, 202);
             this.txtemail.Multiline = true;
             this.txtemail.Name = "txtemail";
@@ -237,7 +237,7 @@ namespace Login.FromMain.Form_ThongTinCaNhan
             // 
             // txtdiachi
             // 
-            this.txtdiachi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtdiachi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtdiachi.Location = new System.Drawing.Point(150, 260);
             this.txtdiachi.Multiline = true;
             this.txtdiachi.Name = "txtdiachi";

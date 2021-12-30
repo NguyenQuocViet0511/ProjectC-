@@ -20,8 +20,9 @@ namespace Login.FromMain
         {
           
             InitializeComponent();
+     
             Trangchu();
-          
+        
             MenuBar();
             timeDate.Enabled = true;
            
@@ -31,8 +32,9 @@ namespace Login.FromMain
 
         private void From_Main_Load(object sender, EventArgs e)
         {
-            Frm_Login frm_Login = new Frm_Login() { LoadDataname = new Frm_Login._LoadDataname(LoadDataname)};
             
+            Frm_Login frm_Login = new Frm_Login() { LoadDataname = new Frm_Login._LoadDataname(LoadDataname)};
+           
             frm_Login.ShowDialog();
             lblLoginName.Text = "Đang Đăng Nhập Bởi Người Dùng " + Const.UserLogin.HovaTen1;
         }
@@ -40,8 +42,8 @@ namespace Login.FromMain
       
         public void LoadDataname()
         {
-           
-          
+
+            PhanQuyen();
             lblLoginName.Text = "Đang Đăng Nhập Bởi Người Dùng " + Const.UserLogin.HovaTen1;
         }
         private void MenuBar()
@@ -138,7 +140,22 @@ namespace Login.FromMain
       
 
        
+        private void PhanQuyen()
+        {
+            switch(Const.UserLogin.Quyen1)
+            {
+                case "Admin":
 
+                    break;
+                case "Manager":
+
+                    break;
+                case "user":
+                    BtnAdmin.Enabled = false;
+                    break;
+
+            }
+        }
         private void btnTrangChu_Click(object sender, EventArgs e)
         {
             //Add();

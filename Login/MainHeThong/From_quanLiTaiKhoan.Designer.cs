@@ -29,9 +29,9 @@ namespace Login.MainHeThong
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -55,26 +55,29 @@ namespace Login.MainHeThong
             this.label2 = new System.Windows.Forms.Label();
             this.txttimkiem = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnThem = new CustomControls.RJControls.RJButton();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnrefresh = new CustomControls.RJControls.RJButton();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -145,14 +148,14 @@ namespace Login.MainHeThong
             this.dataGridView.AllowUserToAddRows = false;
             this.dataGridView.AllowUserToDeleteRows = false;
             this.dataGridView.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STT,
@@ -167,26 +170,26 @@ namespace Login.MainHeThong
             this.ButtonEdit,
             this.buttonDelete});
             this.dataGridView.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.Location = new System.Drawing.Point(0, 162);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridView.RowHeadersVisible = false;
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView.Size = new System.Drawing.Size(1242, 571);
@@ -313,6 +316,7 @@ namespace Login.MainHeThong
             // panel2
             // 
             this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -321,85 +325,22 @@ namespace Login.MainHeThong
             this.panel2.Size = new System.Drawing.Size(1242, 92);
             this.panel2.TabIndex = 2;
             // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.pictureBox2);
-            this.panel5.Controls.Add(this.rjButton1);
-            this.panel5.Controls.Add(this.checkBox1);
-            this.panel5.Controls.Add(this.comboBox1);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(918, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(268, 92);
-            this.panel5.TabIndex = 13;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(3, 92);
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.Backgroundclick = System.Drawing.Color.Empty;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BackGroundEnter = System.Drawing.Color.Red;
-            this.rjButton1.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 0;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.ImageRight = null;
-            this.rjButton1.Location = new System.Drawing.Point(20, 64);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(229, 23);
-            this.rjButton1.TabIndex = 5;
-            this.rjButton1.Text = "Đồng Ý";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(20, 6);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(85, 17);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Phân Quyền";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(20, 34);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(229, 24);
-            this.comboBox1.TabIndex = 4;
-            // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.btnrefresh);
             this.panel7.Controls.Add(this.pictureBox1);
             this.panel7.Controls.Add(this.btnThem);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel7.Location = new System.Drawing.Point(1186, 0);
+            this.panel7.Location = new System.Drawing.Point(1153, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(56, 92);
+            this.panel7.Size = new System.Drawing.Size(89, 92);
             this.panel7.TabIndex = 12;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(45, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(3, 92);
             this.pictureBox1.TabIndex = 1;
@@ -422,9 +363,9 @@ namespace Login.MainHeThong
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.Image = global::Login.Properties.Resources.add_new_30px;
             this.btnThem.ImageRight = null;
-            this.btnThem.Location = new System.Drawing.Point(5, 0);
+            this.btnThem.Location = new System.Drawing.Point(48, 0);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(51, 92);
+            this.btnThem.Size = new System.Drawing.Size(41, 92);
             this.btnThem.TabIndex = 0;
             this.btnThem.TextColor = System.Drawing.Color.White;
             this.btnThem.UseVisualStyleBackColor = false;
@@ -445,6 +386,107 @@ namespace Login.MainHeThong
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.ReadOnly = true;
             this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // btnrefresh
+            // 
+            this.btnrefresh.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnrefresh.Backgroundclick = System.Drawing.Color.MediumSlateBlue;
+            this.btnrefresh.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnrefresh.BackGroundEnter = System.Drawing.Color.Red;
+            this.btnrefresh.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
+            this.btnrefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnrefresh.BorderRadius = 0;
+            this.btnrefresh.BorderSize = 0;
+            this.btnrefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnrefresh.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnrefresh.FlatAppearance.BorderSize = 0;
+            this.btnrefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrefresh.ForeColor = System.Drawing.Color.White;
+            this.btnrefresh.Image = global::Login.Properties.Resources.refresh_shield_30px;
+            this.btnrefresh.ImageRight = null;
+            this.btnrefresh.Location = new System.Drawing.Point(-6, 0);
+            this.btnrefresh.Name = "btnrefresh";
+            this.btnrefresh.Size = new System.Drawing.Size(51, 92);
+            this.btnrefresh.TabIndex = 18;
+            this.btnrefresh.TextColor = System.Drawing.Color.White;
+            this.btnrefresh.UseVisualStyleBackColor = false;
+            this.btnrefresh.Click += new System.EventHandler(this.btnrefresh_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox3.Location = new System.Drawing.Point(1150, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(3, 92);
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.pictureBox2);
+            this.panel5.Controls.Add(this.rjButton1);
+            this.panel5.Controls.Add(this.checkBox1);
+            this.panel5.Controls.Add(this.comboBox1);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel5.Location = new System.Drawing.Point(887, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(263, 92);
+            this.panel5.TabIndex = 15;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(3, 92);
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton1.Backgroundclick = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton1.BackGroundEnter = System.Drawing.Color.Red;
+            this.rjButton1.BackGroundRelease = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 0;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.ImageRight = null;
+            this.rjButton1.Location = new System.Drawing.Point(20, 64);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(229, 23);
+            this.rjButton1.TabIndex = 5;
+            this.rjButton1.Text = "Đồng Ý";
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(20, 6);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(85, 17);
+            this.checkBox1.TabIndex = 3;
+            this.checkBox1.Text = "Phân Quyền";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(20, 34);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(229, 24);
+            this.comboBox1.TabIndex = 4;
             // 
             // From_quanLiTaiKhoan
             // 
@@ -470,11 +512,12 @@ namespace Login.MainHeThong
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -494,11 +537,6 @@ namespace Login.MainHeThong
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel7;
         private CustomControls.RJControls.RJButton btnThem;
-        private System.Windows.Forms.Panel panel5;
-        private CustomControls.RJControls.RJButton rjButton1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn Hovaten;
@@ -513,5 +551,12 @@ namespace Login.MainHeThong
         private System.Windows.Forms.DataGridViewImageColumn buttonDelete;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private CustomControls.RJControls.RJButton rjButton1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private CustomControls.RJControls.RJButton btnrefresh;
     }
 }

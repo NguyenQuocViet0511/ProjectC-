@@ -64,6 +64,8 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataQuyen\ListQuyen.cs" />
+    <Compile Include="DataQuyen\Quyen.cs" />
     <Compile Include="DataSinhVien\ListSinhVien.cs" />
     <Compile Include="DataSinhVien\SinhVien.cs" />
     <Compile Include="DataToanCuc\Const.cs" />
