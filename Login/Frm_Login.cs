@@ -63,6 +63,7 @@ namespace Login
                     MyMessageBox_1.ShowBox("Bạn Đã Đăng Nhập Thành Công", "Thông Báo");
                     LoadDataname();
 
+
                     this.Close();
                   
 
@@ -112,7 +113,7 @@ namespace Login
 
         private void LQuenMatKhau_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
+   
             Form_QuenMatKhau form_QuenMatKhau = new Form_QuenMatKhau();
             form_QuenMatKhau.ShowDialog();
            
@@ -137,7 +138,7 @@ namespace Login
 
         private void LDangKyTaiKhoan_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             Form_DangKy form_DangKy = new Form_DangKy();
             form_DangKy.ShowDialog();
    

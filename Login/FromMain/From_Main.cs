@@ -46,6 +46,7 @@ namespace Login.FromMain
             PhanQuyen();
             lblLoginName.Text = "Đang Đăng Nhập Bởi Người Dùng " + Const.UserLogin.HovaTen1;
         }
+        
         private void MenuBar()
         {
             if (openMenu == true)
@@ -219,6 +220,7 @@ namespace Login.FromMain
 
                 tabMain.Tabs.Clear();
                 Trangchu();
+                
                 frm_Login.ShowDialog();
             }
            

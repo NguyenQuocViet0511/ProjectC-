@@ -29,9 +29,9 @@ namespace Login.Fromlogin
         private void lblQuayLai_Click(object sender, EventArgs e)
         {
          
-            Frm_Login frm_Login = new Frm_Login();
+           
             this.Dispose();
-            frm_Login.ShowDialog();
+
             
 
         }
@@ -226,9 +226,7 @@ namespace Login.Fromlogin
 
         private void rjButton1_Click_1(object sender, EventArgs e)
         {
-            Frm_Login frm_Login = new Frm_Login();
-            this.Hide();
-            frm_Login.ShowDialog();
+            this.Close();
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
