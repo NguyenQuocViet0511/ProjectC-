@@ -30,3 +30,5 @@ C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.csproj.CoreCompileInpu
 C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.csproj.CopyComplete
 C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.exe
 C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.pdb
+C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.FromMain.Form_QuanLyLop.From_QuanLyLop.resources
+C:\Users\admin\Desktop\C#\ProjectC-\Login\obj\Debug\Login.FromMain.Form_QuanLyLop.From_Addlop.resources

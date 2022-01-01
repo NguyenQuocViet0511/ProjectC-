@@ -178,7 +178,7 @@ namespace Login.Data
             }
             row = 3;
             //noi dung
-            for (int i = 2; i < dgv.RowCount; i++)
+            for (int i = 0; i < dgv.RowCount; i++)
             {
                 DataGridViewRow dr = dgv.Rows[i];
                 dynamic[] arr = new dynamic[100];

@@ -1,4 +1,5 @@
 ﻿using Login.Data;
+using Login.DataLop;
 using Login.DataSinhVien;
 using Login.DataUser;
 using Login.MyCustome;
@@ -17,7 +18,9 @@ namespace Login.FromMain.Form_QuanLySinhVien
     public partial class Form_QuanLySinhVien : Form
     {
         BindingList<SinhVien> ListSinhVienfillter = new BindingList<SinhVien>();
+        List<String> vs = new List<string>();
         SinhVien SinhVien = new SinhVien();
+        private bool mo = true;
         static int index = -1;
         ListSinhVien ListSinhVien = new ListSinhVien();
         internal From_Main form_QuanLySinhVien;
@@ -219,15 +222,21 @@ namespace Login.FromMain.Form_QuanLySinhVien
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(ckntimkiemtheolop.Checked == true)
+            if (ckntimkiemtheolop.Checked == true)
             {
-                cbnTimKiemLop.Visible = true;
-                BindingList<SinhVien> Fitter = new BindingList<SinhVien>(ListSinhVienfillter.Where(SinhVien => SinhVien.Lop1.Contains(cbnTimKiemLop.SelectedItem.ToString())).ToList());
-                dataGridView.DataSource = Fitter;
+               
+
+                if (mo == false)
+                {
+                    BindingList<SinhVien> Fitter = new BindingList<SinhVien>(ListSinhVienfillter.Where(SinhVien => SinhVien.Lop1.Contains(cbnTimKiemLop.SelectedItem.ToString())).ToList());
+                    dataGridView.DataSource = Fitter;
+                }
+
+
             }
-     
-            
-          
+
+
+
         }
 
         private void btnrefresh_Click(object sender, EventArgs e)
@@ -240,9 +249,15 @@ namespace Login.FromMain.Form_QuanLySinhVien
             if(ckntimkiemtheolop.Checked == true)
             {
                 
+                loadLop();              
+                cbnTimKiemLop.DataSource = vs;
+                cbnTimKiemLop.SelectedIndex = -1;
+
             }
             else
             {
+                mo = true;
+                cbnTimKiemLop.DataSource = null;
                 LoadData();
             }
         }
@@ -252,11 +267,11 @@ namespace Login.FromMain.Form_QuanLySinhVien
         {
             List<string> list = new List<string>();
             //code Xuất Excel 
-            foreach (SinhVien item in Const.ListSinhVien)
-            {
-                string line = string.Format("{0},{1},{2},{3},{4},{5},{6}", item.STT1, item.MaSV1, item.HovaTen1, item.GioiTinh1, item.NgaySinh1, item.DiaChi1, item.Lop1);
-                list.Add(line);
-            }
+            //foreach (SinhVien item in Const.ListSinhVien)
+            //{
+            //    string line = string.Format("{0},{1},{2},{3},{4},{5},{6}", item.STT1, item.MaSV1, item.HovaTen1, item.GioiTinh1, item.NgaySinh1, item.DiaChi1, item.Lop1);
+            //    list.Add(line);
+            //}
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             // saveFileDialog.InitialDirectory = @"d:\";//Hien thi thu muc khoi tao
             saveFileDialog.RestoreDirectory = true;
@@ -274,17 +289,32 @@ namespace Login.FromMain.Form_QuanLySinhVien
                 MessageBox.Show("Xuất file thành công", "Thông Báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
         }
-
+        //
+        private void loadLop()
+        {
+           
+            vs.Clear();
+            ListLop listLop = new ListLop();
+            listLop.DocFile(Const.PathfileLop);
+            for(int i = 0; i < Const.ListLop.Count;i++)
+            {
+                vs.Add(Const.ListLop[i].Lop1);
+            }
+          
+            
+        }
+        //
         private void cknphanlop_CheckedChanged(object sender, EventArgs e)
         {
             if(cknphanlop.Checked == true)
             {
-
+                loadLop();
+                cbnPhanLop.DataSource = vs;
             }
             else
             {
-                cbnPhanLop.SelectedIndex = -1;
-                cbnPhanLop.Items.Clear();
+    
+                cbnPhanLop.DataSource = null;
             }
         }
 
@@ -292,13 +322,18 @@ namespace Login.FromMain.Form_QuanLySinhVien
         {
             if (cknchuyenlop.Checked == true)
             {
-
+                loadLop();
+                cbnChuyenLop.DataSource = vs;
             }
             else
             {
-                cbnChuyenLop.SelectedIndex = -1;
-                cbnChuyenLop.Items.Clear();
+                cbnChuyenLop.DataSource = null;
             }
+        }
+
+        private void cbnTimKiemLop_MouseClick(object sender, MouseEventArgs e)
+        {
+            mo = false;
         }
     }
             

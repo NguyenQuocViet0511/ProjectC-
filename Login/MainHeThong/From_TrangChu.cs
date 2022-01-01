@@ -1,6 +1,7 @@
 ﻿using LiveCharts;
 using LiveCharts.Wpf;
 using Login.Data;
+using Login.DataLop;
 using Login.DataSinhVien;
 using Login.FromMain;
 using System;
@@ -18,7 +19,10 @@ namespace Login.MainHeThong
 {
     public partial class From_TrangChu : Form
     {
+        List<String> vs = new List<string>();
         internal From_Main from_TrangChu;
+
+        private bool mo = true;
         BindingList<SinhVien> myObjList = new BindingList<SinhVien>();
         public From_TrangChu()
         {
@@ -88,16 +92,31 @@ namespace Login.MainHeThong
         public delegate void _MotabAdmin();
         public _MotabAdmin motabAdmin;
         //
+        public delegate void _MotabLop();
+        public _MotabLop motabLop;
+        //
         private void lblarow2_Click(object sender, EventArgs e)
         {
-     
+            motabLop();
         }
         private void lblarow_Click(object sender, EventArgs e)
         {
             motabAdmin();
         }
 
+        private void loadLop()
+        {
 
+            vs.Clear();
+            ListLop listLop = new ListLop();
+            listLop.DocFile(Const.PathfileLop);
+            for (int i = 0; i < Const.ListLop.Count; i++)
+            {
+                vs.Add(Const.ListLop[i].Lop1);
+            }
+
+
+        }
         private void txttimkiem_TextChanged(object sender, EventArgs e)
         {      
 
@@ -125,8 +144,12 @@ namespace Login.MainHeThong
 
             if (checkBox1.Checked == true)
             {
-                BindingList<SinhVien> filtered = new BindingList<SinhVien>(myObjList.Where(sinhvien => sinhvien.Lop1.Contains(cbnlop.SelectedItem.ToString())).ToList());
-                DataGripSV.DataSource = filtered;
+                if(mo == false)
+                {
+                    BindingList<SinhVien> filtered = new BindingList<SinhVien>(myObjList.Where(sinhvien => sinhvien.Lop1.Contains(cbnlop.SelectedItem.ToString())).ToList());
+                    DataGripSV.DataSource = filtered;
+                }
+              
             }
            
 
@@ -136,10 +159,14 @@ namespace Login.MainHeThong
         {
             if(checkBox1.Checked == true)
             {
-
+                loadLop();
+                cbnlop.DataSource = vs;
+                cbnlop.SelectedIndex = -1;
             }
             else
             {
+                mo = true;
+                cbnlop.DataSource = null;
                 load();
             }
         }
@@ -147,6 +174,11 @@ namespace Login.MainHeThong
         private void lblarow1_Click(object sender, EventArgs e)
         {
             motabSV();
+        }
+
+        private void cbnlop_MouseClick(object sender, MouseEventArgs e)
+        {
+            mo = false;
         }
 
 

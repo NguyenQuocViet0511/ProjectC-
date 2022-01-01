@@ -30,27 +30,49 @@ namespace Login.MainHeThong
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.lblarow = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblarow1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.lblarow2 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.DataGripSV = new System.Windows.Forms.DataGridView();
@@ -62,10 +84,12 @@ namespace Login.MainHeThong
             this.DIACHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LOP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.cbnlop = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.txttimkiem = new System.Windows.Forms.TextBox();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LiveChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel8 = new System.Windows.Forms.Panel();
             this.lblsum = new System.Windows.Forms.Label();
@@ -77,52 +101,42 @@ namespace Login.MainHeThong
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.panel16 = new System.Windows.Forms.Panel();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.lblarow = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblarow1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.lblarow2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGripSV)).BeginInit();
             this.panel12.SuspendLayout();
             this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LiveChart)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -130,29 +144,15 @@ namespace Login.MainHeThong
             this.panel9.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             this.panel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -180,6 +180,26 @@ namespace Login.MainHeThong
             this.label6.Text = "Chào Mừng Bạn Đến Với Trang Chủ";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.MidnightBlue;
+            this.label5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label5.Image = global::Login.Properties.Resources.home_30px;
+            this.label5.Location = new System.Drawing.Point(0, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(81, 66);
+            this.label5.TabIndex = 22;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 66);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(1214, 4);
+            this.pictureBox3.TabIndex = 20;
+            this.pictureBox3.TabStop = false;
+            // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -198,6 +218,15 @@ namespace Login.MainHeThong
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(331, 173);
             this.panel1.TabIndex = 32;
+            // 
+            // label10
+            // 
+            this.label10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label10.Image = global::Login.Properties.Resources.administrative_tools_100px;
+            this.label10.Location = new System.Drawing.Point(3, 45);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(200, 94);
+            this.label10.TabIndex = 12;
             // 
             // label3
             // 
@@ -224,6 +253,58 @@ namespace Login.MainHeThong
             this.label1.TabIndex = 10;
             this.label1.Text = "Quản Lí Tài Khoản";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackColor = System.Drawing.Color.Black;
+            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox14.Location = new System.Drawing.Point(3, 168);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(323, 3);
+            this.pictureBox14.TabIndex = 9;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.Color.Black;
+            this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox13.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(323, 3);
+            this.pictureBox13.TabIndex = 8;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.Color.Black;
+            this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox12.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(3, 171);
+            this.pictureBox12.TabIndex = 7;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.Color.Black;
+            this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox11.Location = new System.Drawing.Point(326, 0);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(3, 171);
+            this.pictureBox11.TabIndex = 6;
+            this.pictureBox11.TabStop = false;
+            // 
+            // lblarow
+            // 
+            this.lblarow.Image = global::Login.Properties.Resources.icons8_right_32px_2;
+            this.lblarow.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblarow.Location = new System.Drawing.Point(209, 42);
+            this.lblarow.Name = "lblarow";
+            this.lblarow.Size = new System.Drawing.Size(106, 100);
+            this.lblarow.TabIndex = 5;
+            this.lblarow.Text = "nhấn vào đây";
+            this.lblarow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblarow.Click += new System.EventHandler(this.lblarow_Click);
             // 
             // timer1
             // 
@@ -264,6 +345,15 @@ namespace Login.MainHeThong
             this.panel4.Size = new System.Drawing.Size(331, 173);
             this.panel4.TabIndex = 33;
             // 
+            // label9
+            // 
+            this.label9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label9.Image = global::Login.Properties.Resources.read_online_100px;
+            this.label9.Location = new System.Drawing.Point(3, 45);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(193, 94);
+            this.label9.TabIndex = 12;
+            // 
             // label12
             // 
             this.label12.BackColor = System.Drawing.Color.MidnightBlue;
@@ -288,6 +378,78 @@ namespace Login.MainHeThong
             this.label13.TabIndex = 10;
             this.label13.Text = "Quản Lí Sinh Viên";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Black;
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox6.Location = new System.Drawing.Point(3, 168);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(323, 3);
+            this.pictureBox6.TabIndex = 9;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Black;
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox5.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(323, 3);
+            this.pictureBox5.TabIndex = 8;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Black;
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(3, 171);
+            this.pictureBox4.TabIndex = 7;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox2.Location = new System.Drawing.Point(326, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(3, 171);
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lblarow1
+            // 
+            this.lblarow1.Image = global::Login.Properties.Resources.icons8_right_32px_2;
+            this.lblarow1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblarow1.Location = new System.Drawing.Point(209, 42);
+            this.lblarow1.Name = "lblarow1";
+            this.lblarow1.Size = new System.Drawing.Size(106, 100);
+            this.lblarow1.TabIndex = 5;
+            this.lblarow1.Text = "nhấn vào đây";
+            this.lblarow1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblarow1.Click += new System.EventHandler(this.lblarow1_Click);
+            // 
+            // label2
+            // 
+            this.label2.Image = global::Login.Properties.Resources.icons8_right_32px_2;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label2.Location = new System.Drawing.Point(209, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(106, 100);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "nhấn vào đây";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label4
+            // 
+            this.label4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label4.Image = global::Login.Properties.Resources.administrative_tools_100px;
+            this.label4.Location = new System.Drawing.Point(0, 42);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(257, 100);
+            this.label4.TabIndex = 4;
             // 
             // label7
             // 
@@ -334,6 +496,15 @@ namespace Login.MainHeThong
             this.panel5.Size = new System.Drawing.Size(331, 173);
             this.panel5.TabIndex = 35;
             // 
+            // label15
+            // 
+            this.label15.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label15.Image = global::Login.Properties.Resources.classroom_100px;
+            this.label15.Location = new System.Drawing.Point(3, 45);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(193, 94);
+            this.label15.TabIndex = 12;
+            // 
             // label16
             // 
             this.label16.BackColor = System.Drawing.Color.MidnightBlue;
@@ -358,6 +529,58 @@ namespace Login.MainHeThong
             this.label17.TabIndex = 10;
             this.label17.Text = "Quản Lí Lớp Học";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Black;
+            this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox10.Location = new System.Drawing.Point(3, 168);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(323, 3);
+            this.pictureBox10.TabIndex = 9;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Black;
+            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox9.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(323, 3);
+            this.pictureBox9.TabIndex = 8;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Black;
+            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(3, 171);
+            this.pictureBox8.TabIndex = 7;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Black;
+            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox7.Location = new System.Drawing.Point(326, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(3, 171);
+            this.pictureBox7.TabIndex = 6;
+            this.pictureBox7.TabStop = false;
+            // 
+            // lblarow2
+            // 
+            this.lblarow2.Image = global::Login.Properties.Resources.icons8_right_32px_2;
+            this.lblarow2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblarow2.Location = new System.Drawing.Point(209, 42);
+            this.lblarow2.Name = "lblarow2";
+            this.lblarow2.Size = new System.Drawing.Size(106, 100);
+            this.lblarow2.TabIndex = 5;
+            this.lblarow2.Text = "nhấn vào đây";
+            this.lblarow2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblarow2.Click += new System.EventHandler(this.lblarow2_Click);
             // 
             // panel7
             // 
@@ -385,14 +608,14 @@ namespace Login.MainHeThong
             this.DataGripSV.AllowUserToAddRows = false;
             this.DataGripSV.AllowUserToDeleteRows = false;
             this.DataGripSV.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGripSV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGripSV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DataGripSV.ColumnHeadersHeight = 40;
             this.DataGripSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DataGripSV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -404,26 +627,26 @@ namespace Login.MainHeThong
             this.DIACHI,
             this.LOP});
             this.DataGripSV.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGripSV.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGripSV.DefaultCellStyle = dataGridViewCellStyle2;
             this.DataGripSV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGripSV.Location = new System.Drawing.Point(0, 0);
             this.DataGripSV.Name = "DataGripSV";
             this.DataGripSV.ReadOnly = true;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGripSV.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGripSV.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.DataGripSV.RowHeadersVisible = false;
             this.DataGripSV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataGripSV.Size = new System.Drawing.Size(530, 494);
@@ -496,6 +719,19 @@ namespace Login.MainHeThong
             this.panel12.Size = new System.Drawing.Size(530, 85);
             this.panel12.TabIndex = 0;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox1.ForeColor = System.Drawing.Color.White;
+            this.checkBox1.Location = new System.Drawing.Point(330, 17);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(135, 17);
+            this.checkBox1.TabIndex = 4;
+            this.checkBox1.Text = "Tìm Kiếm Theo Lớp";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // cbnlop
             // 
             this.cbnlop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -508,6 +744,7 @@ namespace Login.MainHeThong
             this.cbnlop.Size = new System.Drawing.Size(197, 32);
             this.cbnlop.TabIndex = 2;
             this.cbnlop.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cbnlop.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbnlop_MouseClick);
             // 
             // label20
             // 
@@ -543,21 +780,31 @@ namespace Login.MainHeThong
             this.panel14.Size = new System.Drawing.Size(1214, 238);
             this.panel14.TabIndex = 39;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.pictureBox1.Location = new System.Drawing.Point(35, 228);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1134, 10);
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
+            // 
             // LiveChart
             // 
             this.LiveChart.BackColor = System.Drawing.Color.MidnightBlue;
-            chartArea5.Name = "ChartArea1";
-            this.LiveChart.ChartAreas.Add(chartArea5);
+            chartArea1.Name = "ChartArea1";
+            this.LiveChart.ChartAreas.Add(chartArea1);
             this.LiveChart.Dock = System.Windows.Forms.DockStyle.Bottom;
-            legend5.Name = "Legend1";
-            this.LiveChart.Legends.Add(legend5);
+            legend1.Name = "Legend1";
+            this.LiveChart.Legends.Add(legend1);
             this.LiveChart.Location = new System.Drawing.Point(0, 232);
             this.LiveChart.Name = "LiveChart";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series5.Legend = "Legend1";
-            series5.Name = "Sinh Viên";
-            this.LiveChart.Series.Add(series5);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Legend = "Legend1";
+            series1.Name = "Sinh Viên";
+            this.LiveChart.Series.Add(series1);
             this.LiveChart.Size = new System.Drawing.Size(530, 353);
             this.LiveChart.TabIndex = 36;
             this.LiveChart.Text = "chart1";
@@ -664,6 +911,15 @@ namespace Login.MainHeThong
             this.panel9.Size = new System.Drawing.Size(121, 57);
             this.panel9.TabIndex = 1;
             // 
+            // label8
+            // 
+            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label8.Image = global::Login.Properties.Resources.user_groups_50px;
+            this.label8.Location = new System.Drawing.Point(0, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(121, 57);
+            this.label8.TabIndex = 0;
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -689,6 +945,46 @@ namespace Login.MainHeThong
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(538, 587);
             this.panel15.TabIndex = 40;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackColor = System.Drawing.Color.Black;
+            this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox15.Location = new System.Drawing.Point(3, 584);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(532, 3);
+            this.pictureBox15.TabIndex = 13;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BackColor = System.Drawing.Color.Black;
+            this.pictureBox16.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox16.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(532, 3);
+            this.pictureBox16.TabIndex = 12;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.BackColor = System.Drawing.Color.Black;
+            this.pictureBox17.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox17.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(3, 587);
+            this.pictureBox17.TabIndex = 11;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.BackColor = System.Drawing.Color.Black;
+            this.pictureBox18.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox18.Location = new System.Drawing.Point(535, 0);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(3, 587);
+            this.pictureBox18.TabIndex = 10;
+            this.pictureBox18.TabStop = false;
             // 
             // panel16
             // 
@@ -743,301 +1039,6 @@ namespace Login.MainHeThong
             this.pictureBox19.TabIndex = 0;
             this.pictureBox19.TabStop = false;
             // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackColor = System.Drawing.Color.Black;
-            this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox15.Location = new System.Drawing.Point(3, 584);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(532, 3);
-            this.pictureBox15.TabIndex = 13;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.BackColor = System.Drawing.Color.Black;
-            this.pictureBox16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox16.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(532, 3);
-            this.pictureBox16.TabIndex = 12;
-            this.pictureBox16.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Image = global::Login.Properties.Resources.user_groups_50px;
-            this.label8.Location = new System.Drawing.Point(0, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(121, 57);
-            this.label8.TabIndex = 0;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.BackColor = System.Drawing.Color.Black;
-            this.pictureBox17.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox17.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(3, 587);
-            this.pictureBox17.TabIndex = 11;
-            this.pictureBox17.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.BackColor = System.Drawing.Color.Black;
-            this.pictureBox18.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox18.Location = new System.Drawing.Point(535, 0);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(3, 587);
-            this.pictureBox18.TabIndex = 10;
-            this.pictureBox18.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.pictureBox1.Location = new System.Drawing.Point(35, 228);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1134, 10);
-            this.pictureBox1.TabIndex = 40;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label10
-            // 
-            this.label10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label10.Image = global::Login.Properties.Resources.administrative_tools_100px;
-            this.label10.Location = new System.Drawing.Point(3, 45);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(200, 94);
-            this.label10.TabIndex = 12;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackColor = System.Drawing.Color.Black;
-            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox14.Location = new System.Drawing.Point(3, 168);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(323, 3);
-            this.pictureBox14.TabIndex = 9;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackColor = System.Drawing.Color.Black;
-            this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox13.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(323, 3);
-            this.pictureBox13.TabIndex = 8;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackColor = System.Drawing.Color.Black;
-            this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox12.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(3, 171);
-            this.pictureBox12.TabIndex = 7;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackColor = System.Drawing.Color.Black;
-            this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox11.Location = new System.Drawing.Point(326, 0);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(3, 171);
-            this.pictureBox11.TabIndex = 6;
-            this.pictureBox11.TabStop = false;
-            // 
-            // lblarow
-            // 
-            this.lblarow.Image = global::Login.Properties.Resources.icons8_right_32px_2;
-            this.lblarow.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblarow.Location = new System.Drawing.Point(209, 42);
-            this.lblarow.Name = "lblarow";
-            this.lblarow.Size = new System.Drawing.Size(106, 100);
-            this.lblarow.TabIndex = 5;
-            this.lblarow.Text = "nhấn vào đây";
-            this.lblarow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblarow.Click += new System.EventHandler(this.lblarow_Click);
-            // 
-            // label9
-            // 
-            this.label9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label9.Image = global::Login.Properties.Resources.read_online_100px;
-            this.label9.Location = new System.Drawing.Point(3, 45);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(193, 94);
-            this.label9.TabIndex = 12;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Black;
-            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox6.Location = new System.Drawing.Point(3, 168);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(323, 3);
-            this.pictureBox6.TabIndex = 9;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Black;
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox5.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(323, 3);
-            this.pictureBox5.TabIndex = 8;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Black;
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(3, 171);
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Black;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox2.Location = new System.Drawing.Point(326, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(3, 171);
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            // 
-            // lblarow1
-            // 
-            this.lblarow1.Image = global::Login.Properties.Resources.icons8_right_32px_2;
-            this.lblarow1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblarow1.Location = new System.Drawing.Point(209, 42);
-            this.lblarow1.Name = "lblarow1";
-            this.lblarow1.Size = new System.Drawing.Size(106, 100);
-            this.lblarow1.TabIndex = 5;
-            this.lblarow1.Text = "nhấn vào đây";
-            this.lblarow1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblarow1.Click += new System.EventHandler(this.lblarow1_Click);
-            // 
-            // label2
-            // 
-            this.label2.Image = global::Login.Properties.Resources.icons8_right_32px_2;
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label2.Location = new System.Drawing.Point(209, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 100);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "nhấn vào đây";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label4
-            // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label4.Image = global::Login.Properties.Resources.administrative_tools_100px;
-            this.label4.Location = new System.Drawing.Point(0, 42);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(257, 100);
-            this.label4.TabIndex = 4;
-            // 
-            // label15
-            // 
-            this.label15.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label15.Image = global::Login.Properties.Resources.classroom_100px;
-            this.label15.Location = new System.Drawing.Point(3, 45);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(193, 94);
-            this.label15.TabIndex = 12;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Black;
-            this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox10.Location = new System.Drawing.Point(3, 168);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(323, 3);
-            this.pictureBox10.TabIndex = 9;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Black;
-            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox9.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(323, 3);
-            this.pictureBox9.TabIndex = 8;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Black;
-            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(3, 171);
-            this.pictureBox8.TabIndex = 7;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Black;
-            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox7.Location = new System.Drawing.Point(326, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(3, 171);
-            this.pictureBox7.TabIndex = 6;
-            this.pictureBox7.TabStop = false;
-            // 
-            // lblarow2
-            // 
-            this.lblarow2.Image = global::Login.Properties.Resources.icons8_right_32px_2;
-            this.lblarow2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblarow2.Location = new System.Drawing.Point(209, 42);
-            this.lblarow2.Name = "lblarow2";
-            this.lblarow2.Size = new System.Drawing.Size(106, 100);
-            this.lblarow2.TabIndex = 5;
-            this.lblarow2.Text = "nhấn vào đây";
-            this.lblarow2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblarow2.Click += new System.EventHandler(this.lblarow2_Click);
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.MidnightBlue;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label5.Image = global::Login.Properties.Resources.home_30px;
-            this.label5.Location = new System.Drawing.Point(0, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 66);
-            this.label5.TabIndex = 22;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 66);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1214, 4);
-            this.pictureBox3.TabIndex = 20;
-            this.pictureBox3.TabStop = false;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(330, 17);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(135, 17);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Tìm Kiếm Theo Lớp";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
             // From_TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1055,16 +1056,30 @@ namespace Login.MainHeThong
             this.Text = "From_TrangChu";
             this.Load += new System.EventHandler(this.From_TrangChu_Load);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGripSV)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LiveChart)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
@@ -1072,29 +1087,15 @@ namespace Login.MainHeThong
             this.panel9.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             this.panel16.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }

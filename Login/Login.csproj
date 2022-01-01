@@ -64,6 +64,8 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataLop\ListLop.cs" />
+    <Compile Include="DataLop\Lop.cs" />
     <Compile Include="DataQuyen\ListQuyen.cs" />
     <Compile Include="DataQuyen\Quyen.cs" />
     <Compile Include="DataSinhVien\ListSinhVien.cs" />
@@ -114,6 +116,18 @@
     <Compile Include="FromMain\Form_DoiMatkhau\From_doiMatKhau.Designer.cs">
       <DependentUpon>From_doiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="FromMain\Form_QuanLyLop\From_Addlop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromMain\Form_QuanLyLop\From_Addlop.Designer.cs">
+      <DependentUpon>From_Addlop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromMain\Form_QuanLyLop\From_QuanLyLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromMain\Form_QuanLyLop\From_QuanLyLop.Designer.cs">
+      <DependentUpon>From_QuanLyLop.cs</DependentUpon>
+    </Compile>
     <Compile Include="FromMain\Form_QuanLySinhVien\Form_AddUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,11 +152,11 @@
     <Compile Include="FromMain\From_Main.Designer.cs">
       <DependentUpon>From_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainHeThong\From_quanLiTaiKhoan.cs">
+    <Compile Include="MainHeThong\From_quanLyTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainHeThong\From_quanLiTaiKhoan.Designer.cs">
-      <DependentUpon>From_quanLiTaiKhoan.cs</DependentUpon>
+    <Compile Include="MainHeThong\From_quanLyTaiKhoan.Designer.cs">
+      <DependentUpon>From_quanLyTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="MainHeThong\From_ThemAndSua.cs">
       <SubType>Form</SubType>
@@ -205,6 +219,12 @@
     <EmbeddedResource Include="FromMain\Form_DoiMatkhau\From_doiMatKhau.resx">
       <DependentUpon>From_doiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FromMain\Form_QuanLyLop\From_Addlop.resx">
+      <DependentUpon>From_Addlop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromMain\Form_QuanLyLop\From_QuanLyLop.resx">
+      <DependentUpon>From_QuanLyLop.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FromMain\Form_QuanLySinhVien\Form_AddUser.resx">
       <DependentUpon>Form_AddUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,8 +237,8 @@
     <EmbeddedResource Include="FromMain\From_Main.resx">
       <DependentUpon>From_Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainHeThong\From_quanLiTaiKhoan.resx">
-      <DependentUpon>From_quanLiTaiKhoan.cs</DependentUpon>
+    <EmbeddedResource Include="MainHeThong\From_quanLyTaiKhoan.resx">
+      <DependentUpon>From_quanLyTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainHeThong\From_ThemAndSua.resx">
       <DependentUpon>From_ThemAndSua.cs</DependentUpon>

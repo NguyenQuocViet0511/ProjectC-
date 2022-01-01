@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using DevComponents.DotNetBar;
 using Login.Data;
 using Login.FromMain.Form_DoiMatkhau;
+using Login.FromMain.Form_QuanLyLop;
 using Login.MainHeThong;
 using Login.MyCustome;
 
@@ -269,6 +270,7 @@ namespace Login.FromMain
             {
                 MenuBar();
             }
+            QuanLiLop();
         }
 
         private void BtnQuanLiSinhVien_Click(object sender, EventArgs e)
@@ -393,6 +395,7 @@ namespace Login.FromMain
 
                     motabSV = new From_TrangChu._MotabSV(motabSV),
                     motabAdmin = new From_TrangChu._MotabAdmin(motabAdmin),
+                    motabLop = new From_TrangChu._MotabLop(motabLop),
                     from_TrangChu = this,
                     TopLevel = false,
                     Dock = DockStyle.Fill
@@ -413,7 +416,7 @@ namespace Login.FromMain
             if (!CheckOpenTab(tieudeTab))
             {
                 TabItem tab = tabMain.CreateTab(tieudeTab);
-                tab.Name = "Trang Chủ";
+                tab.Name = "Sinh Viên";
                 Form_QuanLySinhVien.Form_QuanLySinhVien form_QuanLySinhVien = new Form_QuanLySinhVien.Form_QuanLySinhVien()
                 {
 
@@ -423,6 +426,28 @@ namespace Login.FromMain
                 };
                 tab.AttachedControl.Controls.Add(form_QuanLySinhVien);
                 form_QuanLySinhVien.Show();
+                tabMain.SelectedTabIndex = tabMain.Tabs.Count - 1;
+            }
+        }
+        //quan li lop
+        private void QuanLiLop()
+        {
+
+            this.TrangThaiMo = true;
+            this.tieudeTab = "Quản Lí Lớp";
+            if (!CheckOpenTab(tieudeTab))
+            {
+                TabItem tab = tabMain.CreateTab(tieudeTab);
+                tab.Name = "Lớp";
+                From_QuanLyLop from_QuanLyLop = new From_QuanLyLop()
+                {
+
+                    from_QuanLyLop = this,
+                    TopLevel = false,
+                    Dock = DockStyle.Fill
+                };
+                tab.AttachedControl.Controls.Add(from_QuanLyLop);
+                from_QuanLyLop.Show();
                 tabMain.SelectedTabIndex = tabMain.Tabs.Count - 1;
             }
         }
@@ -443,7 +468,9 @@ namespace Login.FromMain
         public From_Main Frm;
         public delegate void _MotabSV();
         public delegate void _MotabAdmin();
-       
+        public delegate void _MotabLop();
+
+
         //
 
 
@@ -456,7 +483,10 @@ namespace Login.FromMain
         {
             admin();
         }
-
+        private void motabLop()
+        {
+            QuanLiLop();
+        }
         //
     }
 }
