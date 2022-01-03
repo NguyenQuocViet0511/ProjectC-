@@ -253,6 +253,16 @@ namespace Login.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Class_Dojo_35px {
+            get {
+                object obj = ResourceManager.GetObject("Class Dojo_35px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap classroom_100px {
             get {
                 object obj = ResourceManager.GetObject("classroom_100px", resourceCulture);

@@ -33,7 +33,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.paneltimkiem = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txttimkiemtheoma = new System.Windows.Forms.TextBox();
@@ -41,7 +41,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.txttimkiemtheoten = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.ckntimkiemtheolop = new System.Windows.Forms.CheckBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panellop = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnrefresh = new CustomControls.RJControls.RJButton();
@@ -70,10 +70,11 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.ButtonDelete = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            this.panel6.SuspendLayout();
+            this.paneltimkiem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.panellop.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -97,28 +98,28 @@ namespace Login.FromMain.Form_QuanLySinhVien
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.panel6);
-            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.paneltimkiem);
+            this.panel2.Controls.Add(this.panellop);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 66);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1369, 101);
             this.panel2.TabIndex = 14;
             // 
-            // panel6
+            // paneltimkiem
             // 
-            this.panel6.Controls.Add(this.label3);
-            this.panel6.Controls.Add(this.pictureBox3);
-            this.panel6.Controls.Add(this.txttimkiemtheoma);
-            this.panel6.Controls.Add(this.cbnTimKiemLop);
-            this.panel6.Controls.Add(this.txttimkiemtheoten);
-            this.panel6.Controls.Add(this.label2);
-            this.panel6.Controls.Add(this.ckntimkiemtheolop);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(833, 101);
-            this.panel6.TabIndex = 8;
+            this.paneltimkiem.Controls.Add(this.label3);
+            this.paneltimkiem.Controls.Add(this.pictureBox3);
+            this.paneltimkiem.Controls.Add(this.txttimkiemtheoma);
+            this.paneltimkiem.Controls.Add(this.cbnTimKiemLop);
+            this.paneltimkiem.Controls.Add(this.txttimkiemtheoten);
+            this.paneltimkiem.Controls.Add(this.label2);
+            this.paneltimkiem.Controls.Add(this.ckntimkiemtheolop);
+            this.paneltimkiem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.paneltimkiem.Location = new System.Drawing.Point(0, 0);
+            this.paneltimkiem.Name = "paneltimkiem";
+            this.paneltimkiem.Size = new System.Drawing.Size(833, 101);
+            this.paneltimkiem.TabIndex = 8;
             // 
             // label3
             // 
@@ -157,9 +158,6 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.cbnTimKiemLop.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbnTimKiemLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cbnTimKiemLop.FormattingEnabled = true;
-            this.cbnTimKiemLop.Items.AddRange(new object[] {
-            "19CT113",
-            "19CT114"});
             this.cbnTimKiemLop.Location = new System.Drawing.Point(441, 43);
             this.cbnTimKiemLop.Name = "cbnTimKiemLop";
             this.cbnTimKiemLop.Size = new System.Drawing.Size(143, 32);
@@ -202,22 +200,22 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.ckntimkiemtheolop.UseVisualStyleBackColor = true;
             this.ckntimkiemtheolop.CheckedChanged += new System.EventHandler(this.ckntimkiemtheolop_CheckedChanged);
             // 
-            // panel1
+            // panellop
             // 
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.btnchuyenlop);
-            this.panel1.Controls.Add(this.btnphanlop);
-            this.panel1.Controls.Add(this.cbnChuyenLop);
-            this.panel1.Controls.Add(this.cbnPhanLop);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.btnThem);
-            this.panel1.Controls.Add(this.cknchuyenlop);
-            this.panel1.Controls.Add(this.cknphanlop);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(833, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(536, 101);
-            this.panel1.TabIndex = 7;
+            this.panellop.Controls.Add(this.panel3);
+            this.panellop.Controls.Add(this.btnchuyenlop);
+            this.panellop.Controls.Add(this.btnphanlop);
+            this.panellop.Controls.Add(this.cbnChuyenLop);
+            this.panellop.Controls.Add(this.cbnPhanLop);
+            this.panellop.Controls.Add(this.pictureBox1);
+            this.panellop.Controls.Add(this.btnThem);
+            this.panellop.Controls.Add(this.cknchuyenlop);
+            this.panellop.Controls.Add(this.cknphanlop);
+            this.panellop.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panellop.Location = new System.Drawing.Point(833, 0);
+            this.panellop.Name = "panellop";
+            this.panellop.Size = new System.Drawing.Size(536, 101);
+            this.panellop.TabIndex = 7;
             // 
             // panel3
             // 
@@ -351,9 +349,6 @@ namespace Login.FromMain.Form_QuanLySinhVien
             // 
             this.cbnChuyenLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cbnChuyenLop.FormattingEnabled = true;
-            this.cbnChuyenLop.Items.AddRange(new object[] {
-            "19CT113",
-            "19CT114"});
             this.cbnChuyenLop.Location = new System.Drawing.Point(210, 29);
             this.cbnChuyenLop.Name = "cbnChuyenLop";
             this.cbnChuyenLop.Size = new System.Drawing.Size(143, 32);
@@ -363,8 +358,6 @@ namespace Login.FromMain.Form_QuanLySinhVien
             // 
             this.cbnPhanLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cbnPhanLop.FormattingEnabled = true;
-            this.cbnPhanLop.Items.AddRange(new object[] {
-            "19CT113"});
             this.cbnPhanLop.Location = new System.Drawing.Point(21, 29);
             this.cbnPhanLop.Name = "cbnPhanLop";
             this.cbnPhanLop.Size = new System.Drawing.Size(143, 32);
@@ -526,6 +519,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.LOP,
             this.buttonEdit,
             this.ButtonDelete});
+            this.dataGridView.Cursor = System.Windows.Forms.Cursors.Hand;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -572,11 +566,21 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.ReadOnly = true;
             // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.MidnightBlue;
+            this.label4.Image = global::Login.Properties.Resources.management_30px;
+            this.label4.Location = new System.Drawing.Point(3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 63);
+            this.label4.TabIndex = 17;
+            // 
             // Form_QuanLySinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1369, 650);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.panel2);
@@ -585,11 +589,11 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.Name = "Form_QuanLySinhVien";
             this.Text = "Form1";
             this.panel2.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
+            this.paneltimkiem.ResumeLayout(false);
+            this.paneltimkiem.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panellop.ResumeLayout(false);
+            this.panellop.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -606,7 +610,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panellop;
         private System.Windows.Forms.CheckBox cknphanlop;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.StatusStrip statusStrip1;
@@ -615,7 +619,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
         private System.Windows.Forms.ComboBox cbnChuyenLop;
         private System.Windows.Forms.ComboBox cbnPhanLop;
         private System.Windows.Forms.CheckBox cknchuyenlop;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel paneltimkiem;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox txttimkiemtheoma;
         private System.Windows.Forms.ComboBox cbnTimKiemLop;
@@ -643,5 +647,6 @@ namespace Login.FromMain.Form_QuanLySinhVien
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

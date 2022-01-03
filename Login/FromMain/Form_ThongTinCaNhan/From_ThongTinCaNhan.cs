@@ -116,13 +116,13 @@ namespace Login.FromMain.Form_ThongTinCaNhan
                         {
                             Const.ListUser[i].HovaTen1 = txtHoVaten.Text;
                             Const.ListUser[i].GioiTinh1 = txtgioitinh.Text;
-                            Const.ListUser[i].Ngaysinh1 = Date.Value.Month + "/" + Date.Value.Day + "/" + Date.Value.Year;                      
+                            Const.ListUser[i].Ngaysinh1 = Date.Value.Day  + "/" + Date.Value.Month + "/" + Date.Value.Year;                      
                             Const.ListUser[i].Email1 = txtemail.Text;
                             Const.ListUser[i].DiaChi1 = txtdiachi.Text;
                             // add new moi
                             Const.UserLogin.HovaTen1 = txtHoVaten.Text;
                             Const.UserLogin.GioiTinh1 = txtgioitinh.Text;
-                            Const.UserLogin.Ngaysinh1 = Date.Value.Month + "/" + Date.Value.Day + "/" + Date.Value.Year;
+                            Const.UserLogin.Ngaysinh1 = Date.Value.Day + "/" + Date.Value.Month + "/" + Date.Value.Year;
                             Const.UserLogin.Email1 = txtemail.Text;
                             Const.UserLogin.DiaChi1 = txtdiachi.Text;
                             listUser.GhiFile(Const.Pathfile);

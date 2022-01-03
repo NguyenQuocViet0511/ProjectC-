@@ -29,6 +29,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
         {
             InitializeComponent();
             loadData();
+            PhanQuyen(Const.UserLogin.Quyen1);
         }
         private void loadData()
         {
@@ -330,10 +331,39 @@ namespace Login.FromMain.Form_QuanLySinhVien
                 cbnChuyenLop.DataSource = null;
             }
         }
+        private void PhanQuyen(String quyen)
+        {
+            switch (quyen)
+            {
+                case "Admin":
 
+                    break;
+                case "Manager":
+                    
+                    ButtonDelete.Visible = false;
+                    break;
+                case "user":
+                    panellop.Enabled = false;
+                    ButtonDelete.Visible = false;
+                    buttonEdit.Visible = false;
+                    btnThem.Enabled = false;
+                    paneltimkiem.Enabled = false;
+                    break;
+
+            }
+        }
         private void cbnTimKiemLop_MouseClick(object sender, MouseEventArgs e)
         {
-            mo = false;
+            if(ckntimkiemtheolop.Checked == true)
+            {
+                mo = false;
+            }
+           
+        }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
             

@@ -152,7 +152,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
                         {
                             sinhVien.GioiTinh1 = "Nữ";
                         }
-                        sinhVien.NgaySinh1 = Date.Value.Month + "/" + Date.Value.Day + "/" + Date.Value.Year;
+                        sinhVien.NgaySinh1 = Date.Value.Day + "/" + Date.Value.Month + "/" + Date.Value.Year;
                         sinhVien.DiaChi1 = txt_DiaChi.Text;
                         Const.ListSinhVien.Add(sinhVien);
                         ListSinhVien.GhiFile(Const.PathfileSV);
@@ -179,7 +179,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
                         {
                             Const.ListSinhVien[i].GioiTinh1 = "Nữ";
                         }
-                        Const.ListSinhVien[i].NgaySinh1 = Date.Value.Month + "/" + Date.Value.Day + "/" + Date.Value.Year;
+                        Const.ListSinhVien[i].NgaySinh1 = Date.Value.Day + "/" + Date.Value.Month + "/" + Date.Value.Year;
                         Const.ListSinhVien[i].DiaChi1 = txt_DiaChi.Text;
                         MessageBox.Show("Sửa Thông Tin Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();

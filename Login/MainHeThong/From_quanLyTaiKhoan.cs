@@ -32,6 +32,7 @@ namespace Login.MainHeThong
         private void From_quanLiTaiKhoan_Load(object sender, EventArgs e)
         {
             loadData();
+            PhanQuyen(Const.UserLogin.Quyen1);
 
         }
 
@@ -133,7 +134,27 @@ namespace Login.MainHeThong
             }
             
         }
+        private void PhanQuyen(String quyen)
+        {
+            switch(quyen)
+            {
+                case "Admin":
 
+                    break;
+                case "Manager":
+                    PanelPhanQuyen.Enabled = false;
+                    buttonDelete.Visible = false;
+                    break;
+                case "user":
+                    PanelPhanQuyen.Enabled = false;
+                    buttonDelete.Visible = false;
+                    ButtonEdit.Visible = false;
+                    btnThem.Enabled = false;
+                    
+                    break;
+
+            }
+        }
         private void btnrefresh_Click(object sender, EventArgs e)
         {
             loadData();
@@ -177,17 +198,13 @@ namespace Login.MainHeThong
                         {
                             if (Const.ListUser[i].Equals(User))
                             {
-                                if (String.IsNullOrEmpty(Const.ListUser[i].Quyen1))
-                                {
+                              
+                                
                                     Const.ListUser[i].Quyen1 = comboBox1.SelectedItem.ToString();
                                     listUser.GhiFile(Const.Pathfile);
                                     loadData();
                                     MessageBox.Show("Phân Quyền Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                }
-                                else
-                                {
-                                    MessageBox.Show("User Này Đã Phân Quyền ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                }
+                               
 
 
                             }

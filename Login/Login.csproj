@@ -585,5 +585,8 @@
   <ItemGroup>
     <None Include="Resources\refresh_shield_30px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Class Dojo_35px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,9 +29,9 @@ namespace Login.MainHeThong
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -40,7 +40,7 @@ namespace Login.MainHeThong
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.PanelPhanQuyen = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -55,23 +55,24 @@ namespace Login.MainHeThong
             this.txttimkiem = new System.Windows.Forms.TextBox();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.buttonDelete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.ButtonEdit = new System.Windows.Forms.DataGridViewImageColumn();
-            this.QUYEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DIACHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EMAIL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MATKHAU = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TENDANGNHAP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NGAYSINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GIOITINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Hovaten = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Hovaten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GIOITINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NGAYSINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TENDANGNHAP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MATKHAU = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RowEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DIACHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QUYEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ButtonEdit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.buttonDelete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.PanelPhanQuyen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel7.SuspendLayout();
@@ -115,6 +116,7 @@ namespace Login.MainHeThong
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(78)))), ((int)(((byte)(15)))));
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -145,7 +147,7 @@ namespace Login.MainHeThong
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.PanelPhanQuyen);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.panel6);
@@ -155,17 +157,17 @@ namespace Login.MainHeThong
             this.panel2.Size = new System.Drawing.Size(1242, 92);
             this.panel2.TabIndex = 2;
             // 
-            // panel5
+            // PanelPhanQuyen
             // 
-            this.panel5.Controls.Add(this.pictureBox2);
-            this.panel5.Controls.Add(this.rjButton1);
-            this.panel5.Controls.Add(this.checkBox1);
-            this.panel5.Controls.Add(this.comboBox1);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(887, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(263, 92);
-            this.panel5.TabIndex = 15;
+            this.PanelPhanQuyen.Controls.Add(this.pictureBox2);
+            this.PanelPhanQuyen.Controls.Add(this.rjButton1);
+            this.PanelPhanQuyen.Controls.Add(this.checkBox1);
+            this.PanelPhanQuyen.Controls.Add(this.comboBox1);
+            this.PanelPhanQuyen.Dock = System.Windows.Forms.DockStyle.Right;
+            this.PanelPhanQuyen.Location = new System.Drawing.Point(887, 0);
+            this.PanelPhanQuyen.Name = "PanelPhanQuyen";
+            this.PanelPhanQuyen.Size = new System.Drawing.Size(263, 92);
+            this.PanelPhanQuyen.TabIndex = 15;
             // 
             // pictureBox2
             // 
@@ -350,75 +352,65 @@ namespace Login.MainHeThong
             this.dataGridViewImageColumn2.ReadOnly = true;
             this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
-            // buttonDelete
+            // dataGridView
             // 
-            this.buttonDelete.HeaderText = "";
-            this.buttonDelete.Image = global::Login.Properties.Resources.Delete_20px;
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.ReadOnly = true;
-            this.buttonDelete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.AllowUserToDeleteRows = false;
+            this.dataGridView.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.STT,
+            this.Hovaten,
+            this.GIOITINH,
+            this.NGAYSINH,
+            this.TENDANGNHAP,
+            this.MATKHAU,
+            this.RowEmail,
+            this.DIACHI,
+            this.QUYEN,
+            this.ButtonEdit,
+            this.buttonDelete});
+            this.dataGridView.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView.Location = new System.Drawing.Point(0, 162);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.ReadOnly = true;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.dataGridView.RowHeadersVisible = false;
+            this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView.Size = new System.Drawing.Size(1242, 571);
+            this.dataGridView.TabIndex = 5;
+            this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
-            // ButtonEdit
+            // STT
             // 
-            this.ButtonEdit.HeaderText = "";
-            this.ButtonEdit.Image = global::Login.Properties.Resources.edit_20px;
-            this.ButtonEdit.Name = "ButtonEdit";
-            this.ButtonEdit.ReadOnly = true;
-            this.ButtonEdit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // QUYEN
-            // 
-            this.QUYEN.DataPropertyName = "Quyen1";
-            this.QUYEN.HeaderText = "QUYỀN";
-            this.QUYEN.Name = "QUYEN";
-            this.QUYEN.ReadOnly = true;
-            // 
-            // DIACHI
-            // 
-            this.DIACHI.DataPropertyName = "DiaChi1";
-            this.DIACHI.HeaderText = "ĐỊA CHỈ";
-            this.DIACHI.Name = "DIACHI";
-            this.DIACHI.ReadOnly = true;
-            // 
-            // EMAIL
-            // 
-            this.EMAIL.DataPropertyName = "Email1";
-            this.EMAIL.HeaderText = "EMAIL";
-            this.EMAIL.Name = "EMAIL";
-            this.EMAIL.ReadOnly = true;
-            this.EMAIL.Width = 200;
-            // 
-            // MATKHAU
-            // 
-            this.MATKHAU.DataPropertyName = "Matkhau1";
-            this.MATKHAU.HeaderText = "MẬT KHẨU";
-            this.MATKHAU.Name = "MATKHAU";
-            this.MATKHAU.ReadOnly = true;
-            this.MATKHAU.Visible = false;
-            // 
-            // TENDANGNHAP
-            // 
-            this.TENDANGNHAP.DataPropertyName = "TenTaiKhoan1";
-            this.TENDANGNHAP.HeaderText = "TÊN ĐĂNG NHẬP";
-            this.TENDANGNHAP.Name = "TENDANGNHAP";
-            this.TENDANGNHAP.ReadOnly = true;
-            this.TENDANGNHAP.Width = 204;
-            // 
-            // NGAYSINH
-            // 
-            this.NGAYSINH.DataPropertyName = "Ngaysinh1";
-            this.NGAYSINH.HeaderText = "NGÀY SINH";
-            this.NGAYSINH.Name = "NGAYSINH";
-            this.NGAYSINH.ReadOnly = true;
-            this.NGAYSINH.Width = 200;
-            // 
-            // GIOITINH
-            // 
-            this.GIOITINH.DataPropertyName = "GioiTinh1";
-            this.GIOITINH.HeaderText = "GIỚI TÍNH";
-            this.GIOITINH.Name = "GIOITINH";
-            this.GIOITINH.ReadOnly = true;
-            this.GIOITINH.Width = 130;
+            this.STT.DataPropertyName = "MaID1";
+            this.STT.HeaderText = "ID";
+            this.STT.Name = "STT";
+            this.STT.ReadOnly = true;
             // 
             // Hovaten
             // 
@@ -428,65 +420,85 @@ namespace Login.MainHeThong
             this.Hovaten.Name = "Hovaten";
             this.Hovaten.ReadOnly = true;
             // 
-            // STT
+            // GIOITINH
             // 
-            this.STT.DataPropertyName = "MaID1";
-            this.STT.HeaderText = "ID";
-            this.STT.Name = "STT";
-            this.STT.ReadOnly = true;
+            this.GIOITINH.DataPropertyName = "GioiTinh1";
+            this.GIOITINH.HeaderText = "GIỚI TÍNH";
+            this.GIOITINH.Name = "GIOITINH";
+            this.GIOITINH.ReadOnly = true;
+            this.GIOITINH.Width = 130;
             // 
-            // dataGridView
+            // NGAYSINH
             // 
-            this.dataGridView.AllowUserToAddRows = false;
-            this.dataGridView.AllowUserToDeleteRows = false;
-            this.dataGridView.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.STT,
-            this.Hovaten,
-            this.GIOITINH,
-            this.NGAYSINH,
-            this.TENDANGNHAP,
-            this.MATKHAU,
-            this.EMAIL,
-            this.DIACHI,
-            this.QUYEN,
-            this.ButtonEdit,
-            this.buttonDelete});
-            this.dataGridView.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView.Location = new System.Drawing.Point(0, 162);
-            this.dataGridView.Name = "dataGridView";
-            this.dataGridView.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView.RowHeadersVisible = false;
-            this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView.Size = new System.Drawing.Size(1242, 571);
-            this.dataGridView.TabIndex = 5;
-            this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
+            this.NGAYSINH.DataPropertyName = "Ngaysinh1";
+            this.NGAYSINH.HeaderText = "NGÀY SINH";
+            this.NGAYSINH.Name = "NGAYSINH";
+            this.NGAYSINH.ReadOnly = true;
+            this.NGAYSINH.Width = 200;
+            // 
+            // TENDANGNHAP
+            // 
+            this.TENDANGNHAP.DataPropertyName = "TenTaiKhoan1";
+            this.TENDANGNHAP.HeaderText = "TÊN ĐĂNG NHẬP";
+            this.TENDANGNHAP.Name = "TENDANGNHAP";
+            this.TENDANGNHAP.ReadOnly = true;
+            this.TENDANGNHAP.Width = 204;
+            // 
+            // MATKHAU
+            // 
+            this.MATKHAU.DataPropertyName = "Matkhau1";
+            this.MATKHAU.HeaderText = "MẬT KHẨU";
+            this.MATKHAU.Name = "MATKHAU";
+            this.MATKHAU.ReadOnly = true;
+            this.MATKHAU.Visible = false;
+            // 
+            // RowEmail
+            // 
+            this.RowEmail.DataPropertyName = "Email1";
+            this.RowEmail.HeaderText = "EMAIL";
+            this.RowEmail.Name = "RowEmail";
+            this.RowEmail.ReadOnly = true;
+            this.RowEmail.Width = 200;
+            // 
+            // DIACHI
+            // 
+            this.DIACHI.DataPropertyName = "DiaChi1";
+            this.DIACHI.HeaderText = "ĐỊA CHỈ";
+            this.DIACHI.Name = "DIACHI";
+            this.DIACHI.ReadOnly = true;
+            // 
+            // QUYEN
+            // 
+            this.QUYEN.DataPropertyName = "Quyen1";
+            this.QUYEN.HeaderText = "QUYỀN";
+            this.QUYEN.Name = "QUYEN";
+            this.QUYEN.ReadOnly = true;
+            // 
+            // ButtonEdit
+            // 
+            this.ButtonEdit.HeaderText = "";
+            this.ButtonEdit.Image = global::Login.Properties.Resources.edit_20px;
+            this.ButtonEdit.Name = "ButtonEdit";
+            this.ButtonEdit.ReadOnly = true;
+            this.ButtonEdit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.HeaderText = "";
+            this.buttonDelete.Image = global::Login.Properties.Resources.Delete_20px;
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.ReadOnly = true;
+            this.buttonDelete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.MidnightBlue;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label3.Image = global::Login.Properties.Resources.system_administrator_male_32px;
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 70);
+            this.label3.TabIndex = 2;
             // 
             // From_quanLiTaiKhoan
             // 
@@ -509,8 +521,8 @@ namespace Login.MainHeThong
             this.statusStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.PanelPhanQuyen.ResumeLayout(false);
+            this.PanelPhanQuyen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel7.ResumeLayout(false);
@@ -535,7 +547,7 @@ namespace Login.MainHeThong
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel PanelPhanQuyen;
         private System.Windows.Forms.PictureBox pictureBox2;
         private CustomControls.RJControls.RJButton rjButton1;
         private System.Windows.Forms.CheckBox checkBox1;
@@ -545,18 +557,19 @@ namespace Login.MainHeThong
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txttimkiem;
-        private System.Windows.Forms.DataGridViewImageColumn buttonDelete;
-        private System.Windows.Forms.DataGridViewImageColumn ButtonEdit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn QUYEN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DIACHI;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EMAIL;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MATKHAU;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TENDANGNHAP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NGAYSINH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GIOITINH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Hovaten;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Hovaten;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GIOITINH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NGAYSINH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TENDANGNHAP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MATKHAU;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RowEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DIACHI;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QUYEN;
+        private System.Windows.Forms.DataGridViewImageColumn ButtonEdit;
+        private System.Windows.Forms.DataGridViewImageColumn buttonDelete;
+        private System.Windows.Forms.Label label3;
     }
 }

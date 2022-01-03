@@ -27,6 +27,7 @@ namespace Login.FromMain.Form_QuanLyLop
         {
             InitializeComponent();
             loaddata();
+            PhanQuyen(Const.UserLogin.Quyen1);
         }
         private void loaddata()
         {
@@ -99,7 +100,27 @@ namespace Login.FromMain.Form_QuanLyLop
                 form_Addlop.ShowDialog();
             }
         }
+        private void PhanQuyen(String quyen)
+        {
+            switch (quyen)
+            {
+                case "Admin":
 
+                    break;
+                case "Manager":
+
+                    buttonDelete.Visible = false;
+                    break;
+                case "user":
+                 
+                    buttonDelete.Visible = false;
+                    ButtonEdit.Visible = false;
+                    btnThem.Enabled = false;
+                   
+                    break;
+
+            }
+        }
         private void txttimkiem_TextChanged(object sender, EventArgs e)
         {
 

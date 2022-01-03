@@ -44,7 +44,7 @@ namespace Login.FromMain
         public void LoadDataname()
         {
 
-            PhanQuyen();
+            
             lblLoginName.Text = "Đang Đăng Nhập Bởi Người Dùng " + Const.UserLogin.HovaTen1;
         }
         
@@ -147,13 +147,19 @@ namespace Login.FromMain
             switch(Const.UserLogin.Quyen1)
             {
                 case "Admin":
-
+                    BtnAdmin.Enabled = true;
+                    BtnQuanLiLop.Enabled = true;
+                    BtnQuanLiSinhVien.Enabled = true;
                     break;
                 case "Manager":
-
+                    BtnAdmin.Enabled = true;
+                    BtnQuanLiLop.Enabled = true;
+                    BtnQuanLiSinhVien.Enabled = true;
                     break;
                 case "user":
                     BtnAdmin.Enabled = false;
+                    BtnQuanLiLop.Enabled = false;
+                    BtnQuanLiSinhVien.Enabled = false;
                     break;
 
             }
@@ -401,7 +407,7 @@ namespace Login.FromMain
                     Dock = DockStyle.Fill
                 };
                 tab.AttachedControl.Controls.Add(from_TrangChu);
-       
+           
                 from_TrangChu.Show();
                 tabMain.SelectedTabIndex = tabMain.Tabs.Count - 1;
             }

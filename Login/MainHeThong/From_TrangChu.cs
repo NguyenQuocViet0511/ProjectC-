@@ -27,13 +27,16 @@ namespace Login.MainHeThong
         public From_TrangChu()
         {
             InitializeComponent();
+        
         }
 
         private void From_TrangChu_Load(object sender, EventArgs e)
         {
             AddChart();
-            timer1.Enabled = true;
+            timer1.Enabled = true;               
             load();
+
+            
         }
 
         public void AddChart()
@@ -126,6 +129,32 @@ namespace Login.MainHeThong
             DataGripSV.DataSource = filtered;
       
         }
+        //
+
+        //
+        public void PhanQuyen()
+        {
+            switch (Const.UserLogin.Quyen1)
+            {
+                case "Admin":
+                    lblarow.Enabled = true;
+                    lblarow1.Enabled = true;
+                    lblarow2.Enabled = true;
+                    break;
+                case "Manager":
+                    lblarow.Enabled = true;
+                    lblarow1.Enabled = true;
+                    lblarow2.Enabled = true;
+                    break;
+                case "user":
+                    lblarow.Enabled = false;
+                    lblarow1.Enabled = false;
+                    lblarow2.Enabled = false;
+                    break;
+
+            }
+        }
+        //
         private void load()
         {
             myObjList.Clear();
