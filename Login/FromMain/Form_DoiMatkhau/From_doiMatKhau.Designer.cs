@@ -30,6 +30,7 @@ namespace Login.FromMain.Form_DoiMatkhau
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -55,7 +56,6 @@ namespace Login.FromMain.Form_DoiMatkhau
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
@@ -81,6 +81,19 @@ namespace Login.FromMain.Form_DoiMatkhau
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1223, 70);
             this.panel3.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.MidnightBlue;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(74, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(1149, 66);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Đổi Mật Khẩu";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
@@ -123,7 +136,7 @@ namespace Login.FromMain.Form_DoiMatkhau
             this.panel4.Controls.Add(this.pictureBox6);
             this.panel4.Controls.Add(this.panel2);
             this.panel4.Controls.Add(this.pictureBox5);
-            this.panel4.Location = new System.Drawing.Point(291, 92);
+            this.panel4.Location = new System.Drawing.Point(322, 86);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(621, 509);
             this.panel4.TabIndex = 2;
@@ -369,19 +382,6 @@ namespace Login.FromMain.Form_DoiMatkhau
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.MidnightBlue;
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(74, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(1149, 66);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "Đổi Mật Khẩu";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // From_doiMatKhau
             // 

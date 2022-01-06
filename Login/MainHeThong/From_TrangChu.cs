@@ -120,15 +120,7 @@ namespace Login.MainHeThong
 
 
         }
-        private void txttimkiem_TextChanged(object sender, EventArgs e)
-        {      
-
-
-
-            BindingList<SinhVien> filtered = new BindingList<SinhVien>(myObjList.Where(sinhvien => sinhvien.HovaTen1.Contains(txttimkiem.Text)).ToList());
-            DataGripSV.DataSource = filtered;
-      
-        }
+    
         //
 
         //
@@ -168,26 +160,34 @@ namespace Login.MainHeThong
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
+   
 
+     
+
+        private void lblarow1_Click(object sender, EventArgs e)
+        {
+            motabSV();
+        }
+
+       
+        private void cbnlop_SelectedIndexChanged(object sender, EventArgs e)
+        {
             if (checkBox1.Checked == true)
             {
-                if(mo == false)
+                if (mo == false)
                 {
                     BindingList<SinhVien> filtered = new BindingList<SinhVien>(myObjList.Where(sinhvien => sinhvien.Lop1.Contains(cbnlop.SelectedItem.ToString())).ToList());
                     DataGripSV.DataSource = filtered;
                 }
-              
-            }
-           
 
+            }
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
         {
-            if(checkBox1.Checked == true)
+            if (checkBox1.Checked == true)
             {
+                mo = true;
                 loadLop();
                 cbnlop.DataSource = vs;
                 cbnlop.SelectedIndex = -1;
@@ -200,15 +200,19 @@ namespace Login.MainHeThong
             }
         }
 
-        private void lblarow1_Click(object sender, EventArgs e)
-        {
-            motabSV();
-        }
-
-        private void cbnlop_MouseClick(object sender, MouseEventArgs e)
+        private void cbnlop_MouseClick_1(object sender, MouseEventArgs e)
         {
             mo = false;
         }
+
+        private void txttimkiem_TextChanged_1(object sender, EventArgs e)
+        {
+
+            BindingList<SinhVien> filtered = new BindingList<SinhVien>(myObjList.Where(sinhvien => sinhvien.HovaTen1.Contains(txttimkiem.Text)).ToList());
+            DataGripSV.DataSource = filtered;
+        }
+
+
 
 
 

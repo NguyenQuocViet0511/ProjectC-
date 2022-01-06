@@ -29,8 +29,8 @@ namespace Login.FromMain.Form_QuanLySinhVien
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.paneltimkiem = new System.Windows.Forms.Panel();
@@ -91,7 +91,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1280, 66);
+            this.label1.Size = new System.Drawing.Size(1260, 66);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quản Lý Sinh Viên";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -103,7 +103,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 66);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1280, 101);
+            this.panel2.Size = new System.Drawing.Size(1260, 101);
             this.panel2.TabIndex = 14;
             // 
             // paneltimkiem
@@ -118,15 +118,15 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.paneltimkiem.Dock = System.Windows.Forms.DockStyle.Fill;
             this.paneltimkiem.Location = new System.Drawing.Point(0, 0);
             this.paneltimkiem.Name = "paneltimkiem";
-            this.paneltimkiem.Size = new System.Drawing.Size(744, 101);
+            this.paneltimkiem.Size = new System.Drawing.Size(724, 101);
             this.paneltimkiem.TabIndex = 8;
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(501, 24);
+            this.label3.Location = new System.Drawing.Point(491, 24);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(169, 15);
             this.label3.TabIndex = 11;
@@ -136,7 +136,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox3.Location = new System.Drawing.Point(741, 0);
+            this.pictureBox3.Location = new System.Drawing.Point(721, 0);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(3, 101);
             this.pictureBox3.TabIndex = 10;
@@ -144,44 +144,44 @@ namespace Login.FromMain.Form_QuanLySinhVien
             // 
             // txttimkiemtheoma
             // 
-            this.txttimkiemtheoma.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txttimkiemtheoma.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txttimkiemtheoma.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txttimkiemtheoma.Location = new System.Drawing.Point(504, 42);
+            this.txttimkiemtheoma.Location = new System.Drawing.Point(494, 42);
             this.txttimkiemtheoma.Multiline = true;
             this.txttimkiemtheoma.Name = "txttimkiemtheoma";
-            this.txttimkiemtheoma.Size = new System.Drawing.Size(231, 33);
+            this.txttimkiemtheoma.Size = new System.Drawing.Size(211, 33);
             this.txttimkiemtheoma.TabIndex = 9;
             this.txttimkiemtheoma.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // cbnTimKiemLop
             // 
-            this.cbnTimKiemLop.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbnTimKiemLop.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.cbnTimKiemLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cbnTimKiemLop.FormattingEnabled = true;
-            this.cbnTimKiemLop.Location = new System.Drawing.Point(355, 43);
+            this.cbnTimKiemLop.Location = new System.Drawing.Point(351, 43);
             this.cbnTimKiemLop.Name = "cbnTimKiemLop";
-            this.cbnTimKiemLop.Size = new System.Drawing.Size(143, 32);
+            this.cbnTimKiemLop.Size = new System.Drawing.Size(137, 32);
             this.cbnTimKiemLop.TabIndex = 8;
             this.cbnTimKiemLop.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.cbnTimKiemLop.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbnTimKiemLop_MouseClick);
             // 
             // txttimkiemtheoten
             // 
-            this.txttimkiemtheoten.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txttimkiemtheoten.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txttimkiemtheoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txttimkiemtheoten.Location = new System.Drawing.Point(12, 43);
+            this.txttimkiemtheoten.Location = new System.Drawing.Point(24, 43);
             this.txttimkiemtheoten.Multiline = true;
             this.txttimkiemtheoten.Name = "txttimkiemtheoten";
-            this.txttimkiemtheoten.Size = new System.Drawing.Size(337, 33);
+            this.txttimkiemtheoten.Size = new System.Drawing.Size(315, 33);
             this.txttimkiemtheoten.TabIndex = 1;
             this.txttimkiemtheoten.TextChanged += new System.EventHandler(this.txttimkiemtheoten_TextChanged);
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(12, 23);
+            this.label2.Location = new System.Drawing.Point(21, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(176, 15);
             this.label2.TabIndex = 4;
@@ -189,14 +189,14 @@ namespace Login.FromMain.Form_QuanLySinhVien
             // 
             // ckntimkiemtheolop
             // 
-            this.ckntimkiemtheolop.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ckntimkiemtheolop.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.ckntimkiemtheolop.AutoSize = true;
             this.ckntimkiemtheolop.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ckntimkiemtheolop.Location = new System.Drawing.Point(354, 23);
+            this.ckntimkiemtheolop.Location = new System.Drawing.Point(351, 23);
             this.ckntimkiemtheolop.Name = "ckntimkiemtheolop";
-            this.ckntimkiemtheolop.Size = new System.Drawing.Size(141, 19);
+            this.ckntimkiemtheolop.Size = new System.Drawing.Size(137, 19);
             this.ckntimkiemtheolop.TabIndex = 5;
-            this.ckntimkiemtheolop.Text = "Tìm Kiếm Theo Lớp :";
+            this.ckntimkiemtheolop.Text = "Tìm Kiếm Theo Lớp ";
             this.ckntimkiemtheolop.UseVisualStyleBackColor = true;
             this.ckntimkiemtheolop.CheckedChanged += new System.EventHandler(this.ckntimkiemtheolop_CheckedChanged);
             // 
@@ -212,7 +212,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.panellop.Controls.Add(this.cknchuyenlop);
             this.panellop.Controls.Add(this.cknphanlop);
             this.panellop.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panellop.Location = new System.Drawing.Point(744, 0);
+            this.panellop.Location = new System.Drawing.Point(724, 0);
             this.panellop.Name = "panellop";
             this.panellop.Size = new System.Drawing.Size(536, 101);
             this.panellop.TabIndex = 7;
@@ -427,9 +427,9 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.lblquantity});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 698);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 588);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1280, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1260, 22);
             this.statusStrip1.TabIndex = 15;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -500,14 +500,14 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.dataGridView.AllowUserToAddRows = false;
             this.dataGridView.AllowUserToDeleteRows = false;
             this.dataGridView.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STT,
@@ -520,21 +520,21 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.buttonEdit,
             this.ButtonDelete});
             this.dataGridView.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle26;
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.Location = new System.Drawing.Point(0, 167);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersVisible = false;
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView.Size = new System.Drawing.Size(1280, 531);
+            this.dataGridView.Size = new System.Drawing.Size(1260, 421);
             this.dataGridView.TabIndex = 16;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
@@ -579,7 +579,7 @@ namespace Login.FromMain.Form_QuanLySinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.ClientSize = new System.Drawing.Size(1260, 610);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.statusStrip1);
