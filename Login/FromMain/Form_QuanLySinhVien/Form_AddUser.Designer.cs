@@ -47,7 +47,6 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Date = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -238,22 +237,12 @@ namespace Login.FromMain.Form_QuanLySinhVien
             this.Date.TabIndex = 21;
             this.Date.Value = new System.DateTime(2021, 12, 23, 0, 0, 0, 0);
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Image = global::Login.Properties.Resources.management_30px;
-            this.label1.Location = new System.Drawing.Point(9, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 63);
-            this.label1.TabIndex = 22;
-            // 
             // Form_AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(646, 488);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.Date);
             this.Controls.Add(this.lbltieude);
             this.Controls.Add(this.pictureBox4);
@@ -307,6 +296,5 @@ namespace Login.FromMain.Form_QuanLySinhVien
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lbltieude;
         private System.Windows.Forms.DateTimePicker Date;
-        private System.Windows.Forms.Label label1;
     }
 }
